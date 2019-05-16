@@ -59,14 +59,16 @@ module EpathwayScraper
 
     def extract_index_data(row)
       result = {
-        council_reference: row[:content]["App No."] || row[:content]["Application Number"],
-        address: row[:content]["Location Address"] || (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC"),
-        description: row[:content]["Proposed Use or Development"] || row[:content]["Description"],
+        council_reference: row[:content]["App No."] || row[:content]["Application Number"] || row[:content]["Application number"],
+        address: row[:content]["Location Address"] || row[:content]["Property Address"] || (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC"),
+        description: row[:content]["Proposed Use or Development"] || row[:content]["Description"] || row[:content]["Application Proposal"],
         # This URL will only work in a session. Thanks for that!
         detail_url: row[:url]
       }
       if row[:content]["Date Lodged"]
         result[:date_received] = Date.strptime(row[:content]["Date Lodged"], '%d/%m/%Y').to_s
+      elsif row[:content]["Application Date"]
+        result[:date_received] = Date.strptime(row[:content]["Application Date"], '%d/%m/%Y').to_s
       end
       result
     end
