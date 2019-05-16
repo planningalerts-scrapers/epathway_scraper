@@ -7,7 +7,7 @@ module EpathwayScraper
   class Scraper
     attr_reader :base_url, :agent, :index
 
-    def initialize(base_url: base_url, index: index)
+    def initialize(base_url:, index:)
       @base_url = base_url
       @index = index
       @agent = Mechanize.new
