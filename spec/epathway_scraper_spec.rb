@@ -41,4 +41,12 @@ RSpec.describe EpathwayScraper do
       index: 0
     )
   end
+
+  it "campbelltown" do
+    test_scraper(
+      scraper_name: "campbelltown",
+      base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+      index: 2
+    )
+  end
 end
