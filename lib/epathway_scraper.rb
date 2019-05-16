@@ -21,8 +21,13 @@ module EpathwayScraper
       end
     end
 
-    def click_search_on_form(form)
-      form.submit(form.button_with(:value => /Search/))
+    def click_search_on_page(page)
+      button = page.form.button_with(:value => "Search")
+      if button
+        page.form.submit(button)
+      else
+        page
+      end
     end
 
     # Also include the urls of links
@@ -121,7 +126,7 @@ module EpathwayScraper
 
     def scrape
       page = pick_type_of_search
-      page = click_search_on_form(page.form)
+      page = click_search_on_page(page)
 
       page_no = 1
       loop do
