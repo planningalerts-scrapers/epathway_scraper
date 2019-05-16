@@ -1,0 +1,981 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - eservices.southgippsland.vic.gov.au
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '34077'
+      Content-Type:
+      - text/html; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      Set-Cookie:
+      - ASP.NET_SessionId=h3eb1ggsv0gtl1kmx1ratolr; path=/; HttpOnly
+      - ePathway=9500AF5D672C8F6F5566CE12C44D083C9B5A955972FE6161FE8EEBD24F02B32C881D1ECF1D66A68A0BC005EB3E24F651A732A96DA9180F375116D7AF1FC6EDFF4E5FC65CA5EA042640B5467CA609A29B10FD0EDFBCDF587C2874D1DF7773E98B9C0046006DA2886FD2C089DB527C09C51AB5B13DF8072C471C58AEC1798B7FE72BD0CA45CCB34185CA0D4D8097941CEA5B43CE4D504B447FFD554E801F8367787AEB1CC992AE009972168FDA5796D9CBDFD1132B792BDEAB34B2BECE3869CCD81745ED27DF319FA734B3697391BC8FA099E5756E06EAE40644758FB57F0FF8BDE422B950AE35F31A6C336F5A5C31FDA88EF2D44321C66B77C62BD01F0500BF6D;
+        path=/; HttpOnly
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 16 May 2019 06:42:31 GMT
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        lang=\"en\" xml:lang=\"en\">\r\n    <head id=\"ctl00_headMaster\"><title>\r\n\t\r\n</title><meta
+        content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\" /><meta content=\"C#\"
+        name=\"CODE_LANGUAGE\" /><meta content=\"JavaScript\" name=\"vs_defaultClientScript\"
+        /><meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\"
+        /><meta http-equiv=\"Content-Style-Type\" content=\"text/css\" /><meta name=\"mobile-web-app-capable\"
+        content=\"yes\" /><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"
+        /><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" /><meta
+        name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no\"
+        /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><link
+        href=\"../Styles.Infor.css\" type=\"text/css\" rel=\"stylesheet\" /><link
+        id=\"ctl00_selectedStyleSheet\" href=\"../Styles.Default.css\" type=\"text/css\"
+        rel=\"stylesheet\" /><link href=\"../Styles.css\" type=\"text/css\" rel=\"stylesheet\"
+        /><link rel=\"shortcut icon\" href=\"../favicon.ico\" /><meta name=\"DC.Title\"
+        /><meta name=\"robots\" content=\"noindex\"></head>\r\n    <body>\r\n        <form
+        name=\"aspnetForm\" method=\"post\" action=\"./EnquiryLists.aspx?ModuleCode=LAP\"
+        id=\"aspnetForm\">\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\"
+        value=\"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\"
+        />\r\n\r\n\r\n<script src=\"/ePathway/ePathProd/Web/Scripts/spin.js\" type=\"text/javascript\"></script>\r\n<script
+        src=\"/ePathway/ePathProd/Web/Scripts/jquery-1.11.3.min.js\" type=\"text/javascript\"></script>\r\n<script
+        type=\"text/javascript\">\r\n//<![CDATA[\r\nvar spinner = new Spinner()\r\n
+        \                                                                                                       //
+        Hide spinner when new page has loaded\r\n                                                                                                        $(window).load(function
+        () {\r\n                                                                                                            //spinner.stop();\r\n
+        \                                                                                                           $('#inforLoading').hide();\r\n
+        \                                                                                                       });\r\n
+        \                                                                                                       //
+        Display spinner after certain amount of time after postback\r\n                                                                                                        $(window).submit(function
+        () {\r\n                                                                                                            setTimeout(function
+        () {\r\n                                                                                                                //
+        Show Spinner\r\n                                                                                                                $('#inforLoading').show();\r\n
+        \                                                                                                               //var
+        target = document.getElementById('loading');\r\n                                                                                                                //spinner.spin(target);\r\n\r\n
+        \                                                                                                               //
+        Hide the spinner if the page is invalid as the load function won't be triggered\r\n
+        \                                                                                                               if
+        (typeof Page_IsValid != 'undefined') {\r\n                                                                                                                    if
+        (Page_IsValid==false) {\r\n                                                                                                                        //spinner.stop();\r\n
+        \                                                                                                                       $('#inforLoading').hide();\r\n
+        \                                                                                                                   }
+        \ \r\n                                                                                                                }
+        \                                                                                                             \r\n\r\n
+        \                                                                                                           },
+        100 );\r\n                                                                                                        });//]]>\r\n</script>\r\n\r\n<script
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=aFh7EdufsqE5EpWG-FNCH3htb8xUiH3yVSM92RiEkG3QIhNyucMgAyzJFoedWrkCPCFV4Ro3BkimjWE7rxxHs_wix4n44kxa-Mw6sVCeIlU1&amp;t=636765176300000000\"
+        type=\"text/javascript\"></script>\r\n<script src=\"/ePathway/ePathProd/Web/ScriptResource.axd?d=L_duwCweew_qaY3x0ykZdsDTAtBFNtOUKHNn2gQ6JdF1R2xmauG9NUxu89FaAcLvZjEPMqH42Db9M704fd_TY54SzOaNhOkbiLe1edu3ei1caBaxerH9ai2gCet-Ma9lif5qL-bxuAbgTzvPcd02zqs_OhRpQoGEmbvRqqIy4xU1&amp;t=ffffffff999c3159\"
+        type=\"text/javascript\"></script>\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\"
+        id=\"__VIEWSTATEGENERATOR\" value=\"FFEE26F5\" />\r\n<input type=\"hidden\"
+        name=\"__VIEWSTATEENCRYPTED\" id=\"__VIEWSTATEENCRYPTED\" value=\"\" />\r\n<input
+        type=\"hidden\" name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"ldoOFG5QtQh3SrLdGXWoYNDlIqwMfMjr9gZ5v97qgnWKF30iaP6c9yXfytXLlaDExVblYZmYe+Y+B1swQHkzhaEj7HGWuOJcFtfnEJF0s7kJrzQswVQxT+H8gGutRO0QJzRedb8MrbPTgdx6yTCBREB0wjU/Y6fBeHXYD7JHVfC8emNUXdlve/NQyz96RQJu3BZzpGkcGJX41QUTL3a9b4EGoOPPj8Qs5z6/k4QrjWA=\"
+        />\r\n            \r\n            <div class=\"mainBody\">\r\n                <div
+        class=\"mainBodyHeader\">\r\n                    \r\n\r\n<noscript>\r\n    <div
+        id=\"javascriptMessage\" class=\"javascriptdisabled\" >\r\n        Please
+        note, it has been detected that you have scripting disabled in your browser,
+        this may cause some limitations to apply, and some functions may not be available
+        at all\r\n    </div>\r\n</noscript>\r\n<div class=\"HeaderTop\"> \r\n\r\n
+        \   <!-- Header -->\r\n    <div class=\"Header\">\r\n        <div class=\"HeaderLinks\">\r\n
+        \           <ul><li><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/Login/Login.aspx\">Sign
+        in</a></li><li><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/Registration/Register.aspx\">Register</a></li><li><a
+        class=\"HeaderLink\" href=\"http://www.southgippsland.vic.gov.au\" target=\"_blank\">SGSC
+        Home page</a></li><li id=\"ctl00_mHeader_CartHeaderCell\" class=\"CartHeaderCell
+        hidden\"><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/ShoppingCart.aspx\"><img
+        src=\"/ePathway/ePathProd/Web/Images/cart.gif\" alt=\"View shopping cart\"
+        border=\"0\" style=\"vertical-align:bottom;margin-bottom:2px;\" /><span id=\"ctl00_mHeader_ShoppingCartSize\"></span></a></li></ul>\r\n
+        \       </div>\r\n        <div class=\"HeaderImage\">\r\n            <a id=\"ctl00_mHeader_mHeaderImage\"
+        href=\"../Default.aspx\" style=\"display:inline-block;\"><img src=\"../Images/header.gif\"
+        alt=\"Missing header image\" border=\"0\" /></a>\r\n        </div>\r\n\r\n
+        \       \r\n    </div>\r\n    \r\n    \r\n<div id=\"ctl00_mHeader_Menubar_menuPanel\"
+        class=\"menupanel\">\r\n\t\r\n    <a href=\"#ctl00_mHeader_Menubar_menu_SkipLink\"><img
+        alt=\"Skip Navigation Links\" src=\"/ePathway/ePathProd/Web/WebResource.axd?d=_-CAqSOSQxThlAkhScO4NA7lcMsSwUCSYwwk8F7iTBrLR3qDaaV7pe8FQxWRM3SOBrQBOKEG3BOVOLuujXRuvKHY3b4GPrvrAnd1CYp5jjM1&amp;t=636765176300000000\"
+        width=\"0\" height=\"0\" border=\"0\" /></a><table id=\"ctl00_mHeader_Menubar_menu\"
+        class=\"groupmenu\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tr>\r\n\t\t\t<td
+        onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\" onkeyup=\"Menu_Key(event)\"
+        id=\"ctl00_mHeader_Menubar_menun0\"><table class=\"groupmenu\" cellpadding=\"0\"
+        cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"/ePathway/ePathProd/Web/default.aspx\">Home</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun1\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=25\"
+        target=\"_blank\">General Enquiry</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun2\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=15\">Payments</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun3\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=4\">Other</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun4\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquiryLists.aspx\"
+        target=\"_blank\">Help</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td>\r\n\t\t</tr>\r\n\t</table><div
+        id=\"ctl00_mHeader_Menubar_menun1Items\" class=\"submenu\" style=\"display:none;\">\r\n\t\t<table
+        border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\"
+        onmouseout=\"Menu_Unhover(this)\" onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun5\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx\">Enquiry
+        Lists</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun6\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP\">Application
+        Enquiry</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun1ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun1ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><div id=\"ctl00_mHeader_Menubar_menun2Items\"
+        class=\"submenu\" style=\"display:none;\">\r\n\t\t<table border=\"0\" cellpadding=\"0\"
+        cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun7\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/Payments/PaymentTypes.aspx\">New
+        Payment</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun8\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/Payments/EditSubmit.aspx\">Edit
+        Payment</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun2ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun2ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><div id=\"ctl00_mHeader_Menubar_menun3Items\"
+        class=\"submenu\" style=\"display:none;\">\r\n\t\t<table border=\"0\" cellpadding=\"0\"
+        cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun9\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquiryLists.aspx\"
+        target=\"_blank\">Help</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun10\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"../Other/Contact.aspx\"
+        target=\"_blank\">Contact Us</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun3ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun3ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><a id=\"ctl00_mHeader_Menubar_menu_SkipLink\"></a>\r\n
+        \   \r\n\r\n</div>\r\n\r\n    \r\n\r\n<div id=\"ctl00_mHeader_Menubar_mobileMenuPanel\"
+        class=\"mobile-controls\">\r\n\t\r\n    \r\n    <div id=\"ctl00_mHeader_Menubar_mobileMenuButton\"
+        class=\"nav-mobile-button\" onclick=\"javascript: { if (document.getElementById(&#39;mobileMenu&#39;).className
+        === &#39;mobileMenu&#39;) document.getElementById(&#39;mobileMenu&#39;).className
+        = &#39;mobileMenu hidden&#39;; else document.getElementById(&#39;mobileMenu&#39;).className
+        = &#39;mobileMenu&#39;;  }\">\r\n\r\n\t</div>\r\n\r\n    \r\n            <div
+        id=\"mobileMenu\" class=\"mobileMenu hidden\">\r\n                <ul>\r\n
+        \       \r\n            \r\n            \r\n            \r\n            <li>\r\n
+        \               \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl01_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/default.aspx\">Home</a> \r\n                \r\n
+        \               \r\n           <!-- </li> -->\r\n            </li>\r\n        \r\n
+        \           \r\n            \r\n            \r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl02_mobileLink\"
+        href=\"../AlternateMenu.aspx?id=25\">General Enquiry</a> \r\n                \r\n
+        \               \r\n           <!-- </li> -->\r\n            \r\n        \r\n
+        \           \r\n            \r\n            <ul>\r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl03_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx\">Enquiry
+        Lists</a> \r\n                \r\n                \r\n           <!-- </li>
+        -->\r\n            </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl04_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP\">Application
+        Enquiry</a> \r\n                \r\n                \r\n           <!-- </li>
+        -->\r\n            </li>\r\n        \r\n            </ul>\r\n            </li>\r\n
+        \           \r\n            <li>\r\n                \r\n                <a
+        id=\"ctl00_mHeader_Menubar_mobileMenu_ctl05_mobileLink\" href=\"../AlternateMenu.aspx?id=15\">Payments</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n            \r\n            \r\n            <ul>\r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl06_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/Payments/PaymentTypes.aspx\">New Payment</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl07_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/Payments/EditSubmit.aspx\">Edit Payment</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            </ul>\r\n            </li>\r\n
+        \           \r\n            <li>\r\n                \r\n                <a
+        id=\"ctl00_mHeader_Menubar_mobileMenu_ctl08_mobileLink\" href=\"../AlternateMenu.aspx?id=4\">Other</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n            \r\n            \r\n            <ul>\r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl09_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquiryLists.aspx\">Help</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl10_mobileLink\"
+        href=\"../Other/Contact.aspx\">Contact Us</a> \r\n                \r\n                \r\n
+        \          <!-- </li> -->\r\n            </li>\r\n        \r\n            </ul>\r\n
+        \           </li>\r\n            \r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl11_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquiryLists.aspx\">Help</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n                </ul> <!-- last second closing
+        tag, as it cannot be written out form .cs-->\r\n                </li>\r\n
+        \               </ul>\r\n            </div>     \r\n        \r\n\r\n\r\n</div>\r\n\r\n
+        \   \r\n</div>\r\n\r\n<script type=\"text/javascript\">\r\n    // Enable mobile
+        menu\r\n\r\n</script>\r\n<!-- End Header -->\r\n\r\n                    \r\n<style
+        type=\"text/css\">\r\n.ctl00_mHeader_Menubar_menu_0 \r\n{ \r\n      background-color:
+        rgb(211, 42, 33);\r\npadding-bottom:none;\r\noverflow:visible;\r\n}\r\n</style>\r\n
+        \                </div>\r\n                <div class=\"mainBodyContent\">\r\n
+        \                   \r\n\r\n    <script type=\"text/javascript\">\t\r\n\t\tfunction
+        ValidateGrid(source, arguments) \r\n\t\t{\r\n\t\t\targuments.IsValid = false;\r\n\t\t\tvar
+        controls = document.getElementsByTagName(\"INPUT\");\r\n\t\t\tfor (var i =
+        0; i < controls.length; i++) \r\n\t\t\t{\r\n\t\t\t\tvar control = controls[i];\r\n\t\t\t\tif
+        (control.type.toUpperCase() == \"RADIO\" && control.checked == true) \r\n\t\t\t\t{\r\n\t\t\t\t\targuments.IsValid
+        = true;\r\n\t\t\t\t\treturn;\r\n\t\t\t\t}\t\t\t\t\r\n\t\t\t}\r\n\t\t}\r\n
+        \   </script>\r\n\r\n    <table border=\"0\">\r\n\t<tr>\r\n\t\t<td><span class=\"ContentHeading\"></span><span
+        class=\"ContentText\"></span></td>\r\n\t</tr><tr>\r\n\t\t<td><table border=\"0\">\r\n\t\t\t<tr>\r\n\t\t\t\t<td
+        class=\"imagePreviousStage\"></td><td class=\"imageNextStage\"><input type=\"image\"
+        name=\"ctl00$MainBodyContent$ctl05\" title=\"Click to go to the next step
+        in this process.\" src=\"/ePathway/ePathProd/Web/Images/stage-next.gif\" alt=\"Click
+        to go to the next step in this process.\" onclick=\"javascript:WebForm_DoPostBackWithOptions(new
+        WebForm_PostBackOptions(&quot;ctl00$MainBodyContent$ctl05&quot;, &quot;&quot;,
+        true, &quot;&quot;, &quot;&quot;, false, false))\" border=\"0\" /></td><td
+        class=\"imageCancelStage\"><input type=\"image\" name=\"ctl00$MainBodyContent$CancelImageButton\"
+        id=\"ctl00_MainBodyContent_CancelImageButton\" title=\"Click this button to
+        cancel out of this process (in most cases you will be sent to the home page).\"
+        src=\"/ePathway/ePathProd/Web/Images/stage-cancel.gif\" alt=\"Click this button
+        to cancel out of this process (in most cases you will be sent to the home
+        page).\" border=\"0\" /></td><td><ul id=\"mBreadcrumbs\"><li><a class=\"current\"></a></li><li><a></a></li><li><a></a></li><li><a></a></li></ul></td>\r\n\t\t\t</tr>\r\n\t\t</table></td>\r\n\t</tr>\r\n</table>\r\n
+        \   <div class=\"content\">\r\n        <div id=\"ctl00_MainBodyContent_mImageContentPanel\"
+        class=\"GroupContentPanel\">\r\n\t<table class=\"ContentPanelHeading\" cellspacing=\"0\"
+        cellpadding=\"0\" border=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td></td>\r\n\t\t</tr>\r\n\t</table><div
+        class=\"contentPanel\"><div class=\"contentPanelImage imagegeneralenquiries-enquirylists\"><img
+        src=\"/ePathway/ePathProd/Web/Images/generalenquiries-enquirylists.gif\" alt=\"Missing
+        generalenquiries-enquirylists image\" border=\"0\" /></div><span class=\"ContentText\">Below
+        is a list of the Enquiries that are available for you to request. Please make
+        a selection and click the Next button to continue.</span></div>\r\n        \r\n</div>\r\n
+        \       \r\n        <table id=\"ctl00_MainBodyContent_mDataList\" cellspacing=\"0\"
+        cellpadding=\"2\" border=\"0\" width=\"100%\">\r\n\t<tr>\r\n\t\t<td>\r\n                        \r\n
+        \                   </td>\r\n\t</tr><tr>\r\n\t\t<td>\r\n                        <div
+        id=\"ctl00_MainBodyContent_mDataList_ctl01_mContentPanel\" class=\"GroupContentPanel\">\r\n\t\t\t<table
+        class=\"ContentPanelHeading\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\"
+        width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n
+        \                               <table class=\"AlternateContentPanel\" cellspacing=\"0\"
+        border=\"0\" id=\"ctl00_MainBodyContent_mDataList_ctl01_mDataGrid\" width=\"100%\">\r\n\t\t\t\t<tr
+        class=\"AlternateContentPanelHeading\">\r\n\t\t\t\t\t<th scope=\"col\">&nbsp;</th><th
+        scope=\"col\" width=\"40%\" nowrap=\"nowrap\">Description</th><th scope=\"col\"
+        width=\"60%\">Instructions</th>\r\n\t\t\t\t</tr><tr id=\"ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl02\"
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td><input value=\"ctl00$MainBodyContent$mDataList$ctl01$mDataGrid$ctl02$ctl00\"
+        name=\"mDataGrid:Column0:Property\" id=\"ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl02_ctl00\"
+        type=\"radio\" /></td><td onclick=\"javascript: { document.getElementById(&#39;ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl02_ctl00&#39;).click();
+        }\">Planning Application at Advertising</td><td onclick=\"javascript: { document.getElementById(&#39;ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl02_ctl00&#39;).click();
+        }\">Select this option to enquire on applications that are currently being
+        advertised</td>\r\n\t\t\t\t</tr><tr id=\"ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl03\"
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td><input value=\"ctl00$MainBodyContent$mDataList$ctl01$mDataGrid$ctl03$ctl00\"
+        name=\"mDataGrid:Column0:Property\" id=\"ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl03_ctl00\"
+        type=\"radio\" /></td><td onclick=\"javascript: { document.getElementById(&#39;ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl03_ctl00&#39;).click();
+        }\">Planning Application Register</td><td onclick=\"javascript: { document.getElementById(&#39;ctl00_MainBodyContent_mDataList_ctl01_mDataGrid_ctl03_ctl00&#39;).click();
+        }\">&nbsp;</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n                        \r\n\t\t</div>\r\n
+        \                   </td>\r\n\t</tr><tr>\r\n\t\t<td>\r\n                        \r\n
+        \                   </td>\r\n\t</tr><tr>\r\n\t\t<td>\r\n                        \r\n
+        \                   </td>\r\n\t</tr><tr>\r\n\t\t<td>\r\n                        \r\n
+        \                   </td>\r\n\t</tr>\r\n</table>\r\n        <div class=\"bottomButtonBar\">\r\n
+        \           <input type=\"submit\" name=\"ctl00$MainBodyContent$mContinueButton\"
+        value=\"Next\" onclick=\"javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainBodyContent$mContinueButton&quot;,
+        &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))\" id=\"ctl00_MainBodyContent_mContinueButton\"
+        class=\"Button goButton\" />\r\n            \r\n        </div>\r\n        \r\n
+        \       &nbsp;\r\n    </div>\r\n\r\n                </div>  \r\n        \r\n
+        \               <div class=\"mainBodyFooter\">    \r\n                    \r\n\r\n
+        \                   \r\n<!-- Footer -->\r\n<div align=\"center\">\r\n    <div
+        class=\"Footer\"> \r\n        \r\n        \r\n    </div>\r\n</div>\r\n<!--
+        End Footer -->\r\n\r\n                </div>\r\n            </div>\r\n            <label
+        for=\"ctl00_mWidth\" id=\"ctl00_dummy01\" style=\"display:none;\">dummy</label>\r\n
+        \           <input name=\"ctl00$mWidth\" type=\"text\" id=\"ctl00_mWidth\"
+        class=\"mWidth\" style=\"display:none;\" />\r\n            <label for=\"ctl00_mHeight\"
+        id=\"ctl00_dummy02\" style=\"display:none;\">dummy</label>\r\n            <input
+        name=\"ctl00$mHeight\" type=\"text\" id=\"ctl00_mHeight\" class=\"mHeight\"
+        style=\"display:none;\" />\r\n            <script type=\"text/javascript\">\r\n
+        \               /*function doNothing() {\r\n\r\n                }\r\n                $(\"#ctl00_mHeader_Menubar_menu
+        td\").each(function () {\r\n                    $(this)\r\n                        .attr(\"onblur\",
+        \"doNothing()\")\r\n                        .attr(\"onfocus\", \"doNothing()\");\r\n
+        \               });*/\r\n                $(document).ready(function () {\r\n
+        \                   setDimension();\r\n                   \r\n                    \r\n
+        \               });\r\n\r\n                $(window).bind('orientationchange
+        resize', function (event) {\r\n                    setDimension();\r\n                });\r\n\r\n
+        \               function setDimension() {\r\n                    var mWidth
+        = document.getElementsByClassName(\"mWidth\")[0];\r\n                    var
+        mHeight = document.getElementsByClassName(\"mHeight\")[0];\r\n\r\n                    mWidth.value
+        = $(window).width();\r\n                    mHeight.value = $(window).height();\r\n
+        \               }\r\n            </script>\r\n        \r\n\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nwindow.location.href='/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP&js=-775079632';var
+        ctl00_mHeader_Menubar_menu_Data = new Object();\r\nctl00_mHeader_Menubar_menu_Data.disappearAfter
+        = 500;\r\nctl00_mHeader_Menubar_menu_Data.horizontalOffset = 0;\r\nctl00_mHeader_Menubar_menu_Data.verticalOffset
+        = 0;\r\nctl00_mHeader_Menubar_menu_Data.hoverClass = 'submenuhover';\r\nctl00_mHeader_Menubar_menu_Data.iframeUrl
+        = '/ePathway/ePathProd/Web/WebResource.axd?d=qNhN170AIf0cVoAxBN25cntp8UVUNmqMl7K4rvFzu5IOfj_ehhcr2dnu-ALKH7UARA_DqjdG8JVBMmeuLqMOJzcmfRbGDFvJEgVazO8FuSk1&t=636765176300000000';\r\n//]]>\r\n</script>\r\n</form>\r\n
+        \       <script type=\"text/javascript\" src='/ePathway/ePathProd/Web/Scripts/CommonFooter.js'></script>\r\n
+        \       <script type=\"text/javascript\" src='/ePathway/ePathProd/Web/Scripts/common.js'></script>\r\n
+        \       \r\n        \r\n        <div id=\"loadingContainer\"></div>\r\n        \r\n
+        \       <script type=\"text/javascript\">document.getElementById(\"loadingContainer\").innerHTML
+        = \"<div id='inforLoading' style='position: fixed; text-align: center; height:
+        100%; width: 100%; top: 0; right: 0; left: 0;'><div class='inforBusyIndicatorContainer'><div
+        id='inforLoadingOverlay' class='inforBusyIndicator large pill'><span class='loadingText'>Loading...</span></div></div><div
+        id='inforOverlay' class='inforOverlay' ></div></div>\";</script>        \r\n
+        \       \r\n        \r\n\r\n        \r\n\r\n    </body>\r\n\r\n\r\n\r\n</html>\r\n\r\n"
+    http_version: 
+  recorded_at: Mon, 13 May 2019 14:00:00 GMT
+- request:
+    method: post
+    uri: https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+    body:
+      encoding: UTF-8
+      string: __VIEWSTATE=eKkBK%2F47tc2MigmLOnYXgERB9bq%2FgReGnZxRhCP3125gZgBcwJc%2FBYvO5HIDbXLAmwe05mIAg6WYJ4g4EOcpPvPj9tgSU0zVkefky6ABdSRZSDiiPS%2FQLxCQV7YSMEaOIwnz5AQbYb4oIppRmWZ5qR8k9I8VB%2B4IkonucNIRo7KquNnnTWJZMZNHwbdAncZs9rrVfPYA%2FnPHM8D7baHKps055vO%2Ff1bF4eKOS97R83YOZLeTR%2Bx3%2B1jnTSi6l567SAPnAVN92Ka4SQVq7z%2FwDBZbveAd3I3DRzSGUO0EazLTu8YWs3VmaysjJ5oh%2FdDVTTrP16XnnxENMYtOeyabc5IQmC47CB68lEouW1N%2F9hzBvULXQK%2B4M1oQ7LLnU7%2Bu5f5s3nsEHtnD6F433vf33nOqa34jHQzOp3G3dHB6Ui5AgY%2BeI2Etpj%2BJJ4%2FwBxQfPeOUo4pj3BpWSPSqocZ01q6qbGsTKCUE1iAOdycgdj82EyxETljHn5Fk8kBGGfHwbw4TdPS0mya4nR%2FyGAlcAfAvhegQhwLQYObXr17LkTNkM9GMq7E%2B8SJCGV7dqoSpABwYnkGYJ24quDwxUYX%2FVBZhbgcCEXnnPQDxeG0z209v%2FFyPZhKFSG%2F4j9tzrCTqxQLaDmHSt8%2Bi1Hig1ily3cH6hGAop5wyJ9dLn%2FZ1GJYFHVLColFJkiipLo64s7VSXeaQ40iscUTXCFi6CHclQ2xgW4i8v%2Bz6zdco3h0%2BirzbLszXVDf0M8bT4Be%2BUxophiVBgjxytxPJSlJMIEKmJf1PEfanvmcsXQCXWgcBASeB3KUdlDiccEL7B5gA8Fkb%2BIM%2BgHlWUgeoHYzK4mfDu5Xd0rCK%2FgVOGn8S1brr%2BgruAnL2ECglhlQbR82b78mR8e3vpnxNsdY71Y%2FtJnyRbP7M28he8%2B5hBewecgLjwzNyuca9YRpJzeVcVajpx1xRrqDzu0x3m7OCnjEtAM6b5nIvg4%2FvaWB%2BksnKYkkud5W3nS6EhPFfQexMQ2NKJGwmuK3wpqrhFEi7D7TLw4IPTk1jvp%2FJRkUd0bSiMh73C7oM%2BKuuTyiCKITlH0gOO%2F6TRAlQ%2BpXa42A%2Bvo%2FtsaEQGC37yetH4zjafJ8wLDbJzHXGk0uuyzKLC3JX9DolnSspeITxWP%2FImRrjnkyJQWqL1ccIfZRueuJe8cRcXsQpUkQXVaaMFDF2Pornsjcf%2BiRzs473QQdiW5ZdqvR8QdTd3DSFrqSomcJ7C1aKn7BuOjDUXEiCDNoLI23ocHHkP7ORJW4gR7%2BXTfU7DKY9HPjzQE0EmMZgqaSWCgQhDH8n9einzM%2F7IzxYjnBmRT53JqqOEd2U7qOH%2F%2FxNTZ1u5hirbZFzBRQemqdNhyyLiayNqZNoVF%2FcINY9oOZVuCOE2YBsuQDfO4zMoYJgeR4wvpCjxmo730cODALd4p7oK7XO2RqB79meABEB0qL1Uofd9zn3xCIhbl4F7bO4743UsW8G4bO8QOZLZRnNZkfK7SMgpq2bw9ksmPkBbyqFyuaIT2kVg%2F68Ly69vzleiBxI3BdAe%2FLGjMk%2FdRzhokQ8mYr3ec0lwyiYHW4Xvjp456E%2Fl7KRTVUckFLxmWC3%2FzKiVvta9HcYA%2FyknHSLanPbhjOrwwnfckjHaBHQDAUYp96STSRj4dlqvVfemFnnBrrBt%2Fq8Ubdcr%2FcwvNUSMC%2FebHv8BPwC63U3yNE%2BobnJlG%2FH%2B%2FNRkCf7vKNStkNfGiUIo1DhAlX%2F3ZpZOVApv50a2MM693siHOxyZ7%2BumK24QzS8XY1v4Oz1iMTq3VMBYaGEddq8Ah1xIF0sJzYYx0FXdDYAyzXYPv4aABotA6XMaizMnB2yupBdwZy9K1lekWy4I4cbOrmxUcm5IqtrQ5M9aJEtkor%2F5L4UIv2sAiAx3CFA9O0Le%2FlxAXo6noMUozkGjDSeCfjA3EOdhhQY%2BNK0vwEA15n5RfqwC%2BfamuYmDtga3Xk74tgPNdmGKf4MIdF0fA0YUWDy5joLl0IWoheU4MECcclxwa9IUyAo40v%2BxrJGKY1FtT6mi6dKAw14%2Bafm7zuM4rr0NOLjgogt6H1XCWp4IisGaZeoAgs0zZO4RUDrQKOFmBFpq9iPGQ96fOlufgZeTJDS1hv36j7EO1iRyOFa6RHBas0RVxVDw%2BZVB%2BhL66Y6qrxlSre%2FH%2FeBS84NFjlb%2BdzCK4ZjrnAhNKguHzLb7L7sPYLO7DHUfrXZ4cVAeI0Qmi%2Bu16LZnJ8LyB90SEQhVPmDqR1eSHkIYUo%2BGbobgxtDLjjnVBspi9pgaemD8hdJBVmtJdzlfFJdBwnALxcAaJCETMKLc7T19IYrXEMq7bKcbNMaLNM5f58mZPXIUcyF2s2MHCzyZb1M1%2BIDtDxQ%2F1SZ8PxWZIt2goTjX5yBMyNBLqbDkVJYnJFwYc5ZNA5Dcj7RUnBUwGH8nFNVlPx1QcJKBdS9EXWiGKks2ZX1N6qZq8f2n2dSOvaSoGdVlWv%2FM4bjnIPZ0LnPrYG0hlzqvECBGJM%2FmyVVXyxDYvki7oLXnworpCGPdFwYp95%2FNZWSO1F3B%2Bv4w0iwt%2Be2uVF4bMbfOykbrODHh8EnJaFzrVti9yTLBc5JBoqsuq1m2jK4oc19wmvDg1k1bcQD%2FUoAh6V4RTOXzzai6Nh309bhoPqNPfa6Vys3tDIbEY20I5TypECLYbPB8xr7duysEPDDH2ta7%2Bwpugj%2FwAsbTJNhg68lBLpiqBubxO9LceK5T0jLtm5w2%2Fru60EitNzvDt8GVdve7dB24OAS52caiNapZ79K%2B9DAA0MxN2vq1N3UwifNHCwFZ31A8SIFct2OVgoqn5%2Brwqr%2ByPIeYNbXv%2FCo6jplmaNIK%2FSdg02sOwG9Id%2Fs%2B4LD2GX0zpd6gSLkdQWG%2FEizuERqtZsVzVBhwv%2FSjmTgRV4nWZvJ9EyR5xg3IlU%2F0OtPcAB13tORT7dPDrPYm97ScHWHSEH0Pk2aNxOioZuZNrHIw6iqrZfKUb%2BijykXFi9tr1bemhXQfWONP4MCp5Dj97sxZSbDiiqmKZlE36XVIiu1XYmnrhqO0eEV7vErlC7qaclI2H1HbGd5h7nRP0FFdMWAqfHEnZ6Mk%2FQEd8EOYucWb9e%2B6WT1O2lLSGCzIIBdPSdZ4ysgC4XT4mqrV5Ag4sLzOKL9npbCULErODvJassUJVlPzWbqKMGG%2FRY4Lqt%2BYpctClCIx1WL8FZI7kGDz6Mo5m4eg8m3vuj2na9qfz6lJvJEfwyYAH%2Flqp%2FZkOEsd4HeVtuqokp2nJGNAVBGqWjjfyebzxjti%2F8CW6ZjE9spWwxJ66PBAmfVbd0c0j4LL%2FNZ70ugK6ZZZZpMcAHExnu1%2BgmY5IKM0Flsyd9COFpKtLg7J7mI5Cg1lpdEvuChVi2k9qI61%2F2Od3HxLYheVpH6FCjOf%2FlNfjKvaQbA04NfPdQ%2FZCexLuRwaXPKFr29HtV0ZjbDAqwtb%2B896gaDpFeDKWW90VXzQ4ElZbV2Sh6Q%2BptfWQvJ5rDxE2Xxta6B%2FN6GdTEzo%2BfLXTKaYwDLJcltIDvG9IJA5RFpEir9G7p95vEvs3L3WsvyY05WzL4e55E4mobtq%2Fmc8WQEjpnQDLW0rzxZ9A1eP2u3PCQJtqFd%2FiOWIKhpNlRDgcriBkRgAe4lsjD0MeTihgGavjbZbj7uAUYK7ZNZPneAZzFtwGyeMVmabBuV5A08KuQVjj%2FbMHUborfB%2BvlW3jMlO1EJyaYVbBO5Kj4HjxhDxEoxq0aBSpDlerIq0mwikefcUkNthL1LLyIb9PzpTcBZvLeX6oNtv4wm2e1LSyCnF69JcCA4vJrbI0BEaEeBRPhiktx10B8pVlA2gr9mkIKC%2B%2BnZOLEIRBZIw65gLNqicE3Nt866JbVW02OVixjzoliGKT26so%2FupBq1pwj6R8kT2tNBd%2B2XauHFUXGyTW%2BIxVLYK1b2HvF%2FZg0lViSUSph2TSt4JgyFbg0pPHii5JueizZS%2Bqtcjf8y5xo2oLE1A79U3XPwDOZN64rVC8F%2BXJamDp7Kxu%2B%2FN%2FrDpoIzvv66Nnk0MYLz67afUA0s3ygpuIUosqjCqqqrU4UYBNA4a0gxYMAB2tZoYRGYrNExfQl38SZCXOrowDk7hdco3XRlp2JySzN6s1%2FWxTlyXGV%2BP8z1Q%2BPpHRnPvn4PWi%2FaMC4D0v%2Bg8EkzuQUopIfvmWJVDGewc8%2BzxSLx5N4YWxdRiQfbi4Geb9NijXqaYtCD6HJmR%2Fj2vj3QhPjdRedYG1S8mKG50Lelb4WCu%2Bg3HgMCBc%2BZD9YLLTJdMzdpfvMKSqHFBuOdM%2BmX6A7Ku4UUU67z2mnphE0OmejNDrX%2F72iGmcfkUjtW%2FkzKkiwqKahEXgQbgOQGPfTKOSKULVU9gymjohjmoKYG56Dsen3%2F%2B9TLHH%2BGTpHwZyfOW5h8vE2AYy1V%2FwfOad3oX2nFw3onCVzdIrKrJlWh8YFMHeRAw93wZTU2MxwU7eshW33qEh7ebqes8kr6JckXGckZ9worbt6O7C91cFDRYy7MKzs0D5mdSG2Urj%2B7sJsBObHyZYpFazj7WknbTxkUn6Mid9VkO9kJeQnoVGXgSeqwZKq7JsZWAKaV64Dah8%2BI5tFG0KOEjXqO%2FPOq7dRFDVVFCFM3BJyPLC1cBplTpXtUlVmJ7lRb4YFqE5VntzaZ1YM0RuzizOw9%2Bd4QXp%2BKGvIxH1zOUFmg%2FC6JPP21twFkHxjuLCU1Ba%2FDtnsgcoY6eEW%2F1aIgID5gxwDypIY%2FoAXSl1A3B9Trcm2X%2FOsjvAYTuBu5TmUDh6CLRDl2TubN32RJSqqtvU22tammtKblK3lyhPcSo9JmBPjf%2BtVcGB6kxX4mk53SvTdnOPsTkFlAsolICfswB8EhiWZ%2FV6Z6qeSDBSMHxSfNA9YxhtH6UmWOQNJyF%2BvJ7kLVXqIMSPNR0LNFuazMmV4WchUyeqc%2Fqa8DJppQ%2FkRsLW%2BlJntfq5lsgycNbwC0DZcH4ODiJpZQvv2N6Odhv8JEQd7X2P%2BdOHbdrKvGfBNeAtrs%2Fk7OUe57JDGO0hrJgHjXz2lhzoSeUoJcXkK4vKAU6c%2B6WprJ9mYYkYQmYWSxmN9vCwWzqTlJH2D6iaLSt1xflk0rfk%2Bg3A0yRoLZfTcmU49LqJ1vCdDXQFZ%2BUscUWLg5Rf0SZSPzAK7bnKbrp%2Bqz78j6msG%2FOVyPLzL%2Bd%2FpzyGZxwVO%2F7B2XPMlg%2FXFxKRLkgldtM%2BPR%2FyNUW99EEedStBbJHhfoISMjexlFsgQRDIBshyOLMX4bSqDSTHbyyp8aY%2Fbl2BDn4T1fbw43PeyzK9YU1wMpj8%2BixAprIDf2YCwZBy%2B9nUA2%2FT%2FA9zvGGEVe99QhwXwaOFKmsvfk4UwT1WaSy1mHiZarMPLn15q4WcO4oyjI4J6nkwEL6Knq9GjUa5nS5pr%2FiUT%2FnzswxgEccpqWUbaUKWqCO%2BKoMYM%2F89LbwLW68UUu8i%2B4m1YIsBL6caeIvvT%2F4WML%2Fjy9%2BDPtSl3h8%2BQaiZXC858fWwvsfvly8R%2BUZ2ntX0XfLpmTM4sHIfOZ2PR%2FJqf03fovUK%2BH4M3GswnAse7BsMwBESY19DDwXLHEcM6n%2FJh1bpTG2PFwoUy6bbvt09E7PN3s%2F99XoTT8XvY0KVjbSqt6Mmm%2BnXUIpTP3cNe%2FbMoQrlNyl%2FmEo1Sg9t2QXvkAl8i4OylihqJm6Iuez3UzxQRp22%2BbTwhv65A5AiTSbcX2a2SOjqAfAD3K91bWctSVkJcs9e5KV03Q30y%2FRKM0CWrQCpW2VrmdkM3FduXjpTmWUV%2F0CIbosGumbPMIuO1%2F%2FTDFBsnUooIb6QujmL7nSUv4calwh301dhDbyg1%2FCECd8DBqKAAqTW%2FuxHnEIGyUPoZwTdiasxF4s86JwcwCDXgcQ8RZzukjl3eIfu5Y4tX84bX3ojE%3D&__VIEWSTATEGENERATOR=FFEE26F5&__VIEWSTATEENCRYPTED=&__EVENTVALIDATION=ldoOFG5QtQh3SrLdGXWoYNDlIqwMfMjr9gZ5v97qgnWKF30iaP6c9yXfytXLlaDExVblYZmYe%2BY%2BB1swQHkzhaEj7HGWuOJcFtfnEJF0s7kJrzQswVQxT%2BH8gGutRO0QJzRedb8MrbPTgdx6yTCBREB0wjU%2FY6fBeHXYD7JHVfC8emNUXdlve%2FNQyz96RQJu3BZzpGkcGJX41QUTL3a9b4EGoOPPj8Qs5z6%2Fk4QrjWA%3D&ctl00%24mWidth=&ctl00%24mHeight=&mDataGrid%3AColumn0%3AProperty=ctl00%24MainBodyContent%24mDataList%24ctl01%24mDataGrid%24ctl02%24ctl00&ctl00%24MainBodyContent%24mContinueButton=Next
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=h3eb1ggsv0gtl1kmx1ratolr; ePathway=9500AF5D672C8F6F5566CE12C44D083C9B5A955972FE6161FE8EEBD24F02B32C881D1ECF1D66A68A0BC005EB3E24F651A732A96DA9180F375116D7AF1FC6EDFF4E5FC65CA5EA042640B5467CA609A29B10FD0EDFBCDF587C2874D1DF7773E98B9C0046006DA2886FD2C089DB527C09C51AB5B13DF8072C471C58AEC1798B7FE72BD0CA45CCB34185CA0D4D8097941CEA5B43CE4D504B447FFD554E801F8367787AEB1CC992AE009972168FDA5796D9CBDFD1132B792BDEAB34B2BECE3869CCD81745ED27DF319FA734B3697391BC8FA099E5756E06EAE40644758FB57F0FF8BDE422B950AE35F31A6C336F5A5C31FDA88EF2D44321C66B77C62BD01F0500BF6D
+      Host:
+      - eservices.southgippsland.vic.gov.au
+      Referer:
+      - https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '6856'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '179'
+      Content-Type:
+      - text/html; charset=utf-8
+      Location:
+      - "/ePathway/ePathProd/Web/GeneralEnquiry/EnquirySummaryView.aspx"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 16 May 2019 06:42:31 GMT
+    body:
+      encoding: UTF-8
+      string: "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+        moved to <a href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquirySummaryView.aspx\">here</a>.</h2>\r\n</body></html>\r\n"
+    http_version: 
+  recorded_at: Mon, 13 May 2019 14:00:00 GMT
+- request:
+    method: get
+    uri: https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquirySummaryView.aspx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=h3eb1ggsv0gtl1kmx1ratolr; ePathway=9500AF5D672C8F6F5566CE12C44D083C9B5A955972FE6161FE8EEBD24F02B32C881D1ECF1D66A68A0BC005EB3E24F651A732A96DA9180F375116D7AF1FC6EDFF4E5FC65CA5EA042640B5467CA609A29B10FD0EDFBCDF587C2874D1DF7773E98B9C0046006DA2886FD2C089DB527C09C51AB5B13DF8072C471C58AEC1798B7FE72BD0CA45CCB34185CA0D4D8097941CEA5B43CE4D504B447FFD554E801F8367787AEB1CC992AE009972168FDA5796D9CBDFD1132B792BDEAB34B2BECE3869CCD81745ED27DF319FA734B3697391BC8FA099E5756E06EAE40644758FB57F0FF8BDE422B950AE35F31A6C336F5A5C31FDA88EF2D44321C66B77C62BD01F0500BF6D
+      Host:
+      - eservices.southgippsland.vic.gov.au
+      Referer:
+      - https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '50140'
+      Content-Type:
+      - text/html; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 16 May 2019 06:42:32 GMT
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        lang=\"en\" xml:lang=\"en\">\r\n    <head id=\"ctl00_headMaster\"><title>\r\n\t\r\n</title><meta
+        content=\"Microsoft Visual Studio .NET 7.1\" name=\"GENERATOR\" /><meta content=\"C#\"
+        name=\"CODE_LANGUAGE\" /><meta content=\"JavaScript\" name=\"vs_defaultClientScript\"
+        /><meta content=\"http://schemas.microsoft.com/intellisense/ie5\" name=\"vs_targetSchema\"
+        /><meta http-equiv=\"Content-Style-Type\" content=\"text/css\" /><meta name=\"mobile-web-app-capable\"
+        content=\"yes\" /><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"
+        /><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\" /><meta
+        name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no\"
+        /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><link
+        href=\"../Styles.Infor.css\" type=\"text/css\" rel=\"stylesheet\" /><link
+        id=\"ctl00_selectedStyleSheet\" href=\"../Styles.Default.css\" type=\"text/css\"
+        rel=\"stylesheet\" /><link href=\"../Styles.css\" type=\"text/css\" rel=\"stylesheet\"
+        /><link rel=\"shortcut icon\" href=\"../favicon.ico\" /><meta name=\"DC.Title\"
+        /><meta name=\"robots\" content=\"noindex\"></head>\r\n    <body>\r\n        <form
+        name=\"aspnetForm\" method=\"post\" action=\"./EnquirySummaryView.aspx\" id=\"aspnetForm\">\r\n<input
+        type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTE0MTExMDU2MDAPZBYCZg9kFgRmD2QWAgIMDxYCHgRocmVmBRJTdHlsZXMuRGVmYXVsdC5jc3NkAgEPZBYGAgMPZBYCAgcPZBYEAgIPZBYCAgEPPCsADQIADxYCHgtfIURhdGFCb3VuZGdkDBQrAAYFEzA6MCwwOjEsMDoyLDA6MywwOjQUKwACFgweBFRleHQFBEhvbWUeC05hdmlnYXRlVXJsBSQvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9kZWZhdWx0LmFzcHgeB0VuYWJsZWRnHgpTZWxlY3RhYmxlZx4IRGF0YVBhdGgFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTFdHglEYXRhQm91bmRnZBQrAAIWDh8CBQ9HZW5lcmFsIEVucXVpcnkfAwUYQWx0ZXJuYXRlTWVudS5hc3B4P2lkPTI1HgZUYXJnZXQFBl9ibGFuax8EZx8FZx8GBSAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0yXR8HZxQrAAMFBzA6MCwwOjEUKwACFgwfAgUNRW5xdWlyeSBMaXN0cx8DBTgvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9HZW5lcmFsRW5xdWlyeS9FbnF1aXJ5TGlzdHMuYXNweB8EZx8FZx8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0yXS8qW3Bvc2l0aW9uKCk9MV0fB2dkFCsAAhYMHwIFE0FwcGxpY2F0aW9uIEVucXVpcnkfAwVHL2VQYXRod2F5L2VQYXRoUHJvZC9XZWIvR2VuZXJhbEVucXVpcnkvRW5xdWlyeUxpc3RzLmFzcHg/TW9kdWxlQ29kZT1MQVAfBGcfBWcfBgUwLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9Ml0vKltwb3NpdGlvbigpPTJdHwdnZBQrAAIWDB8CBQhQYXltZW50cx8DBRhBbHRlcm5hdGVNZW51LmFzcHg/aWQ9MTUfBGcfBWcfBgUgLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9M10fB2cUKwADBQcwOjAsMDoxFCsAAhYMHwIFC05ldyBQYXltZW50HwMFMi9lUGF0aHdheS9lUGF0aFByb2QvV2ViL1BheW1lbnRzL1BheW1lbnRUeXBlcy5hc3B4HwRnHwVnHwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTNdLypbcG9zaXRpb24oKT0xXR8HZ2QUKwACFgwfAgUMRWRpdCBQYXltZW50HwMFMC9lUGF0aHdheS9lUGF0aFByb2QvV2ViL1BheW1lbnRzL0VkaXRTdWJtaXQuYXNweB8EZx8FZx8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0zXS8qW3Bvc2l0aW9uKCk9Ml0fB2dkFCsAAhYMHwIFBU90aGVyHwMFF0FsdGVybmF0ZU1lbnUuYXNweD9pZD00HwRnHwVnHwYFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTRdHwdnFCsAAwUHMDowLDA6MRQrAAIWDh8CBQRIZWxwHwMFQy9lUGF0aHdheS9lUGF0aFByb2QvV2ViL2hlbHAvaGVscC5hc3B4P3BhZ2U9RW5xdWlyeVN1bW1hcnlWaWV3LmFzcHgfCAUGX2JsYW5rHwRnHwVnHwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTRdLypbcG9zaXRpb24oKT0xXR8HZ2QUKwACFg4fAgUKQ29udGFjdCBVcx8DBRJPdGhlci9Db250YWN0LmFzcHgfCAUGX2JsYW5rHwRnHwVnHwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTRdLypbcG9zaXRpb24oKT0yXR8HZ2QUKwACFg4fAgUESGVscB8DBUMvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9oZWxwL2hlbHAuYXNweD9wYWdlPUVucXVpcnlTdW1tYXJ5Vmlldy5hc3B4HwgFBl9ibGFuax8EZx8FZx8GBSAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XR8HZ2RkAgQPZBYEAgEPD2QWAh4Hb25jbGljawXiAWphdmFzY3JpcHQ6IHsgaWYgKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtb2JpbGVNZW51JykuY2xhc3NOYW1lID09PSAnbW9iaWxlTWVudScpIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtb2JpbGVNZW51JykuY2xhc3NOYW1lID0gJ21vYmlsZU1lbnUgaGlkZGVuJzsgZWxzZSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbW9iaWxlTWVudScpLmNsYXNzTmFtZSA9ICdtb2JpbGVNZW51JzsgIH1kAgMPFgIeC18hSXRlbUNvdW50AgsWFgIBD2QWBAIHDw8WBB8DBSQvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9kZWZhdWx0LmFzcHgfAgUESG9tZWRkAgkPFgIfAgUFPC9saT5kAgIPZBYCAgcPDxYEHwMFGEFsdGVybmF0ZU1lbnUuYXNweD9pZD0yNR8CBQ9HZW5lcmFsIEVucXVpcnlkZAIDD2QWBgIFDxYCHwIFBDx1bD5kAgcPDxYEHwMFOC9lUGF0aHdheS9lUGF0aFByb2QvV2ViL0dlbmVyYWxFbnF1aXJ5L0VucXVpcnlMaXN0cy5hc3B4HwIFDUVucXVpcnkgTGlzdHNkZAIJDxYCHwIFBTwvbGk+ZAIED2QWBAIHDw8WBB8DBUcvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9HZW5lcmFsRW5xdWlyeS9FbnF1aXJ5TGlzdHMuYXNweD9Nb2R1bGVDb2RlPUxBUB8CBRNBcHBsaWNhdGlvbiBFbnF1aXJ5ZGQCCQ8WAh8CBQU8L2xpPmQCBQ9kFgYCAQ8WAh8CBQU8L3VsPmQCAw8WAh8CBQU8L2xpPmQCBw8PFgQfAwUYQWx0ZXJuYXRlTWVudS5hc3B4P2lkPTE1HwIFCFBheW1lbnRzZGQCBg9kFgYCBQ8WAh8CBQQ8dWw+ZAIHDw8WBB8DBTIvZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9QYXltZW50cy9QYXltZW50VHlwZXMuYXNweB8CBQtOZXcgUGF5bWVudGRkAgkPFgIfAgUFPC9saT5kAgcPZBYEAgcPDxYEHwMFMC9lUGF0aHdheS9lUGF0aFByb2QvV2ViL1BheW1lbnRzL0VkaXRTdWJtaXQuYXNweB8CBQxFZGl0IFBheW1lbnRkZAIJDxYCHwIFBTwvbGk+ZAIID2QWBgIBDxYCHwIFBTwvdWw+ZAIDDxYCHwIFBTwvbGk+ZAIHDw8WBB8DBRdBbHRlcm5hdGVNZW51LmFzcHg/aWQ9NB8CBQVPdGhlcmRkAgkPZBYGAgUPFgIfAgUEPHVsPmQCBw8PFgQfAwVDL2VQYXRod2F5L2VQYXRoUHJvZC9XZWIvaGVscC9oZWxwLmFzcHg/cGFnZT1FbnF1aXJ5U3VtbWFyeVZpZXcuYXNweB8CBQRIZWxwZGQCCQ8WAh8CBQU8L2xpPmQCCg9kFgQCBw8PFgQfAwUZLi4vV2ViL090aGVyL0NvbnRhY3QuYXNweB8CBQpDb250YWN0IFVzZGQCCQ8WAh8CBQU8L2xpPmQCCw9kFgYCAQ8WAh8CBQU8L3VsPmQCAw8WAh8CBQU8L2xpPmQCBw8PFgQfAwVDL2VQYXRod2F5L2VQYXRoUHJvZC9XZWIvaGVscC9oZWxwLmFzcHg/cGFnZT1FbnF1aXJ5U3VtbWFyeVZpZXcuYXNweB8CBQRIZWxwZGQCBw9kFgoCAQ9kFgJmD2QWBGYPZBYCZg9kFgICAQ8PFgIfAmVkZAIBD2QWAmYPZBYCZg9kFgJmD2QWBGYPZBYCZg8PFgIeCEltYWdlVXJsBS0vZVBhdGh3YXkvZVBhdGhQcm9kL1dlYi9JbWFnZXMvc3RhZ2UtYmFjay5naWZkZAIBD2QWAmYPDxYEHwsFLS9lUGF0aHdheS9lUGF0aFByb2QvV2ViL0ltYWdlcy9zdGFnZS1uZXh0LmdpZh4HVmlzaWJsZWhkZAIFDw8WBh4IQ3NzQ2xhc3MFFUFsdGVybmF0ZUNvbnRlbnRQYW5lbB4HVG9vbFRpcGUeBF8hU0ICAmRkAgcPDxYGHwIFTFVuZm9ydHVuYXRlbHkgZm9yIHNlY3VyaXR5IHJlYXNvbnMgeW91IGFyZSBub3QgYWxsb3dlZCB0byBzZWUgdGhlc2UgcmVzdWx0cy4fDmUfDGhkZAIJDw8WAh8MaGRkAg0PDxYCHwxoZGQCCw9kFgICAQ8PFgIfDGhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUnY3RsMDAkTWFpbkJvZHlDb250ZW50JENhbmNlbEltYWdlQnV0dG9uGjW9vDOwnCfd9iEojjigZg7NAuI7fKQfqT1IkGSGGlk=\"
+        />\r\n\r\n\r\n<script src=\"/ePathway/ePathProd/Web/Scripts/spin.js\" type=\"text/javascript\"></script>\r\n<script
+        src=\"/ePathway/ePathProd/Web/Scripts/jquery-1.11.3.min.js\" type=\"text/javascript\"></script>\r\n<script
+        type=\"text/javascript\">\r\n//<![CDATA[\r\nvar spinner = new Spinner()\r\n
+        \                                                                                                       //
+        Hide spinner when new page has loaded\r\n                                                                                                        $(window).load(function
+        () {\r\n                                                                                                            //spinner.stop();\r\n
+        \                                                                                                           $('#inforLoading').hide();\r\n
+        \                                                                                                       });\r\n
+        \                                                                                                       //
+        Display spinner after certain amount of time after postback\r\n                                                                                                        $(window).submit(function
+        () {\r\n                                                                                                            setTimeout(function
+        () {\r\n                                                                                                                //
+        Show Spinner\r\n                                                                                                                $('#inforLoading').show();\r\n
+        \                                                                                                               //var
+        target = document.getElementById('loading');\r\n                                                                                                                //spinner.spin(target);\r\n\r\n
+        \                                                                                                               //
+        Hide the spinner if the page is invalid as the load function won't be triggered\r\n
+        \                                                                                                               if
+        (typeof Page_IsValid != 'undefined') {\r\n                                                                                                                    if
+        (Page_IsValid==false) {\r\n                                                                                                                        //spinner.stop();\r\n
+        \                                                                                                                       $('#inforLoading').hide();\r\n
+        \                                                                                                                   }
+        \ \r\n                                                                                                                }
+        \                                                                                                             \r\n\r\n
+        \                                                                                                           },
+        100 );\r\n                                                                                                        });//]]>\r\n</script>\r\n\r\n<script
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=aFh7EdufsqE5EpWG-FNCH3htb8xUiH3yVSM92RiEkG3QIhNyucMgAyzJFoedWrkCPCFV4Ro3BkimjWE7rxxHs_wix4n44kxa-Mw6sVCeIlU1&amp;t=636765176300000000\"
+        type=\"text/javascript\"></script>\r\n<script src=\"/ePathway/ePathProd/Web/ScriptResource.axd?d=L_duwCweew_qaY3x0ykZdsDTAtBFNtOUKHNn2gQ6JdF1R2xmauG9NUxu89FaAcLvZjEPMqH42Db9M704fd_TY54SzOaNhOkbiLe1edu3ei1caBaxerH9ai2gCet-Ma9lif5qL-bxuAbgTzvPcd02zqs_OhRpQoGEmbvRqqIy4xU1&amp;t=ffffffff999c3159\"
+        type=\"text/javascript\"></script>\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\"
+        id=\"__VIEWSTATEGENERATOR\" value=\"38718108\" />\r\n<input type=\"hidden\"
+        name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEdAAUrZBSCViCA/ec12hqaaCRe6xqs7+REVcY36s+Pn6hLX66M/O2D3jVnLJ1YL65gMldC3oxB4y/pxlp6XvaP9eFCyXCDVbtE2mlACHZFiFPvHOaM1MTao9eMzD6kIA7cj2flHNRoWoguexLgCOknAihS\"
+        />\r\n            \r\n            <div class=\"mainBody\">\r\n                <div
+        class=\"mainBodyHeader\">\r\n                    \r\n\r\n<noscript>\r\n    <div
+        id=\"javascriptMessage\" class=\"javascriptdisabled\" >\r\n        Please
+        note, it has been detected that you have scripting disabled in your browser,
+        this may cause some limitations to apply, and some functions may not be available
+        at all\r\n    </div>\r\n</noscript>\r\n<div class=\"HeaderTop\"> \r\n\r\n
+        \   <!-- Header -->\r\n    <div class=\"Header\">\r\n        <div class=\"HeaderLinks\">\r\n
+        \           <ul><li><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/Login/Login.aspx\">Sign
+        in</a></li><li><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/Registration/Register.aspx\">Register</a></li><li><a
+        class=\"HeaderLink\" href=\"http://www.southgippsland.vic.gov.au\" target=\"_blank\">SGSC
+        Home page</a></li><li id=\"ctl00_mHeader_CartHeaderCell\" class=\"CartHeaderCell
+        hidden\"><a class=\"HeaderLink\" href=\"/ePathway/ePathProd/Web/ShoppingCart.aspx\"><img
+        src=\"/ePathway/ePathProd/Web/Images/cart.gif\" alt=\"View shopping cart\"
+        border=\"0\" style=\"vertical-align:bottom;margin-bottom:2px;\" /><span id=\"ctl00_mHeader_ShoppingCartSize\"></span></a></li></ul>\r\n
+        \       </div>\r\n        <div class=\"HeaderImage\">\r\n            <a id=\"ctl00_mHeader_mHeaderImage\"
+        href=\"../Default.aspx\" style=\"display:inline-block;\"><img src=\"../Images/header.gif\"
+        alt=\"Missing header image\" border=\"0\" /></a>\r\n        </div>\r\n\r\n
+        \       \r\n    </div>\r\n    \r\n    \r\n<div id=\"ctl00_mHeader_Menubar_menuPanel\"
+        class=\"menupanel\">\r\n\t\r\n    <a href=\"#ctl00_mHeader_Menubar_menu_SkipLink\"><img
+        alt=\"Skip Navigation Links\" src=\"/ePathway/ePathProd/Web/WebResource.axd?d=_-CAqSOSQxThlAkhScO4NA7lcMsSwUCSYwwk8F7iTBrLR3qDaaV7pe8FQxWRM3SOBrQBOKEG3BOVOLuujXRuvKHY3b4GPrvrAnd1CYp5jjM1&amp;t=636765176300000000\"
+        width=\"0\" height=\"0\" border=\"0\" /></a><table id=\"ctl00_mHeader_Menubar_menu\"
+        class=\"groupmenu\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\r\n\t\t<tr>\r\n\t\t\t<td
+        onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\" onkeyup=\"Menu_Key(event)\"
+        id=\"ctl00_mHeader_Menubar_menun0\"><table class=\"groupmenu\" cellpadding=\"0\"
+        cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"/ePathway/ePathProd/Web/default.aspx\">Home</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun1\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=25\"
+        target=\"_blank\">General Enquiry</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun2\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=15\">Payments</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun3\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"../AlternateMenu.aspx?id=4\">Other</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td><td
+        width=\"3\"></td><td onmouseover=\"Menu_HoverStatic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun4\"><table class=\"groupmenu\"
+        cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td
+        nowrap=\"nowrap\"><a class=\"groupmenu\" href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquirySummaryView.aspx\"
+        target=\"_blank\">Help</a></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td>\r\n\t\t</tr>\r\n\t</table><div
+        id=\"ctl00_mHeader_Menubar_menun1Items\" class=\"submenu\" style=\"display:none;\">\r\n\t\t<table
+        border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\"
+        onmouseout=\"Menu_Unhover(this)\" onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun5\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx\">Enquiry
+        Lists</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun6\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP\">Application
+        Enquiry</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun1ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun1ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><div id=\"ctl00_mHeader_Menubar_menun2Items\"
+        class=\"submenu\" style=\"display:none;\">\r\n\t\t<table border=\"0\" cellpadding=\"0\"
+        cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun7\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/Payments/PaymentTypes.aspx\">New
+        Payment</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun8\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/Payments/EditSubmit.aspx\">Edit
+        Payment</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun2ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun2ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><div id=\"ctl00_mHeader_Menubar_menun3Items\"
+        class=\"submenu\" style=\"display:none;\">\r\n\t\t<table border=\"0\" cellpadding=\"0\"
+        cellspacing=\"0\">\r\n\t\t\t<tr onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun9\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquirySummaryView.aspx\"
+        target=\"_blank\">Help</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr><tr
+        onmouseover=\"Menu_HoverDynamic(this)\" onmouseout=\"Menu_Unhover(this)\"
+        onkeyup=\"Menu_Key(event)\" id=\"ctl00_mHeader_Menubar_menun10\">\r\n\t\t\t\t<td><table
+        class=\"submenuitem\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td
+        nowrap=\"nowrap\" width=\"100%\"><a class=\"submenuitem\" href=\"../Other/Contact.aspx\"
+        target=\"_blank\">Contact Us</a></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table></td>\r\n\t\t\t</tr>\r\n\t\t</table><div
+        class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun3ItemsUp\" onmouseover=\"PopOut_Up(this)\"
+        onmouseout=\"PopOut_Stop(this)\" align=\"center\" style=\"display:none;\">\r\n\t\t\t<img
+        src=\"/ePathway/ePathProd/Web/WebResource.axd?d=K1CiWiqI63L1V4fecIqYfK5K-wQz1N7bB7PbYWxJSnDsB88znc6YKfPDGDkCgSL7xnG8kE6fAz00qHmTM_k46k0z26TlIxE51PAVHRKpS4c1&amp;t=636765176300000000\"
+        alt=\"Scroll up\" />\r\n\t\t</div><div class=\"submenuitem\" id=\"ctl00_mHeader_Menubar_menun3ItemsDn\"
+        onmouseover=\"PopOut_Down(this)\" onmouseout=\"PopOut_Stop(this)\" align=\"center\"
+        style=\"display:none;\">\r\n\t\t\t<img src=\"/ePathway/ePathProd/Web/WebResource.axd?d=g3c8co3lpvHPnJCQg9EyhghDfh12yTXWYDBxxS9obQvZox8QZ_j-cV8eNmemletcQ6HKf5KruZRXgmVgWOhXUhtEOT0V9VfUhh_MsFCpkXA1&amp;t=636765176300000000\"
+        alt=\"Scroll down\" />\r\n\t\t</div>\r\n\t</div><a id=\"ctl00_mHeader_Menubar_menu_SkipLink\"></a>\r\n
+        \   \r\n\r\n</div>\r\n\r\n    \r\n\r\n<div id=\"ctl00_mHeader_Menubar_mobileMenuPanel\"
+        class=\"mobile-controls\">\r\n\t\r\n    \r\n    <div id=\"ctl00_mHeader_Menubar_mobileMenuButton\"
+        class=\"nav-mobile-button\" onclick=\"javascript: { if (document.getElementById(&#39;mobileMenu&#39;).className
+        === &#39;mobileMenu&#39;) document.getElementById(&#39;mobileMenu&#39;).className
+        = &#39;mobileMenu hidden&#39;; else document.getElementById(&#39;mobileMenu&#39;).className
+        = &#39;mobileMenu&#39;;  }\">\r\n\r\n\t</div>\r\n\r\n    \r\n            <div
+        id=\"mobileMenu\" class=\"mobileMenu hidden\">\r\n                <ul>\r\n
+        \       \r\n            \r\n            \r\n            \r\n            <li>\r\n
+        \               \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl01_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/default.aspx\">Home</a> \r\n                \r\n
+        \               \r\n           <!-- </li> -->\r\n            </li>\r\n        \r\n
+        \           \r\n            \r\n            \r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl02_mobileLink\"
+        href=\"../AlternateMenu.aspx?id=25\">General Enquiry</a> \r\n                \r\n
+        \               \r\n           <!-- </li> -->\r\n            \r\n        \r\n
+        \           \r\n            \r\n            <ul>\r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl03_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx\">Enquiry
+        Lists</a> \r\n                \r\n                \r\n           <!-- </li>
+        -->\r\n            </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl04_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP\">Application
+        Enquiry</a> \r\n                \r\n                \r\n           <!-- </li>
+        -->\r\n            </li>\r\n        \r\n            </ul>\r\n            </li>\r\n
+        \           \r\n            <li>\r\n                \r\n                <a
+        id=\"ctl00_mHeader_Menubar_mobileMenu_ctl05_mobileLink\" href=\"../AlternateMenu.aspx?id=15\">Payments</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n            \r\n            \r\n            <ul>\r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl06_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/Payments/PaymentTypes.aspx\">New Payment</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl07_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/Payments/EditSubmit.aspx\">Edit Payment</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            </ul>\r\n            </li>\r\n
+        \           \r\n            <li>\r\n                \r\n                <a
+        id=\"ctl00_mHeader_Menubar_mobileMenu_ctl08_mobileLink\" href=\"../AlternateMenu.aspx?id=4\">Other</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n            \r\n            \r\n            <ul>\r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl09_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquirySummaryView.aspx\">Help</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           </li>\r\n        \r\n            \r\n            \r\n            \r\n
+        \           <li>\r\n                \r\n                <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl10_mobileLink\"
+        href=\"../Other/Contact.aspx\">Contact Us</a> \r\n                \r\n                \r\n
+        \          <!-- </li> -->\r\n            </li>\r\n        \r\n            </ul>\r\n
+        \           </li>\r\n            \r\n            <li>\r\n                \r\n
+        \               <a id=\"ctl00_mHeader_Menubar_mobileMenu_ctl11_mobileLink\"
+        href=\"/ePathway/ePathProd/Web/help/help.aspx?page=EnquirySummaryView.aspx\">Help</a>
+        \r\n                \r\n                \r\n           <!-- </li> -->\r\n
+        \           \r\n        \r\n                </ul> <!-- last second closing
+        tag, as it cannot be written out form .cs-->\r\n                </li>\r\n
+        \               </ul>\r\n            </div>     \r\n        \r\n\r\n\r\n</div>\r\n\r\n
+        \   \r\n</div>\r\n\r\n<script type=\"text/javascript\">\r\n    // Enable mobile
+        menu\r\n\r\n</script>\r\n<!-- End Header -->\r\n\r\n                    \r\n<style
+        type=\"text/css\">\r\n.ctl00_mHeader_Menubar_menu_0 \r\n{ \r\n      background-color:
+        rgb(211, 42, 33);\r\npadding-bottom:none;\r\noverflow:visible;\r\n}\r\n</style>\r\n
+        \                </div>\r\n                <div class=\"mainBodyContent\">\r\n
+        \                   \r\n    <table border=\"0\">\r\n\t<tr>\r\n\t\t<td><span
+        class=\"ContentHeading\"></span><span class=\"ContentText\"></span></td>\r\n\t</tr><tr>\r\n\t\t<td><table
+        border=\"0\">\r\n\t\t\t<tr>\r\n\t\t\t\t<td class=\"imagePreviousStage\"></td><td
+        class=\"imageNextStage\"></td><td class=\"imageCancelStage\"><input type=\"image\"
+        name=\"ctl00$MainBodyContent$CancelImageButton\" id=\"ctl00_MainBodyContent_CancelImageButton\"
+        title=\"Click this button to cancel out of this process (in most cases you
+        will be sent to the home page).\" src=\"/ePathway/ePathProd/Web/Images/stage-cancel.gif\"
+        alt=\"Click this button to cancel out of this process (in most cases you will
+        be sent to the home page).\" border=\"0\" /></td><td><ul id=\"mBreadcrumbs\"><li><a
+        class=\"current\"></a></li><li><a class=\"current\"></a></li><li><a class=\"current\"></a></li><li><a></a></li></ul></td>\r\n\t\t\t</tr>\r\n\t\t</table></td>\r\n\t</tr>\r\n</table>\r\n
+        \   <div class=\"content\">\r\n        <div id=\"ctl00_MainBodyContent_mImageContentPanel\"
+        class=\"GroupContentPanel\">\r\n\t<table class=\"ContentPanelHeading\" cellspacing=\"0\"
+        cellpadding=\"0\" border=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td></td>\r\n\t\t</tr>\r\n\t</table><div
+        class=\"contentPanel\"><div class=\"contentPanelImage imagegeneralenquiries-enquirylists\"><img
+        src=\"/ePathway/ePathProd/Web/Images/generalenquiries-enquirylists.gif\" alt=\"Missing
+        generalenquiries-enquirylists image\" border=\"0\" /></div><span class=\"ContentText\">Select
+        'New search' at the bottom of this page to limit results in the list.<p>\r\n\r\nClick
+        on a heading to sort results. Select an item from the first column in the
+        list to see details.</span></div>\r\n        \r\n</div>\r\n        \r\n        <div
+        id=\"ctl00_MainBodyContent_group_420\" class=\"GroupContentPanel\">\r\n\t<table
+        class=\"AlternateContentPanelHeading\" cellspacing=\"0\" cellpadding=\"0\"
+        border=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td></td>\r\n\t\t</tr>\r\n\t</table><div
+        class=\"contentPanel\"><span class=\"AlternateContentText\"></span></div>\r\n
+        \       <table border=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\"
+        width=\"100%\"><table class=\"ContentPanel\" cellspacing=\"0\" border=\"0\"
+        width=\"100%\">\r\n\t\t\t\t<tr class=\"ContentPanelHeading\">\r\n\t\t\t\t\t<th
+        align=\"left\" scope=\"col\" width=\"80\"><a href=\"EnquirySummaryView.aspx?SortFieldNumber=0&amp;SortDirection=Ascending\">Application
+        number</a></th><th align=\"left\" scope=\"col\" width=\"250\">Property Address</th><th
+        align=\"left\" scope=\"col\" width=\"300\"><a href=\"EnquirySummaryView.aspx?SortFieldNumber=2&amp;SortDirection=Ascending\">Application
+        Proposal</a></th><th align=\"left\" scope=\"col\" width=\"200\"><a href=\"EnquirySummaryView.aspx?SortFieldNumber=3&amp;SortDirection=Ascending\">Application
+        Date</a></th><th align=\"left\" scope=\"col\" width=\"120\"><a href=\"EnquirySummaryView.aspx?SortFieldNumber=4&amp;SortDirection=Ascending\">Current
+        status</a></th>\r\n\t\t\t\t</tr><tr class=\"ContentPanel\">\r\n\t\t\t\t\t<td
+        align=\"left\" valign=\"top\" width=\"80\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=289218'>2017/364</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"ContentText\">1-5 Roughead Street
+        \ Leongatha  VIC  3953</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"ContentText\">Buildings and works to re-develop and extend a vehicle
+        sales showroom, advertising signage and alter access to a road in a Road Zone
+        Category 1</span></td><td align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span
+        class=\"ContentText\">21/12/2017</span></td><td align=\"left\" valign=\"top\"
+        width=\"120\" nowrap=\"nowrap\"><div class='ContentText' style='width: 120px;
+        text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=292274'>2018/80</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">15 Sanders
+        Street  Korumburra  VIC  3950</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Development of the land
+        with four (4) warehouses, partial waiver of car parking requirements, creation
+        of an easement and two (2) lot subdivision</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">6/04/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=294601'>2018/120</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">6835
+        South Gippsland Highway  Loch  VIC  3945</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Retrospective development of an
+        outbuilding (shipping container), retrospective alterations and additions
+        to cellar door, increase red line area and waive onsite car parking requirement</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">23/05/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=299613'>2018/196</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">44-46 Burchell
+        Lane  Mirboo North  VIC  3871</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Development of a vehicle
+        store and removal of native vegetation</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">13/08/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=304413'>2006/79/K</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">Unit
+        1-50/1 Dale Drive  Leongatha  VIC  3953</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Retirement village with 45 units
+        and staged subdivision - Amendment to include privacy screens</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">16/10/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=305848'>2018/283</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">4-8 Hughes
+        Street  Leongatha  VIC  3953</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Use and develop the land
+        for trade supplies, create access to RDZ1 and display of signage</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">1/11/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=306954'>2018/295</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">135
+        Acacia Road  Walkerville  VIC  3956</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Development of the land with a dwelling</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">19/11/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=307286'>2018/299</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">5 Carol
+        Court  Venus Bay  VIC  3956</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"AlternateContentText\">Single Dwelling</span></td><td align=\"left\"
+        valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">22/11/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=307487'>2018/304</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">4
+        Gilfedder Terrace  Mirboo North  VIC  3871</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Subdivision of the land into three
+        (3) lots, removal of native vegetation and creation of a restriction under
+        Section 23 of the Subdivision Act</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">23/11/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=307781'>2018/307</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">335 Barry
+        Road  Agnes  VIC  3962</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"AlternateContentText\">Alterations and additions to an existing industrial
+        building and alteration of access to a Road Zone Category 1</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">28/11/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=309697'>2018/333</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">Blackwood
+        Drive  Foster  VIC  3960</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"ContentText\">Development of the land with 12 dwellings, remove reserve
+        status from RES1/PS704469, remove easements E-1 and E-2 from S4/PS704469 and
+        RES1/PS704469, creation of a drainage easement on S4/PS704469 and waive two
+        (2) visitor car parking spaces</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">21/12/2018</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=309907'>2019/7</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">1094 Lang
+        Lang-Poowong Road  Poowong  VIC  3988</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Use land for animal keeping
+        (cat breeding)</span></td><td align=\"left\" valign=\"top\" width=\"200\"
+        nowrap=\"nowrap\"><span class=\"AlternateContentText\">3/01/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=310219'>2019/12</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">61
+        Inlet View Road  Venus Bay  VIC  3956</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Develop land with single dwelling
+        and workshop</span></td><td align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span
+        class=\"ContentText\">9/01/2019</span></td><td align=\"left\" valign=\"top\"
+        width=\"120\" nowrap=\"nowrap\"><div class='ContentText' style='width: 120px;
+        text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=310283'>2003/124/B</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">Shop 2/114-116
+        Jupiter Boulevard  Venus Bay  VIC  3956</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Amend Permit 2003/124/A
+        for 'The Cavity Bar' to increase patron numbers from 55 to 150, waive onsite
+        car parking requirement relating to increased patron numbers, increase the
+        'red line' area for the sale and consumption of liquor, allow trading between
+        8am-11pm Monday-Sunday and remove condition prohibiting live music, entertainment
+        and dancing</span></td><td align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span
+        class=\"AlternateContentText\">9/01/2019</span></td><td align=\"left\" valign=\"top\"
+        width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=312764'>2019/34</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">360
+        Wooreen-Mirboo Road  Berrys Creek  VIC  3953</span></td><td align=\"left\"
+        valign=\"top\" width=\"300\"><span class=\"ContentText\">Develop land with
+        Agricultural Shed - Retrospective</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">6/02/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=312774'>2019/35</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">340 Millar
+        Road  Yanakie  VIC  3960</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"AlternateContentText\">Subdivision of the land into two (2) lots</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">8/02/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=313334'>2019/40</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">13B-15
+        Mine Road  Korumburra  VIC  3950</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Use land for restricted recreation
+        facility (pilates)</span></td><td align=\"left\" valign=\"top\" width=\"200\"
+        nowrap=\"nowrap\"><span class=\"ContentText\">12/02/2019</span></td><td align=\"left\"
+        valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText' style='width:
+        120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=315034'>2019/61</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">780 Foster-Mt
+        Best Road  Mount Best  VIC  3960</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"AlternateContentText\">Develop land with single
+        dwelling with removal of native vegetation</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">5/03/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=315605'>2019/73</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">8-13
+        Karmai Court  Korumburra  VIC  3950</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Develop land with six dwelling,
+        and subdivide land into six lots with common property.</span></td><td align=\"left\"
+        valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"ContentText\">12/03/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='ContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=315615'>2019/74</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">296 Ferriers
+        Road  Loch  VIC  3945</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"AlternateContentText\">Develop land with replacement dwelling.</span></td><td
+        align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">12/03/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"ContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\" width=\"80\"
+        nowrap=\"nowrap\"><div class='ContentText' style='width: 80px; text-overflow:
+        ellipsis; overflow:hidden;'><a onclick='$(window).submit();' href='EnquiryDetailView.aspx?Id=315616'>2014/146/A</a></div></td><td
+        align=\"left\" valign=\"top\" width=\"250\"><span class=\"ContentText\">65
+        Goochs Road  Jumbunna  VIC  3951</span></td><td align=\"left\" valign=\"top\"
+        width=\"300\"><span class=\"ContentText\">Amend existing permit for use and
+        development of a rural industry, restaurant, host farm, display of business
+        identification signage, waiver of required bicycle facilities to include Liquor
+        licence, function centre, place of assembly, group accommodation, increase
+        in patron numbers to 70, partial waiver of car parking requirements and amendment
+        of plans</span></td><td align=\"left\" valign=\"top\" width=\"200\" nowrap=\"nowrap\"><span
+        class=\"ContentText\">12/03/2019</span></td><td align=\"left\" valign=\"top\"
+        width=\"120\" nowrap=\"nowrap\"><div class='ContentText' style='width: 120px;
+        text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr><tr
+        class=\"AlternateContentPanel\">\r\n\t\t\t\t\t<td align=\"left\" valign=\"top\"
+        width=\"80\" nowrap=\"nowrap\"><div class='AlternateContentText' style='width:
+        80px; text-overflow: ellipsis; overflow:hidden;'><a onclick='$(window).submit();'
+        href='EnquiryDetailView.aspx?Id=315664'>2019/75</a></div></td><td align=\"left\"
+        valign=\"top\" width=\"250\"><span class=\"AlternateContentText\">31 Louis
+        Road  Venus Bay  VIC  3956</span></td><td align=\"left\" valign=\"top\" width=\"300\"><span
+        class=\"AlternateContentText\">Develop land with single dwelling, native vegetation
+        removal and earthworks exceeding 1m</span></td><td align=\"left\" valign=\"top\"
+        width=\"200\" nowrap=\"nowrap\"><span class=\"AlternateContentText\">12/03/2019</span></td><td
+        align=\"left\" valign=\"top\" width=\"120\" nowrap=\"nowrap\"><div class='AlternateContentText'
+        style='width: 120px; text-overflow: ellipsis; overflow:hidden;'>On Advertising</div></td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table></td>\r\n\t\t</tr>\r\n\t</table>\r\n</div>\r\n
+        \       \r\n\r\n        \r\n\r\n        <div class=\"bottomButtonBar\">\r\n
+        \           <input type=\"submit\" name=\"ctl00$MainBodyContent$mSearchButton\"
+        value=\"New Search\" id=\"ctl00_MainBodyContent_mSearchButton\" class=\"Button
+        goButton\" />\r\n        </div>\r\n        \r\n    </div>\r\n\r\n                </div>
+        \ \r\n        \r\n                <div class=\"mainBodyFooter\">    \r\n                    \r\n\r\n
+        \                   \r\n<!-- Footer -->\r\n<div align=\"center\">\r\n    <div
+        class=\"Footer\"> \r\n        \r\n        \r\n    </div>\r\n</div>\r\n<!--
+        End Footer -->\r\n\r\n                </div>\r\n            </div>\r\n            <label
+        for=\"ctl00_mWidth\" id=\"ctl00_dummy01\" style=\"display:none;\">dummy</label>\r\n
+        \           <input name=\"ctl00$mWidth\" type=\"text\" id=\"ctl00_mWidth\"
+        class=\"mWidth\" style=\"display:none;\" />\r\n            <label for=\"ctl00_mHeight\"
+        id=\"ctl00_dummy02\" style=\"display:none;\">dummy</label>\r\n            <input
+        name=\"ctl00$mHeight\" type=\"text\" id=\"ctl00_mHeight\" class=\"mHeight\"
+        style=\"display:none;\" />\r\n            <script type=\"text/javascript\">\r\n
+        \               /*function doNothing() {\r\n\r\n                }\r\n                $(\"#ctl00_mHeader_Menubar_menu
+        td\").each(function () {\r\n                    $(this)\r\n                        .attr(\"onblur\",
+        \"doNothing()\")\r\n                        .attr(\"onfocus\", \"doNothing()\");\r\n
+        \               });*/\r\n                $(document).ready(function () {\r\n
+        \                   setDimension();\r\n                   \r\n                    \r\n
+        \               });\r\n\r\n                $(window).bind('orientationchange
+        resize', function (event) {\r\n                    setDimension();\r\n                });\r\n\r\n
+        \               function setDimension() {\r\n                    var mWidth
+        = document.getElementsByClassName(\"mWidth\")[0];\r\n                    var
+        mHeight = document.getElementsByClassName(\"mHeight\")[0];\r\n\r\n                    mWidth.value
+        = $(window).width();\r\n                    mHeight.value = $(window).height();\r\n
+        \               }\r\n            </script>\r\n        \r\n\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nvar
+        ctl00_mHeader_Menubar_menu_Data = new Object();\r\nctl00_mHeader_Menubar_menu_Data.disappearAfter
+        = 500;\r\nctl00_mHeader_Menubar_menu_Data.horizontalOffset = 0;\r\nctl00_mHeader_Menubar_menu_Data.verticalOffset
+        = 0;\r\nctl00_mHeader_Menubar_menu_Data.hoverClass = 'submenuhover';\r\nctl00_mHeader_Menubar_menu_Data.iframeUrl
+        = '/ePathway/ePathProd/Web/WebResource.axd?d=qNhN170AIf0cVoAxBN25cntp8UVUNmqMl7K4rvFzu5IOfj_ehhcr2dnu-ALKH7UARA_DqjdG8JVBMmeuLqMOJzcmfRbGDFvJEgVazO8FuSk1&t=636765176300000000';\r\n//]]>\r\n</script>\r\n</form>\r\n
+        \       <script type=\"text/javascript\" src='/ePathway/ePathProd/Web/Scripts/CommonFooter.js'></script>\r\n
+        \       <script type=\"text/javascript\" src='/ePathway/ePathProd/Web/Scripts/common.js'></script>\r\n
+        \       \r\n        \r\n        <div id=\"loadingContainer\"></div>\r\n        \r\n
+        \       <script type=\"text/javascript\">document.getElementById(\"loadingContainer\").innerHTML
+        = \"<div id='inforLoading' style='position: fixed; text-align: center; height:
+        100%; width: 100%; top: 0; right: 0; left: 0;'><div class='inforBusyIndicatorContainer'><div
+        id='inforLoadingOverlay' class='inforBusyIndicator large pill'><span class='loadingText'>Loading...</span></div></div><div
+        id='inforOverlay' class='inforOverlay' ></div></div>\";</script>        \r\n
+        \       \r\n        \r\n\r\n        \r\n\r\n    </body>\r\n\r\n\r\n\r\n</html>\r\n\r\n"
+    http_version: 
+  recorded_at: Mon, 13 May 2019 14:00:00 GMT
+recorded_with: VCR 4.0.0
