@@ -1,0 +1,46 @@
+---
+- council_reference: PLP/2014/495/A
+  address: 203 Wendouree Parade, LAKE WENDOUREE  VIC  3350
+  description: Development of 17 dwellings and reduction in visitor parking spaces
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-03-08'
+- council_reference: PLP/2019/142
+  address: 110 Leith Street, REDAN  VIC  3350
+  description: Development of four addtional dwellings and five lot subdivision
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-02-27'
+- council_reference: PLP/2019/163
+  address: 879 Remembrance Drive, WINDERMERE  VIC  3352
+  description: Use and development of land for retail premises (landscape gardening
+    supplies/plant nursery, reduction in the car parking requirement, advertising
+    signage and alteration of access to a road zone
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-03-12'
+- council_reference: PLP/2019/217
+  address: 16 Longley Street, ALFREDTON  VIC  3350
+  description: Development of an additional dwelling, two lot subdivision and reduction
+    in a car parking space
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-04-03'
+- council_reference: PLP/2019/218
+  address: 5-7 Humffray Street North, BAKERY HILL  VIC  3350
+  description: Extensions to an existing use of land for motel accommodation
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-04-03'
+- council_reference: PLP/2019/236
+  address: 846 Eureka Street, BALLARAT EAST  VIC  3350
+  description: Staged multi lot subdivision
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-04-12'
+- council_reference: PLP/2019/66
+  address: 6 Sussex Street, BALLARAT CENTRAL  VIC  3350
+  description: Partial demolition, alterations and additions to a dwelling
+  info_url: https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-14'
+  date_received: '2019-02-04'
