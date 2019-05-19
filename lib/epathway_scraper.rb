@@ -124,10 +124,7 @@ module EpathwayScraper
       agent.submit(aspnetForm)
     end
 
-    def scrape
-      page = pick_type_of_search
-      page = click_search_on_page(page)
-
+    def scrape_all_index_pages(page)
       page_no = 1
       loop do
         scrape_index_page(page) do |record|
@@ -137,6 +134,17 @@ module EpathwayScraper
         page = click_next_page_link(page, page_no)
         break if page.nil?
         page_no += 1
+      end
+    end
+
+    def scrape
+      # Navigate to the correct list
+      page = pick_type_of_search
+      page = click_search_on_page(page)
+
+      # And scrape everything
+      scrape_all_index_pages(page) do |record|
+        yield record
       end
     end
 
