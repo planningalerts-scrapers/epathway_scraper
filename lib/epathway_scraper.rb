@@ -4,6 +4,7 @@ require "epathway_scraper/version"
 
 require "scraperwiki"
 require "mechanize"
+require "English"
 
 # Top level module of gem
 module EpathwayScraper
