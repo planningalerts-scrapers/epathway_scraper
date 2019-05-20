@@ -17,11 +17,13 @@ module EpathwayScraper
     end
 
     def scrape_and_save
-      scrape do |record|
-        puts "Storing " + record["council_reference"] + " - " + record["address"]
-        # puts record
-        ScraperWiki.save_sqlite(["council_reference"], record)
-      end
+      scrape { |record| save(record) }
+    end
+
+    def save(record)
+      puts "Storing " + record["council_reference"] + " - " + record["address"]
+      # puts record
+      ScraperWiki.save_sqlite(["council_reference"], record)
     end
 
     def click_search_on_page(page)
