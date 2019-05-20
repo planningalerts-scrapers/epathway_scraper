@@ -142,7 +142,8 @@ module EpathwayScraper
                   button_texts.index("Planning Permit Applications Advertised") ||
                   button_texts.index("Development applications in Public Notification") ||
                   button_texts.index("Advertised Planning Applications") ||
-                  button_texts.index("Planning Applications Currently Advertised")
+                  button_texts.index("Planning Applications Currently Advertised") ||
+                  button_texts.index("Planning permit applications advertised")
               elsif list_type == :all
                 button_texts.index("Development Application Tracking") ||
                   button_texts.index("Town Planning Public Register") ||
