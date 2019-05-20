@@ -108,6 +108,7 @@ module EpathwayScraper
                  row[:content]["Application location"] ||
                  row[:content]["Application Location"] ||
                  row[:content]["Location"] ||
+                 row[:content]["Primary Property Address"] ||
                  (if row[:content]["Address"] && row[:content]["Suburb"]
                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
                   end),
@@ -120,6 +121,7 @@ module EpathwayScraper
         detail_url: row[:url]
       }
       date_received = row[:content]["Date Lodged"] ||
+                      row[:content]["Date lodged"] ||
                       row[:content]["Application Date"] ||
                       row[:content]["Lodgement Date"]
       result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
