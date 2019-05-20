@@ -96,5 +96,15 @@ RSpec.describe EpathwayScraper do
         }
       )
     end
+
+    it "knox" do
+      test_scraper(
+        scraper_name: "knox",
+        base_url: "https://eservices.knox.vic.gov.au/ePathway/Production",
+        scrape_params: {
+          list_type: :advertising
+        }
+      )
+    end
   end
 end
