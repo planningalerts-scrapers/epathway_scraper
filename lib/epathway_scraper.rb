@@ -154,7 +154,10 @@ module EpathwayScraper
     end
 
     def scrape_index_page(page)
-      extract_table_data_and_urls(page.at("table.ContentPanel")).each do |row|
+      table = page.at("table.ContentPanel")
+      return if table.nil?
+
+      extract_table_data_and_urls(table).each do |row|
         data = extract_index_data(row)
 
         # Check if we have all the information we need from the index_data
