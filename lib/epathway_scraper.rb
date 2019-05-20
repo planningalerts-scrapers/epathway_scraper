@@ -107,6 +107,7 @@ module EpathwayScraper
                  row[:content]["Site Location"] ||
                  row[:content]["Application location"] ||
                  row[:content]["Application Location"] ||
+                 row[:content]["Location"] ||
                  (if row[:content]["Address"] && row[:content]["Suburb"]
                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
                   end),
