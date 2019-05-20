@@ -50,19 +50,29 @@ module EpathwayScraper
     end
 
     def scrape_detail_page(detail_page)
-      # Find the table that contains the addresses
-      table = detail_page.search("table.ContentPanel").find do |t|
-        extract_table_data_and_urls(t)[0][:content].keys.include?("Property Address")
+      address = field(detail_page, "Application location")
+      # If address is stored in a table at the bottom
+      if address.nil?
+        # Find the table that contains the addresses
+        table = detail_page.search("table.ContentPanel").find do |t|
+          extract_table_data_and_urls(t)[0][:content].keys.include?("Property Address")
+        end
+        # Find the address of the primary location
+        row = extract_table_data_and_urls(table).find do |r|
+          r[:content]["Primary Location"] == "Yes"
+        end
+        address = row[:content]["Property Address"]
       end
-      # Find the address of the primary location
-      row = extract_table_data_and_urls(table).find { |r| r[:content]["Primary Location"] == "Yes" }
-      address = row[:content]["Property Address"]
 
       {
-        council_reference: field(detail_page, "Application Number"),
-        description: field(detail_page, "Proposed Use or Development"),
+        council_reference: field(detail_page, "Application Number") ||
+          field(detail_page, "Application number"),
+        description: field(detail_page, "Proposed Use or Development") ||
+          field(detail_page, "Application description"),
         # TODO: Do this more sensibly based on knowledge of the date format
-        date_received: Date.parse(field(detail_page, "Date Received")).to_s,
+        date_received: Date.parse(
+          field(detail_page, "Date Received") || field(detail_page, "Lodgement date")
+        ).to_s,
         address: address
       }
     end
@@ -212,7 +222,8 @@ module EpathwayScraper
     private
 
     def field(page, name)
-      page.at("span:contains(\"#{name}\")").next.inner_text.to_s.strip
+      span = page.at("span:contains(\"#{name}\")")
+      span.next.inner_text.to_s.strip if span
     end
   end
 end
