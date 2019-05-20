@@ -5,7 +5,14 @@ require "epathway_scraper/version"
 require "scraperwiki"
 require "mechanize"
 
+# Top level module of gem
 module EpathwayScraper
+  def self.save(record)
+    puts "Storing " + record["council_reference"] + " - " + record["address"]
+    # puts record
+    ScraperWiki.save_sqlite(["council_reference"], record)
+  end
+
   # Scrape an epathway development applications site
   class Scraper
     attr_reader :base_url, :agent, :list_type
@@ -18,12 +25,6 @@ module EpathwayScraper
 
     def scrape_and_save
       scrape { |record| save(record) }
-    end
-
-    def save(record)
-      puts "Storing " + record["council_reference"] + " - " + record["address"]
-      # puts record
-      ScraperWiki.save_sqlite(["council_reference"], record)
     end
 
     def click_search_on_page(page)
