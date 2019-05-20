@@ -219,7 +219,7 @@ module EpathwayScraper
     end
 
     # TODO: max_pages is currently ignored if with_gets is false
-    def scrape(list_type:, with_gets: false, max_pages: 4)
+    def scrape(list_type:, with_gets: false, max_pages: nil)
       # Navigate to the correct list
       page = pick_type_of_search(list_type)
       if with_gets
