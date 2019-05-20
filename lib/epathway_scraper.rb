@@ -49,6 +49,18 @@ module EpathwayScraper
       end
     end
 
+    def extract_total_number_of_pages(page)
+      page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
+      if page_label.nil?
+        # If we can't find the label assume there is only one page of results
+        1
+      elsif page_label.inner_text =~ /Page \d+ of (\d+)/
+        $LAST_MATCH_INFO[1].to_i
+      else
+        raise "Unexpected form for number of pages"
+      end
+    end
+
     def scrape_detail_page(detail_page)
       address = field(detail_page, "Application location")
       # If address is stored in a table at the bottom
