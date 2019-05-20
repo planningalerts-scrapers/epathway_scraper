@@ -21,7 +21,19 @@ RSpec.describe EpathwayScraper do
       end
     end
 
-    expected = YAML.load(File.read("fixtures/expected/#{scraper_name}.yml"))
+    if File.exist?("fixtures/expected/#{scraper_name}.yml")
+      expected = YAML.load(File.read("fixtures/expected/#{scraper_name}.yml"))
+    else
+      expected = []
+    end
+
+    if results != expected
+      # Overwrite expected so that we can compare with version control
+      # (and maybe commit if it is correct)
+      File.open("fixtures/expected/#{scraper_name}.yml", "w") do |f|
+        f.write(results.to_yaml)
+      end
+    end
 
     expect(results).to eq expected
   end
