@@ -18,7 +18,7 @@ module EpathwayScraper
     attr_reader :base_url, :agent
 
     def initialize(base_url)
-      @base_url = base_url
+      @base_url = base_url + "/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
       @agent = Mechanize.new
     end
 

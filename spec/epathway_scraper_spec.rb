@@ -50,9 +50,7 @@ RSpec.describe EpathwayScraper do
     it "South_Gippsland_Shire_DAs" do
       test_scraper(
         scraper_name: "South_Gippsland_Shire_DAs",
-        # rubocop:disable Metrics/LineLength
-        base_url: "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-        # rubocop:enable Metrics/LineLength
+        base_url: "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
         scrape_params: {
           list_type: :advertising
         }
@@ -62,9 +60,7 @@ RSpec.describe EpathwayScraper do
     it "ballarat" do
       test_scraper(
         scraper_name: "ballarat",
-        # rubocop:disable Metrics/LineLength
-        base_url: "https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-        # rubocop:enable Metrics/LineLength
+        base_url: "https://eservices.ballarat.vic.gov.au/ePathway/Production",
         scrape_params: {
           list_type: :advertising
         }
@@ -74,9 +70,7 @@ RSpec.describe EpathwayScraper do
     it "campbelltown" do
       test_scraper(
         scraper_name: "campbelltown",
-        # rubocop:disable Metrics/LineLength
-        base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-        # rubocop:enable Metrics/LineLength
+        base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
         scrape_params: {
           list_type: :all
         }
@@ -86,9 +80,7 @@ RSpec.describe EpathwayScraper do
     it "glen_eira" do
       test_scraper(
         scraper_name: "glen_eira",
-        # rubocop:disable Metrics/LineLength
-        base_url: "https://epathway-web.gleneira.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-        # rubocop:enable Metrics/LineLength
+        base_url: "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
         scrape_params: {
           list_type: :all, with_gets: true, max_pages: 4
         }
