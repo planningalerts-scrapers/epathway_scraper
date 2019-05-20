@@ -116,5 +116,15 @@ RSpec.describe EpathwayScraper do
         }
       )
     end
+
+    it "moreland" do
+      test_scraper(
+        scraper_name: "moreland",
+        base_url: "https://eservices.moreland.vic.gov.au/ePathway/Production",
+        scrape_params: {
+          list_type: :advertising, with_gets: true
+        }
+      )
+    end
   end
 end
