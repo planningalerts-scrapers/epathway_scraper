@@ -69,9 +69,9 @@ module EpathwayScraper
           field(detail_page, "Application number"),
         description: field(detail_page, "Proposed Use or Development") ||
           field(detail_page, "Application description"),
-        # TODO: Do this more sensibly based on knowledge of the date format
-        date_received: Date.parse(
-          field(detail_page, "Date Received") || field(detail_page, "Lodgement date")
+        date_received: Date.strptime(
+          field(detail_page, "Date Received") || field(detail_page, "Lodgement date"),
+          "%d/%m/%Y"
         ).to_s,
         address: address
       }
