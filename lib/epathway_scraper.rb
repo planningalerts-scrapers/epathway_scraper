@@ -35,6 +35,14 @@ module EpathwayScraper
       end
     end
 
+    def search_for_one_application(page, application_no)
+      form = page.form
+      field = form.field_with(name: /FormattedNumberTextBox/)
+      field.value = application_no
+      button = form.button_with(value: "Search")
+      form.submit(button)
+    end
+
     # Also include the urls of links
     def extract_table_data_and_urls(table)
       headings = table.at("tr.ContentPanelHeading").search("th").map(&:inner_text)
