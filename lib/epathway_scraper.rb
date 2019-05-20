@@ -121,27 +121,23 @@ module EpathwayScraper
       form = page.forms.first
 
       button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
-      index_advertising = button_texts.index("Planning Application at Advertising") ||
-                          button_texts.index("Planning Applications Currently on Advertising") ||
-                          button_texts.index("Development Applications On Public Exhibition") ||
-                          button_texts.index("Planning Permit Applications Advertised") ||
-                          button_texts.index("Development applications in Public Notification")
-      raise "Couldn't find index for :advertising in #{button_texts}" if index_advertising.nil?
 
-      index_all = button_texts.index("Development Application Tracking") ||
+      index = if list_type == :advertising
+                button_texts.index("Planning Application at Advertising") ||
+                  button_texts.index("Planning Applications Currently on Advertising") ||
+                  button_texts.index("Development Applications On Public Exhibition") ||
+                  button_texts.index("Planning Permit Applications Advertised") ||
+                  button_texts.index("Development applications in Public Notification")
+              elsif list_type == :all
+                button_texts.index("Development Application Tracking") ||
                   button_texts.index("Town Planning Public Register") ||
                   button_texts.index("Planning Application Register") ||
                   button_texts.index("Planning Permit Application Search") ||
                   button_texts.index("Development applications")
-      raise "Couldn't find index for :all in #{button_texts}" if index_all.nil?
-
-      if list_type == :advertising
-        index = index_advertising
-      elsif list_type == :all
-        index = index_all
-      else
-        raise "Unexpected list type: #{list_type}"
-      end
+              else
+                raise "Unexpected list type: #{list_type}"
+              end
+      raise "Couldn't find index for #{list_type} in #{button_texts}" if index.nil?
 
       form.radiobuttons[index].click
       form.submit(form.button_with(value: /Next/))
