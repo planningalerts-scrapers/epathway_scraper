@@ -98,21 +98,22 @@ module EpathwayScraper
                  row[:content]["Property Address"] ||
                  row[:content]["Site Location"] ||
                  row[:content]["Application location"] ||
+                 row[:content]["Application Location"] ||
                  (if row[:content]["Address"] && row[:content]["Suburb"]
                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
                   end),
         description: row[:content]["Proposed Use or Development"] ||
                      row[:content]["Description"] ||
                      row[:content]["Application Proposal"] ||
-                     row[:content]["Proposal"],
+                     row[:content]["Proposal"] ||
+                     row[:content]["Application Description"],
         # This URL will only work in a session. Thanks for that!
         detail_url: row[:url]
       }
-      if row[:content]["Date Lodged"]
-        result[:date_received] = Date.strptime(row[:content]["Date Lodged"], "%d/%m/%Y").to_s
-      elsif row[:content]["Application Date"]
-        result[:date_received] = Date.strptime(row[:content]["Application Date"], "%d/%m/%Y").to_s
-      end
+      date_received = row[:content]["Date Lodged"] ||
+                      row[:content]["Application Date"] ||
+                      row[:content]["Lodgement Date"]
+      result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
       result
     end
 
@@ -133,7 +134,8 @@ module EpathwayScraper
                   button_texts.index("Town Planning Public Register") ||
                   button_texts.index("Planning Application Register") ||
                   button_texts.index("Planning Permit Application Search") ||
-                  button_texts.index("Development applications")
+                  button_texts.index("Development applications") ||
+                  button_texts.index("Development Applications")
               else
                 raise "Unexpected list type: #{list_type}"
               end
