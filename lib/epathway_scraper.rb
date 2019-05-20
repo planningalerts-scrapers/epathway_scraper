@@ -163,6 +163,18 @@ module EpathwayScraper
       agent.submit(aspnet_form)
     end
 
+    # This scrapes all index pages by doing GETs on each page
+    def scrape_all_index_pages_with_gets(number_pages)
+      (1..number_pages).each do |no|
+        page = agent.get("EnquirySummaryView.aspx?PageNumber=#{no}")
+        scrape_index_page(page) do |record|
+          yield record
+        end
+      end
+    end
+
+    # This scrapes all index pages by clicking the next link
+    # with all the POSTback nonsense
     def scrape_all_index_pages(page)
       page_no = 1
       loop do
