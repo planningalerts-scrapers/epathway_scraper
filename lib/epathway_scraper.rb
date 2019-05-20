@@ -121,13 +121,15 @@ module EpathwayScraper
       index_advertising = button_texts.index("Planning Application at Advertising") ||
                           button_texts.index("Planning Applications Currently on Advertising") ||
                           button_texts.index("Development Applications On Public Exhibition") ||
-                          button_texts.index("Planning Permit Applications Advertised")
+                          button_texts.index("Planning Permit Applications Advertised") ||
+                          button_texts.index("Development applications in Public Notification")
       raise "Couldn't find index for :advertising in #{button_texts}" if index_advertising.nil?
 
       index_all = button_texts.index("Development Application Tracking") ||
                   button_texts.index("Town Planning Public Register") ||
                   button_texts.index("Planning Application Register") ||
-                  button_texts.index("Planning Permit Application Search")
+                  button_texts.index("Planning Permit Application Search") ||
+                  button_texts.index("Development applications")
       raise "Couldn't find index for :all in #{button_texts}" if index_all.nil?
 
       if list_type == :advertising
