@@ -106,5 +106,15 @@ RSpec.describe EpathwayScraper do
         }
       )
     end
+
+    it "monash" do
+      test_scraper(
+        scraper_name: "monash",
+        base_url: "https://epathway.monash.vic.gov.au/ePathway/Production",
+        scrape_params: {
+          list_type: :advertising, with_gets: true
+        }
+      )
+    end
   end
 end
