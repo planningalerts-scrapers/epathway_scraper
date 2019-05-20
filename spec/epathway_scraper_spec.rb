@@ -21,7 +21,7 @@ RSpec.describe EpathwayScraper do
       scraper = EpathwayScraper::Scraper.new(base_url)
 
       results = VCR.use_cassette(scraper_name) do
-        Timecop.freeze(Date.new(2019, 5, 14)) do
+        Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
           scraper.scrape(scrape_params) do |record|
             results << record
