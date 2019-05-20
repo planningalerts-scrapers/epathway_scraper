@@ -5,11 +5,11 @@ require 'mechanize'
 
 module EpathwayScraper
   class Scraper
-    attr_reader :base_url, :agent, :index
+    attr_reader :base_url, :agent, :list_type_name
 
-    def initialize(base_url:, index:)
+    def initialize(base_url:, list_type_name:)
       @base_url = base_url
-      @index = index
+      @list_type_name = list_type_name
       @agent = Mechanize.new
     end
 
@@ -81,6 +81,13 @@ module EpathwayScraper
     def pick_type_of_search
       page = agent.get(base_url)
       form = page.forms.first
+
+      button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
+      index = button_texts.index(list_type_name)
+      if index.nil?
+        raise "Couldn't find radiobutton with text: #{list_type_name}"
+      end
+
       form.radiobuttons[index].click
       form.submit(form.button_with(:value => /Next/))
     end

@@ -5,10 +5,10 @@ RSpec.describe EpathwayScraper do
     expect(EpathwayScraper::VERSION).not_to be nil
   end
 
-  def test_scraper(scraper_name:, base_url:, index:)
+  def test_scraper(scraper_name:, base_url:, list_type_name:)
     scraper = EpathwayScraper::Scraper.new(
       base_url: base_url,
-      index: index
+      list_type_name: list_type_name
     )
 
     results = VCR.use_cassette(scraper_name) do
@@ -30,7 +30,7 @@ RSpec.describe EpathwayScraper do
     test_scraper(
       scraper_name: "South_Gippsland_Shire_DAs",
       base_url: 'https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP',
-      index: 0
+      list_type_name: "Planning Application at Advertising"
     )
   end
 
@@ -38,7 +38,7 @@ RSpec.describe EpathwayScraper do
     test_scraper(
       scraper_name: "ballarat",
       base_url: "https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-      index: 0
+      list_type_name: "Planning Applications Currently on Advertising"
     )
   end
 
@@ -46,7 +46,7 @@ RSpec.describe EpathwayScraper do
     test_scraper(
       scraper_name: "campbelltown",
       base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
-      index: 2
+      list_type_name: "Development Application Tracking"
     )
   end
 end
