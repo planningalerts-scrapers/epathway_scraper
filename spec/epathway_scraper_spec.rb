@@ -86,5 +86,15 @@ RSpec.describe EpathwayScraper do
         }
       )
     end
+
+    it "gold_coast" do
+      test_scraper(
+        scraper_name: "gold_coast",
+        base_url: "https://cogc.cloud.infor.com/ePathway/epthprod",
+        scrape_params: {
+          list_type: :advertising, with_gets: true
+        }
+      )
+    end
   end
 end
