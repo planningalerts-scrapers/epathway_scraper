@@ -74,10 +74,12 @@ module EpathwayScraper
                            row[:content]["Application number"],
         address: row[:content]["Location Address"] ||
                  row[:content]["Property Address"] ||
+                 row[:content]["Site Location"] ||
                  (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC"),
         description: row[:content]["Proposed Use or Development"] ||
                      row[:content]["Description"] ||
-                     row[:content]["Application Proposal"],
+                     row[:content]["Application Proposal"] ||
+                     row[:content]["Proposal"],
         # This URL will only work in a session. Thanks for that!
         detail_url: row[:url]
       }
@@ -96,13 +98,15 @@ module EpathwayScraper
       button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
       index_advertising = button_texts.index("Planning Application at Advertising") ||
                           button_texts.index("Planning Applications Currently on Advertising") ||
-                          button_texts.index("Development Applications On Public Exhibition")
-      raise "Couldn't find index for :advertising" if index_advertising.nil?
+                          button_texts.index("Development Applications On Public Exhibition") ||
+                          button_texts.index("Planning Permit Applications Advertised")
+      raise "Couldn't find index for :advertising in #{button_texts}" if index_advertising.nil?
 
       index_all = button_texts.index("Development Application Tracking") ||
                   button_texts.index("Town Planning Public Register") ||
-                  button_texts.index("Planning Application Register")
-      raise "Couldn't find index for :all" if index_all.nil?
+                  button_texts.index("Planning Application Register") ||
+                  button_texts.index("Planning Permit Application Search")
+      raise "Couldn't find index for :all in #{button_texts}" if index_all.nil?
 
       if list_type == :advertising
         index = index_advertising
