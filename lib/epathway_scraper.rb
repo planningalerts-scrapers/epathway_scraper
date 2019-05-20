@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 require "epathway_scraper/version"
 
-require 'scraperwiki'
-require 'mechanize'
+require "scraperwiki"
+require "mechanize"
 
 module EpathwayScraper
+  # Scrape an epathway development applications site
   class Scraper
     attr_reader :base_url, :agent, :list_type
 
@@ -15,14 +18,14 @@ module EpathwayScraper
 
     def scrape_and_save
       scrape do |record|
-        puts "Storing " + record['council_reference'] + " - " + record['address']
-      #      puts record
-        ScraperWiki.save_sqlite(['council_reference'], record)
+        puts "Storing " + record["council_reference"] + " - " + record["address"]
+        # puts record
+        ScraperWiki.save_sqlite(["council_reference"], record)
       end
     end
 
     def click_search_on_page(page)
-      button = page.form.button_with(:value => "Search")
+      button = page.form.button_with(value: "Search")
       if button
         page.form.submit(button)
       else
@@ -32,9 +35,9 @@ module EpathwayScraper
 
     # Also include the urls of links
     def extract_table_data_and_urls(table)
-      headings = table.at("tr.ContentPanelHeading").search("th").map{|th| th.inner_text}
+      headings = table.at("tr.ContentPanelHeading").search("th").map(&:inner_text)
       table.search("tr.ContentPanel, tr.AlternateContentPanel").map do |tr|
-        content = tr.search("td").map{|td| td.inner_text}
+        content = tr.search("td").map(&:inner_text)
         url = (URI.parse(base_url) + tr.at("a")["href"]).to_s if tr.at("a")
         r = {}
         content.each_with_index do |value, index|
@@ -46,11 +49,11 @@ module EpathwayScraper
 
     def scrape_detail_page(detail_page)
       # Find the table that contains the addresses
-      table = detail_page.search("table.ContentPanel").find do |table|
-        extract_table_data_and_urls(table)[0][:content].keys.include?("Property Address")
+      table = detail_page.search("table.ContentPanel").find do |t|
+        extract_table_data_and_urls(t)[0][:content].keys.include?("Property Address")
       end
       # Find the address of the primary location
-      row = extract_table_data_and_urls(table).find { |row| row[:content]["Primary Location"] == "Yes" }
+      row = extract_table_data_and_urls(table).find { |r| r[:content]["Primary Location"] == "Yes" }
       address = row[:content]["Property Address"]
 
       {
@@ -64,16 +67,22 @@ module EpathwayScraper
 
     def extract_index_data(row)
       result = {
-        council_reference: row[:content]["App No."] || row[:content]["Application Number"] || row[:content]["Application number"],
-        address: row[:content]["Location Address"] || row[:content]["Property Address"] || (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC"),
-        description: row[:content]["Proposed Use or Development"] || row[:content]["Description"] || row[:content]["Application Proposal"],
+        council_reference: row[:content]["App No."] ||
+                           row[:content]["Application Number"] ||
+                           row[:content]["Application number"],
+        address: row[:content]["Location Address"] ||
+                 row[:content]["Property Address"] ||
+                 (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC"),
+        description: row[:content]["Proposed Use or Development"] ||
+                     row[:content]["Description"] ||
+                     row[:content]["Application Proposal"],
         # This URL will only work in a session. Thanks for that!
         detail_url: row[:url]
       }
       if row[:content]["Date Lodged"]
-        result[:date_received] = Date.strptime(row[:content]["Date Lodged"], '%d/%m/%Y').to_s
+        result[:date_received] = Date.strptime(row[:content]["Date Lodged"], "%d/%m/%Y").to_s
       elsif row[:content]["Application Date"]
-        result[:date_received] = Date.strptime(row[:content]["Application Date"], '%d/%m/%Y').to_s
+        result[:date_received] = Date.strptime(row[:content]["Application Date"], "%d/%m/%Y").to_s
       end
       result
     end
@@ -87,6 +96,7 @@ module EpathwayScraper
                           button_texts.index("Planning Applications Currently on Advertising") ||
                           button_texts.index("Development Applications On Public Exhibition")
       raise "Couldn't find index for :advertising" if index_advertising.nil?
+
       index_all = button_texts.index("Development Application Tracking") ||
                   button_texts.index("Town Planning Public Register") ||
                   button_texts.index("Planning Application Register")
@@ -101,7 +111,7 @@ module EpathwayScraper
       end
 
       form.radiobuttons[index].click
-      form.submit(form.button_with(:value => /Next/))
+      form.submit(form.button_with(value: /Next/))
     end
 
     def scrape_index_page(page)
@@ -110,37 +120,41 @@ module EpathwayScraper
 
         # Check if we have all the information we need from the index_data
         # If so then there's no need to scrape the detail page
-        unless data.has_key?(:council_reference) &&
-               data.has_key?(:address) &&
-               data.has_key?(:description) &&
-               data.has_key?(:date_received)
+        unless data.key?(:council_reference) &&
+               data.key?(:address) &&
+               data.key?(:description) &&
+               data.key?(:date_received)
 
           detail_page = agent.get(data[:detail_url])
           data = scrape_detail_page(detail_page)
         end
 
         yield({
-          'council_reference' => data[:council_reference],
-          'address' => data[:address],
-          'description' => data[:description],
-          'info_url' => base_url,
-          'date_scraped' => Date.today.to_s,
-          'date_received' => data[:date_received],
+          "council_reference" => data[:council_reference],
+          "address" => data[:address],
+          "description" => data[:description],
+          "info_url" => base_url,
+          "date_scraped" => Date.today.to_s,
+          "date_received" => data[:date_received]
         })
       end
     end
 
     def click_next_page_link(page, page_no)
-      next_link = page.links_with(:text => (page_no + 1).to_s)[0]
-      return if !next_link
+      next_link = page.links_with(text: (page_no + 1).to_s)[0]
+      return unless next_link
+
+      # rubocop:disable Metrics/LineLength
+      # TODO: Fix this long unreadable line
       params = /javascript:WebForm_DoPostBackWithOptions\(new WebForm_PostBackOptions\("([^"]*)", "", false, "", "([^"]*)", false, true\)\)/.match(next_link.href)
+      # rubocop:enable Metrics/LineLength
 
-      aspnetForm = page.forms_with(:name => "aspnetForm")[0]
-      aspnetForm.action = params[2]
-      aspnetForm['__EVENTTARGET'] = params[1]
-      aspnetForm['__EVENTARGUMENT'] = ""
+      aspnet_form = page.forms_with(name: "aspnetForm")[0]
+      aspnet_form.action = params[2]
+      aspnet_form["__EVENTTARGET"] = params[1]
+      aspnet_form["__EVENTARGUMENT"] = ""
 
-      agent.submit(aspnetForm)
+      agent.submit(aspnet_form)
     end
 
     def scrape_all_index_pages(page)
@@ -152,6 +166,7 @@ module EpathwayScraper
 
         page = click_next_page_link(page, page_no)
         break if page.nil?
+
         page_no += 1
       end
     end
