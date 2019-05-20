@@ -17,13 +17,13 @@ RSpec.describe EpathwayScraper do
   end
 
   describe "Scraper" do
-    def test_scraper(scraper_name:, base_url:, list_type:)
+    def test_scraper(scraper_name:, base_url:, scrape_params:)
       scraper = EpathwayScraper::Scraper.new(base_url)
 
       results = VCR.use_cassette(scraper_name) do
         Timecop.freeze(Date.new(2019, 5, 14)) do
           results = []
-          scraper.scrape(list_type: list_type) do |record|
+          scraper.scrape(scrape_params) do |record|
             results << record
           end
           results.sort_by { |r| r["council_reference"] }
@@ -53,7 +53,9 @@ RSpec.describe EpathwayScraper do
         # rubocop:disable Metrics/LineLength
         base_url: "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
         # rubocop:enable Metrics/LineLength
-        list_type: :advertising
+        scrape_params: {
+          list_type: :advertising
+        }
       )
     end
 
@@ -63,7 +65,9 @@ RSpec.describe EpathwayScraper do
         # rubocop:disable Metrics/LineLength
         base_url: "https://eservices.ballarat.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
         # rubocop:enable Metrics/LineLength
-        list_type: :advertising
+        scrape_params: {
+          list_type: :advertising
+        }
       )
     end
 
@@ -73,7 +77,9 @@ RSpec.describe EpathwayScraper do
         # rubocop:disable Metrics/LineLength
         base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
         # rubocop:enable Metrics/LineLength
-        list_type: :all
+        scrape_params: {
+          list_type: :all
+        }
       )
     end
   end
