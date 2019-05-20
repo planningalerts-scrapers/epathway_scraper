@@ -15,11 +15,10 @@ module EpathwayScraper
 
   # Scrape an epathway development applications site
   class Scraper
-    attr_reader :base_url, :agent, :list_type
+    attr_reader :base_url, :agent
 
-    def initialize(base_url:, list_type:)
+    def initialize(base_url)
       @base_url = base_url
-      @list_type = list_type
       @agent = Mechanize.new
     end
 
@@ -90,7 +89,7 @@ module EpathwayScraper
       result
     end
 
-    def pick_type_of_search
+    def pick_type_of_search(list_type)
       page = agent.get(base_url)
       form = page.forms.first
 
@@ -174,9 +173,9 @@ module EpathwayScraper
       end
     end
 
-    def scrape
+    def scrape(list_type)
       # Navigate to the correct list
-      page = pick_type_of_search
+      page = pick_type_of_search(list_type)
       page = click_search_on_page(page)
 
       # And scrape everything

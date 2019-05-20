@@ -18,15 +18,12 @@ RSpec.describe EpathwayScraper do
 
   describe "Scraper" do
     def test_scraper(scraper_name:, base_url:, list_type:)
-      scraper = EpathwayScraper::Scraper.new(
-        base_url: base_url,
-        list_type: list_type
-      )
+      scraper = EpathwayScraper::Scraper.new(base_url)
 
       results = VCR.use_cassette(scraper_name) do
         Timecop.freeze(Date.new(2019, 5, 14)) do
           results = []
-          scraper.scrape do |record|
+          scraper.scrape(list_type) do |record|
             results << record
           end
           results.sort_by { |r| r["council_reference"] }
