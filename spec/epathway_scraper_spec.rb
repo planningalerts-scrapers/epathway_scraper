@@ -82,5 +82,17 @@ RSpec.describe EpathwayScraper do
         }
       )
     end
+
+    it "glen_eira" do
+      test_scraper(
+        scraper_name: "glen_eira",
+        # rubocop:disable Metrics/LineLength
+        base_url: "https://epathway-web.gleneira.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+        # rubocop:enable Metrics/LineLength
+        scrape_params: {
+          list_type: :all, with_gets: true, max_pages: 4
+        }
+      )
+    end
   end
 end
