@@ -112,19 +112,22 @@ module EpathwayScraper
                  row[:content]["Primary Property Address"] ||
                  (if row[:content]["Address"] && row[:content]["Suburb"]
                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
-                  end),
+                  end) ||
+                 row[:content]["Address"],
         description: row[:content]["Proposed Use or Development"] ||
                      row[:content]["Description"] ||
                      row[:content]["Application Proposal"] ||
                      row[:content]["Proposal"] ||
-                     row[:content]["Application Description"],
+                     row[:content]["Application Description"] ||
+                     row[:content]["Application proposal"],
         # This URL will only work in a session. Thanks for that!
         detail_url: row[:url]
       }
       date_received = row[:content]["Date Lodged"] ||
                       row[:content]["Date lodged"] ||
                       row[:content]["Application Date"] ||
-                      row[:content]["Lodgement Date"]
+                      row[:content]["Lodgement Date"] ||
+                      row[:content]["Date received"]
       result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
       result
     end
