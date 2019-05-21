@@ -23,6 +23,14 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
+    # Convenience method
+    def self.scrape_and_save(base_url, params)
+      scraper = EpathwayScraper::Scraper.new(base_url)
+      scraper.scrape(params) do |record|
+        EpathwayScraper.save(record)
+      end
+    end
+
     def scrape_and_save
       scrape { |record| save(record) }
     end
