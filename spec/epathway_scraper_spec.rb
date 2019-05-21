@@ -17,11 +17,11 @@ RSpec.describe EpathwayScraper do
   end
 
   describe "Scraper" do
-    def test_scraper(scraper_name:, base_url:, scrape_params:)
+    def test_scraper(scraper_name:, params:)
       results = VCR.use_cassette(scraper_name) do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
-          EpathwayScraper::Scraper.scrape(base_url, scrape_params) do |record|
+          EpathwayScraper::Scraper.scrape(*params) do |record|
             results << record
           end
           results.sort_by { |r| r["council_reference"] }
@@ -48,43 +48,59 @@ RSpec.describe EpathwayScraper do
     SCRAPERS = [
       {
         scraper_name: "South_Gippsland_Shire_DAs",
-        base_url: "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
-        scrape_params: { list_type: :advertising }
+        params: [
+          "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
+          { list_type: :advertising }
+        ]
       },
       {
         scraper_name: "campbelltown",
-        base_url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
-        scrape_params: { list_type: :all }
+        params: [
+          "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
+          { list_type: :all }
+        ]
       },
       {
         scraper_name: "ballarat",
-        base_url: "https://eservices.ballarat.vic.gov.au/ePathway/Production",
-        scrape_params: { list_type: :advertising }
+        params: [
+          "https://eservices.ballarat.vic.gov.au/ePathway/Production",
+          { list_type: :advertising }
+        ]
       },
       {
         scraper_name: "glen_eira",
-        base_url: "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
-        scrape_params: { list_type: :all, with_gets: true, max_pages: 4 }
+        params: [
+          "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
+          { list_type: :all, with_gets: true, max_pages: 4 }
+        ]
       },
       {
         scraper_name: "gold_coast",
-        base_url: "https://cogc.cloud.infor.com/ePathway/epthprod",
-        scrape_params: { list_type: :advertising, with_gets: true }
+        params: [
+          "https://cogc.cloud.infor.com/ePathway/epthprod",
+          { list_type: :advertising, with_gets: true }
+        ]
       },
       {
         scraper_name: "knox",
-        base_url: "https://eservices.knox.vic.gov.au/ePathway/Production",
-        scrape_params: { list_type: :advertising }
+        params: [
+          "https://eservices.knox.vic.gov.au/ePathway/Production",
+          { list_type: :advertising }
+        ]
       },
       {
         scraper_name: "monash",
-        base_url: "https://epathway.monash.vic.gov.au/ePathway/Production",
-        scrape_params: { list_type: :advertising, with_gets: true }
+        params: [
+          "https://epathway.monash.vic.gov.au/ePathway/Production",
+          { list_type: :advertising, with_gets: true }
+        ]
       },
       {
         scraper_name: "moreland",
-        base_url: "https://eservices.moreland.vic.gov.au/ePathway/Production",
-        scrape_params: { list_type: :advertising, with_gets: true }
+        params: [
+          "https://eservices.moreland.vic.gov.au/ePathway/Production",
+          { list_type: :advertising, with_gets: true }
+        ]
       }
     ].freeze
 
