@@ -101,6 +101,13 @@ RSpec.describe EpathwayScraper do
           "https://eservices.moreland.vic.gov.au/ePathway/Production",
           { list_type: :advertising, with_gets: true }
         ]
+      },
+      {
+        scraper_name: "nillumbik",
+        params: [
+          "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
+          { list_type: :advertising }
+        ]
       }
     ].freeze
 
