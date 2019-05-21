@@ -25,9 +25,15 @@ module EpathwayScraper
 
     # Convenience method
     def self.scrape_and_save(base_url, params)
-      scraper = EpathwayScraper::Scraper.new(base_url)
-      scraper.scrape(params) do |record|
+      scrape(base_url, params) do |record|
         EpathwayScraper.save(record)
+      end
+    end
+
+    # Convenience method
+    def self.scrape(base_url, params)
+      new(base_url).scrape(params) do |record|
+        yield record
       end
     end
 
