@@ -50,6 +50,17 @@ module EpathwayScraper
       end
     end
 
+    def click_date_search_tab(page)
+      table = page.at("table.tabcontrol")
+      href = table.search("a").find { |a| a.inner_text == "Date Search" }["href"]
+      # Extract target and argument of postback from href
+      match = href.match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
+      form = page.forms.first
+      form["__EVENTTARGET"] = match[1]
+      form["__EVENTARGUMENT"] = match[2]
+      agent.submit(form)
+    end
+
     def search_for_one_application(page, application_no)
       form = page.form
       field = form.field_with(name: /FormattedNumberTextBox/)
