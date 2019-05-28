@@ -157,7 +157,8 @@ module EpathwayScraper
                       row[:content]["Date lodged"] ||
                       row[:content]["Application Date"] ||
                       row[:content]["Lodgement Date"] ||
-                      row[:content]["Date received"]
+                      row[:content]["Date received"] ||
+                      row[:content]["Date"]
       result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
       result
     end
