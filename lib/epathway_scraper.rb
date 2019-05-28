@@ -167,6 +167,7 @@ module EpathwayScraper
       form = page.forms.first
 
       button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
+      return page if button_texts.empty? && list_type == :all
 
       index = if list_type == :advertising
                 button_texts.index("Planning Application at Advertising") ||
