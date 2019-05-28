@@ -108,6 +108,13 @@ RSpec.describe EpathwayScraper do
           "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
           { list_type: :advertising }
         ]
+      },
+      {
+        scraper_name: "salisbury",
+        params: [
+          "https://eservices.salisbury.sa.gov.au/ePathway/Production",
+          { list_type: :last_30_days, with_gets: true }
+        ]
       }
     ].freeze
 
