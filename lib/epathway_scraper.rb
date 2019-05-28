@@ -162,37 +162,50 @@ module EpathwayScraper
       result
     end
 
+    # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
       form = page.forms.first
 
       button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
-      return page if button_texts.empty? && list_type == :all
 
-      index = if list_type == :advertising
-                button_texts.index("Planning Application at Advertising") ||
-                  button_texts.index("Planning Applications Currently on Advertising") ||
-                  button_texts.index("Development Applications On Public Exhibition") ||
-                  button_texts.index("Planning Permit Applications Advertised") ||
-                  button_texts.index("Development applications in Public Notification") ||
-                  button_texts.index("Advertised Planning Applications") ||
-                  button_texts.index("Planning Applications Currently Advertised") ||
-                  button_texts.index("Planning permit applications advertised") ||
-                  button_texts.index("Planning applications being advertised")
-              elsif list_type == :all
-                button_texts.index("Development Application Tracking") ||
-                  button_texts.index("Town Planning Public Register") ||
-                  button_texts.index("Planning Application Register") ||
-                  button_texts.index("Planning Permit Application Search") ||
-                  button_texts.index("Development applications") ||
-                  button_texts.index("Development Applications")
-              else
-                raise "Unexpected list type: #{list_type}"
-              end
-      raise "Couldn't find index for #{list_type} in #{button_texts}" if index.nil?
+      unless button_texts.empty?
+        index = if list_type == :advertising
+                  button_texts.index("Planning Application at Advertising") ||
+                    button_texts.index("Planning Applications Currently on Advertising") ||
+                    button_texts.index("Development Applications On Public Exhibition") ||
+                    button_texts.index("Planning Permit Applications Advertised") ||
+                    button_texts.index("Development applications in Public Notification") ||
+                    button_texts.index("Advertised Planning Applications") ||
+                    button_texts.index("Planning Applications Currently Advertised") ||
+                    button_texts.index("Planning permit applications advertised") ||
+                    button_texts.index("Planning applications being advertised")
+                elsif list_type == :all
+                  button_texts.index("Development Application Tracking") ||
+                    button_texts.index("Town Planning Public Register") ||
+                    button_texts.index("Planning Application Register") ||
+                    button_texts.index("Planning Permit Application Search") ||
+                    button_texts.index("Development applications") ||
+                    button_texts.index("Development Applications")
+                else
+                  raise "Unexpected list type: #{list_type}"
+                end
+        raise "Couldn't find index for #{list_type} in #{button_texts}" if index.nil?
 
-      form.radiobuttons[index].click
-      form.submit(form.button_with(value: /Next/))
+        form.radiobuttons[index].click
+        page = form.submit(form.button_with(value: /Next/))
+      end
+
+      if list_type == :last_30_days
+        # Fake that we're running javascript by picking out the javascript redirect
+        redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
+        page = agent.get(redirected_url)
+
+        page = click_date_search_tab(page)
+        # The Date tab defaults to a search range of the last 30 days.
+        page = click_search_on_page(page)
+      end
+      page
     end
 
     def scrape_index_page(page)
