@@ -55,7 +55,11 @@ module EpathwayScraper
       href = table.search("a").find { |a| a.inner_text == "Date Search" }["href"]
       # Extract target and argument of postback from href
       match = href.match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
+      raise "Link isn't a postback link" if match.nil?
+
       form = page.forms.first
+      raise "Can't find form for postback" if form.nil?
+
       form["__EVENTTARGET"] = match[1]
       form["__EVENTARGUMENT"] = match[2]
       agent.submit(form)
