@@ -163,6 +163,11 @@ module EpathwayScraper
       result
     end
 
+    # Very simple minded test for whether we're on the correct page
+    def on_pick_type_of_application_page?(page)
+      !page.search('input[type="radio"]').empty?
+    end
+
     # type can be either :advertising or :all
     def pick_type_of_application(page, type)
       form = page.forms.first
@@ -200,9 +205,7 @@ module EpathwayScraper
       page = agent.get(base_url)
 
       # Checking whether we're on the right page
-      unless page.search('input[type="radio"]').empty?
-        page = pick_type_of_application(page, list_type)
-      end
+      page = pick_type_of_application(page, list_type) if on_pick_type_of_application_page?(page)
 
       if list_type == :last_30_days
         # Fake that we're running javascript by picking out the javascript redirect
