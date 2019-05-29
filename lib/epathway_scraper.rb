@@ -2,6 +2,7 @@
 
 require "epathway_scraper/version"
 require "epathway_scraper/list_select_page"
+require "epathway_scraper/search_page"
 
 require "scraperwiki"
 require "mechanize"
@@ -51,27 +52,8 @@ module EpathwayScraper
       end
     end
 
-    def click_date_search_tab(page)
-      table = page.at("table.tabcontrol")
-      href = table.search("a").find { |a| a.inner_text == "Date Search" }["href"]
-      # Extract target and argument of postback from href
-      match = href.match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
-      raise "Link isn't a postback link" if match.nil?
-
-      form = page.forms.first
-      raise "Can't find form for postback" if form.nil?
-
-      form["__EVENTTARGET"] = match[1]
-      form["__EVENTARGUMENT"] = match[2]
-      agent.submit(form)
-    end
-
     def search_for_one_application(page, application_no)
-      form = page.form
-      field = form.field_with(name: /FormattedNumberTextBox/)
-      field.value = application_no
-      button = form.button_with(value: "Search")
-      form.submit(button)
+      SearchPage.search_for_one_application(page, application_no)
     end
 
     # Also include the urls of links
@@ -176,7 +158,7 @@ module EpathwayScraper
         redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
         page = agent.get(redirected_url)
 
-        page = click_date_search_tab(page)
+        page = SearchPage.click_date_search_tab(page, agent)
         # The Date tab defaults to a search range of the last 30 days.
         page = click_search_on_page(page)
       end
