@@ -97,6 +97,22 @@ module EpathwayScraper
 
         agent.submit(aspnet_form)
       end
+
+      # This scrapes all index pages by clicking the next link
+      # with all the POSTback nonsense
+      def self.scrape_all_index_pages(page, base_url, agent)
+        page_no = 1
+        loop do
+          scrape_index_page(page, base_url, agent) do |record|
+            yield record
+          end
+
+          page = Page::Index.click_next_page_link(page, page_no, agent)
+          break if page.nil?
+
+          page_no += 1
+        end
+      end
     end
   end
 end
