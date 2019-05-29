@@ -46,10 +46,6 @@ module EpathwayScraper
       scrape { |record| save(record) }
     end
 
-    def click_search_on_page(page)
-      Page::Search.on_page?(page) ? Page::Search.click_search(page) : page
-    end
-
     def search_for_one_application(page, application_no)
       Page::Search.search_for_one_application(page, application_no)
     end
@@ -84,7 +80,7 @@ module EpathwayScraper
 
         page = Page::Search.click_date_search_tab(page, agent)
         # The Date tab defaults to a search range of the last 30 days.
-        page = click_search_on_page(page)
+        page = Page::Search.click_search(page) if Page::Search.on_page?(page)
       end
       page
     end
@@ -174,7 +170,7 @@ module EpathwayScraper
           yield record
         end
       else
-        page = click_search_on_page(page)
+        page = Page::Search.click_search(page) if Page::Search.on_page?(page)
 
         # And scrape everything
         scrape_all_index_pages(page) do |record|
