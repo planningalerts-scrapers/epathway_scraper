@@ -28,12 +28,15 @@ module EpathwayScraper
       end
 
       def self.click_search(page)
-        button = page.form.button_with(value: "Search")
-        page.form.submit(button)
+        page.form.submit(search_button(page))
       end
 
       def self.on_page?(page)
-        !page.form.button_with(value: "Search").nil?
+        !search_button(page).nil?
+      end
+
+      def self.search_button(page)
+        page.form.button_with(value: "Search")
       end
     end
   end
