@@ -103,12 +103,6 @@ module EpathwayScraper
       end
     end
 
-    def scrape_all_index_pages(page)
-      Page::Index.scrape_all_index_pages(page, base_url, agent) do |record|
-        yield record
-      end
-    end
-
     # TODO: max_pages is currently ignored if with_gets is false
     def scrape(list_type:, with_gets: false, max_pages: nil)
       # Navigate to the correct list
@@ -123,7 +117,7 @@ module EpathwayScraper
         page = Page::Search.click_search(page) if Page::Search.on_page?(page)
 
         # And scrape everything
-        scrape_all_index_pages(page) do |record|
+        Page::Index.scrape_all_index_pages(page, base_url, agent) do |record|
           yield record
         end
       end
