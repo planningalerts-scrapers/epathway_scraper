@@ -5,6 +5,19 @@ module EpathwayScraper
     # Usually the second page on the site where you do an actual search.
     # It has a tab interface usually for different kinds of searches
     module Search
+      # Currently only supporting type of :last_30_days
+      def self.pick(page, type, agent)
+        raise "Unexpected type #{type}" unless type == :last_30_days
+
+        # Fake that we're running javascript by picking out the javascript redirect
+        redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
+        page = agent.get(redirected_url)
+
+        page = Page::Search.click_date_search_tab(page, agent)
+        # The Date tab defaults to a search range of the last 30 days.
+        Page::Search.click_search(page)
+      end
+
       def self.click_date_search_tab(page, agent)
         table = page.at("table.tabcontrol")
         href = table.search("a").find { |a| a.inner_text == "Date Search" }["href"]

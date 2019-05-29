@@ -73,15 +73,8 @@ module EpathwayScraper
         end
       end
 
-      if list_type == :last_30_days
-        # Fake that we're running javascript by picking out the javascript redirect
-        redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
-        page = agent.get(redirected_url)
+      page = Page::Search.pick(page, :last_30_days, agent) if list_type == :last_30_days
 
-        page = Page::Search.click_date_search_tab(page, agent)
-        # The Date tab defaults to a search range of the last 30 days.
-        page = Page::Search.click_search(page)
-      end
       page
     end
 
