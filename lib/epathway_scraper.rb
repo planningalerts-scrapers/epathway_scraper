@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "epathway_scraper/version"
+require "epathway_scraper/list_select_page"
 
 require "scraperwiki"
 require "mechanize"
@@ -163,49 +164,12 @@ module EpathwayScraper
       result
     end
 
-    # Very simple minded test for whether we're on the correct page
-    def on_pick_type_of_application_page?(page)
-      !page.search('input[type="radio"]').empty?
-    end
-
-    # type can be either :advertising or :all
-    def pick_type_of_application(page, type)
-      form = page.forms.first
-
-      button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
-
-      index = if type == :advertising
-                button_texts.index("Planning Application at Advertising") ||
-                  button_texts.index("Planning Applications Currently on Advertising") ||
-                  button_texts.index("Development Applications On Public Exhibition") ||
-                  button_texts.index("Planning Permit Applications Advertised") ||
-                  button_texts.index("Development applications in Public Notification") ||
-                  button_texts.index("Advertised Planning Applications") ||
-                  button_texts.index("Planning Applications Currently Advertised") ||
-                  button_texts.index("Planning permit applications advertised") ||
-                  button_texts.index("Planning applications being advertised")
-              elsif type == :all
-                button_texts.index("Development Application Tracking") ||
-                  button_texts.index("Town Planning Public Register") ||
-                  button_texts.index("Planning Application Register") ||
-                  button_texts.index("Planning Permit Application Search") ||
-                  button_texts.index("Development applications") ||
-                  button_texts.index("Development Applications")
-              else
-                raise "Unexpected list type: #{type}"
-              end
-      raise "Couldn't find index for #{type} in #{button_texts}" if index.nil?
-
-      form.radiobuttons[index].click
-      form.submit(form.button_with(value: /Next/))
-    end
-
     # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
 
       # Checking whether we're on the right page
-      page = pick_type_of_application(page, list_type) if on_pick_type_of_application_page?(page)
+      page = ListSelectPage.pick(page, list_type) if ListSelectPage.on_page?(page)
 
       if list_type == :last_30_days
         # Fake that we're running javascript by picking out the javascript redirect
