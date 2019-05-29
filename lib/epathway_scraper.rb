@@ -92,20 +92,7 @@ module EpathwayScraper
     end
 
     def click_next_page_link(page, page_no)
-      next_link = page.links_with(text: (page_no + 1).to_s)[0]
-      return unless next_link
-
-      # rubocop:disable Metrics/LineLength
-      # TODO: Fix this long unreadable line
-      params = /javascript:WebForm_DoPostBackWithOptions\(new WebForm_PostBackOptions\("([^"]*)", "", false, "", "([^"]*)", false, true\)\)/.match(next_link.href)
-      # rubocop:enable Metrics/LineLength
-
-      aspnet_form = page.forms_with(name: "aspnetForm")[0]
-      aspnet_form.action = params[2]
-      aspnet_form["__EVENTTARGET"] = params[1]
-      aspnet_form["__EVENTARGUMENT"] = ""
-
-      agent.submit(aspnet_form)
+      Page::Index.click_next_page_link(page, page_no, agent)
     end
 
     # This scrapes all index pages by doing GETs on each page
