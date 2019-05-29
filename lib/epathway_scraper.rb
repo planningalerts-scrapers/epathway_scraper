@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require "epathway_scraper/version"
-require "epathway_scraper/list_select_page"
-require "epathway_scraper/search_page"
+require "epathway_scraper/page/list_select"
+require "epathway_scraper/page/search"
 
 require "scraperwiki"
 require "mechanize"
@@ -53,7 +53,7 @@ module EpathwayScraper
     end
 
     def search_for_one_application(page, application_no)
-      SearchPage.search_for_one_application(page, application_no)
+      Page::Search.search_for_one_application(page, application_no)
     end
 
     # Also include the urls of links
@@ -151,14 +151,14 @@ module EpathwayScraper
       page = agent.get(base_url)
 
       # Checking whether we're on the right page
-      page = ListSelectPage.pick(page, list_type) if ListSelectPage.on_page?(page)
+      page = Page::ListSelect.pick(page, list_type) if Page::ListSelect.on_page?(page)
 
       if list_type == :last_30_days
         # Fake that we're running javascript by picking out the javascript redirect
         redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
         page = agent.get(redirected_url)
 
-        page = SearchPage.click_date_search_tab(page, agent)
+        page = Page::Search.click_date_search_tab(page, agent)
         # The Date tab defaults to a search range of the last 30 days.
         page = click_search_on_page(page)
       end
