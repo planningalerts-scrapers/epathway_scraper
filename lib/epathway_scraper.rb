@@ -4,6 +4,7 @@ require "epathway_scraper/version"
 require "epathway_scraper/page/list_select"
 require "epathway_scraper/page/search"
 require "epathway_scraper/page/index"
+require "epathway_scraper/page/detail"
 require "epathway_scraper/table"
 
 require "scraperwiki"
@@ -62,31 +63,7 @@ module EpathwayScraper
     end
 
     def scrape_detail_page(detail_page)
-      address = field(detail_page, "Application location")
-      # If address is stored in a table at the bottom
-      if address.nil?
-        # Find the table that contains the addresses
-        table = detail_page.search("table.ContentPanel").find do |t|
-          extract_table_data_and_urls(t)[0][:content].keys.include?("Property Address")
-        end
-        # Find the address of the primary location
-        row = extract_table_data_and_urls(table).find do |r|
-          r[:content]["Primary Location"] == "Yes"
-        end
-        address = row[:content]["Property Address"]
-      end
-
-      {
-        council_reference: field(detail_page, "Application Number") ||
-          field(detail_page, "Application number"),
-        description: field(detail_page, "Proposed Use or Development") ||
-          field(detail_page, "Application description"),
-        date_received: Date.strptime(
-          field(detail_page, "Date Received") || field(detail_page, "Lodgement date"),
-          "%d/%m/%Y"
-        ).to_s,
-        address: address
-      }
+      Page::Detail.scrape(detail_page, base_url)
     end
 
     def extract_index_data(row)
@@ -236,13 +213,6 @@ module EpathwayScraper
           yield record
         end
       end
-    end
-
-    private
-
-    def field(page, name)
-      span = page.at("span:contains(\"#{name}\")")
-      span.next.inner_text.to_s.strip if span
     end
   end
 end
