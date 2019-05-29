@@ -3,6 +3,7 @@
 require "epathway_scraper/version"
 require "epathway_scraper/page/list_select"
 require "epathway_scraper/page/search"
+require "epathway_scraper/page/index"
 require "epathway_scraper/table"
 
 require "scraperwiki"
@@ -57,15 +58,7 @@ module EpathwayScraper
     end
 
     def extract_total_number_of_pages(page)
-      page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
-      if page_label.nil?
-        # If we can't find the label assume there is only one page of results
-        1
-      elsif page_label.inner_text =~ /Page \d+ of (\d+)/
-        $LAST_MATCH_INFO[1].to_i
-      else
-        raise "Unexpected form for number of pages"
-      end
+      Page::Index.extract_total_number_of_pages(page)
     end
 
     def scrape_detail_page(detail_page)
