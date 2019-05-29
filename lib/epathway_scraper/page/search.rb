@@ -27,6 +27,15 @@ module EpathwayScraper
         button = form.button_with(value: "Search")
         form.submit(button)
       end
+
+      def self.click_search(page)
+        button = page.form.button_with(value: "Search")
+        page.form.submit(button)
+      end
+
+      def self.on_page?(page)
+        !page.form.button_with(value: "Search").nil?
+      end
     end
   end
 end

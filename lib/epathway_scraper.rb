@@ -44,12 +44,7 @@ module EpathwayScraper
     end
 
     def click_search_on_page(page)
-      button = page.form.button_with(value: "Search")
-      if button
-        page.form.submit(button)
-      else
-        page
-      end
+      Page::Search.on_page?(page) ? Page::Search.click_search(page) : page
     end
 
     def search_for_one_application(page, application_no)
