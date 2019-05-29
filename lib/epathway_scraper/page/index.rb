@@ -113,6 +113,18 @@ module EpathwayScraper
           page_no += 1
         end
       end
+
+      # This scrapes all index pages by doing GETs on each page
+      def self.scrape_all_index_pages_with_gets(number_pages, base_url, agent)
+        page = agent.get("EnquirySummaryView.aspx?PageNumber=1")
+        number_pages ||= extract_total_number_of_pages(page)
+        (1..number_pages).each do |no|
+          page = agent.get("EnquirySummaryView.aspx?PageNumber=#{no}") if no > 1
+          scrape_index_page(page, base_url, agent) do |record|
+            yield record
+          end
+        end
+      end
     end
   end
 end
