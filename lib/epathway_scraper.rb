@@ -80,7 +80,7 @@ module EpathwayScraper
 
         page = Page::Search.click_date_search_tab(page, agent)
         # The Date tab defaults to a search range of the last 30 days.
-        page = Page::Search.click_search(page) if Page::Search.on_page?(page)
+        page = Page::Search.click_search(page)
       end
       page
     end
