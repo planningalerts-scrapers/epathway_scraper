@@ -63,7 +63,15 @@ module EpathwayScraper
       page = agent.get(base_url)
 
       # Checking whether we're on the right page
-      page = Page::ListSelect.pick(page, list_type) if Page::ListSelect.on_page?(page)
+      if Page::ListSelect.on_page?(page)
+        if %i[all last_30_days].include?(list_type)
+          page = Page::ListSelect.pick(page, :all)
+        elsif list_type == :advertising
+          page = Page::ListSelect.pick(page, :advertising)
+        else
+          raise "Unexpected list_type: #{list_type}"
+        end
+      end
 
       if list_type == :last_30_days
         # Fake that we're running javascript by picking out the javascript redirect
