@@ -86,31 +86,8 @@ module EpathwayScraper
     end
 
     def scrape_index_page(page)
-      table = page.at("table.ContentPanel")
-      return if table.nil?
-
-      extract_table_data_and_urls(table).each do |row|
-        data = extract_index_data(row)
-
-        # Check if we have all the information we need from the index_data
-        # If so then there's no need to scrape the detail page
-        unless data.key?(:council_reference) &&
-               data.key?(:address) &&
-               data.key?(:description) &&
-               data.key?(:date_received)
-
-          detail_page = agent.get(data[:detail_url])
-          data = scrape_detail_page(detail_page)
-        end
-
-        yield({
-          "council_reference" => data[:council_reference],
-          "address" => data[:address],
-          "description" => data[:description],
-          "info_url" => base_url,
-          "date_scraped" => Date.today.to_s,
-          "date_received" => data[:date_received]
-        })
+      Page::Index.scrape_index_page(page, base_url, agent) do |record|
+        yield record
       end
     end
 
