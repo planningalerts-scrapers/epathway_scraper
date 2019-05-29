@@ -24,8 +24,7 @@ module EpathwayScraper
         form = page.form
         field = form.field_with(name: /FormattedNumberTextBox/)
         field.value = application_no
-        button = form.button_with(value: "Search")
-        form.submit(button)
+        click_search(page)
       end
 
       def self.click_search(page)
