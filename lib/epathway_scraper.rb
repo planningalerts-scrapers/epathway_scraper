@@ -91,10 +91,6 @@ module EpathwayScraper
       end
     end
 
-    def click_next_page_link(page, page_no)
-      Page::Index.click_next_page_link(page, page_no, agent)
-    end
-
     # This scrapes all index pages by doing GETs on each page
     def scrape_all_index_pages_with_gets(number_pages)
       page = agent.get("EnquirySummaryView.aspx?PageNumber=1")
@@ -116,7 +112,7 @@ module EpathwayScraper
           yield record
         end
 
-        page = click_next_page_link(page, page_no)
+        page = Page::Index.click_next_page_link(page, page_no, agent)
         break if page.nil?
 
         page_no += 1
