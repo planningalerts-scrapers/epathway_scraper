@@ -3,6 +3,7 @@
 require "epathway_scraper/version"
 require "epathway_scraper/page/list_select"
 require "epathway_scraper/page/search"
+require "epathway_scraper/table"
 
 require "scraperwiki"
 require "mechanize"
@@ -51,18 +52,8 @@ module EpathwayScraper
       Page::Search.search_for_one_application(page, application_no)
     end
 
-    # Also include the urls of links
     def extract_table_data_and_urls(table)
-      headings = table.at("tr.ContentPanelHeading").search("th").map(&:inner_text)
-      table.search("tr.ContentPanel, tr.AlternateContentPanel").map do |tr|
-        content = tr.search("td").map(&:inner_text)
-        url = (URI.parse(base_url) + tr.at("a")["href"]).to_s if tr.at("a")
-        r = {}
-        content.each_with_index do |value, index|
-          r[headings[index]] = value
-        end
-        { content: r, url: url }
-      end
+      Table.extract_table_data_and_urls(table, base_url)
     end
 
     def extract_total_number_of_pages(page)
