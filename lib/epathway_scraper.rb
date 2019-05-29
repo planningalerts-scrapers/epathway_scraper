@@ -58,14 +58,6 @@ module EpathwayScraper
       Page::Index.extract_total_number_of_pages(page)
     end
 
-    def scrape_detail_page(detail_page)
-      Page::Detail.scrape(detail_page, base_url)
-    end
-
-    def extract_index_data(row)
-      Page::Index.extract_index_data(row)
-    end
-
     # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
