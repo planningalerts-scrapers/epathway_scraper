@@ -20,9 +20,11 @@ module EpathwayScraper
 
       def self.click_date_search_tab(page, agent)
         table = page.at("table.tabcontrol")
-        href = table.search("a").find { |a| a.inner_text == "Date Search" }["href"]
+        a = table.search("a").find do |b|
+          ["Date Search", "Lodgement Date"].include?(b.inner_text)
+        end
         # Extract target and argument of postback from href
-        match = href.match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
+        match = a["href"].match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
         raise "Link isn't a postback link" if match.nil?
 
         form = page.forms.first
