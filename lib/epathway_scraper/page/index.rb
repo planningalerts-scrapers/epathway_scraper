@@ -23,6 +23,7 @@ module EpathwayScraper
                         row[:content]["Lodgement Date"] ||
                         row[:content]["Date received"] ||
                         row[:content]["Date"]
+        date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
         council_reference = row[:content]["App No."] ||
                             row[:content]["Application Number"] ||
@@ -52,7 +53,7 @@ module EpathwayScraper
           council_reference: council_reference,
           address: address,
           description: description,
-          date_received: (Date.strptime(date_received, "%d/%m/%Y").to_s if date_received),
+          date_received: date_received,
           # This URL will only work in a session. Thanks for that!
           detail_url: row[:url]
         }
