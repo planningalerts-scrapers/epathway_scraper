@@ -17,39 +17,45 @@ module EpathwayScraper
       end
 
       def self.extract_index_data(row)
-        result = {
-          council_reference: row[:content]["App No."] ||
-                             row[:content]["Application Number"] ||
-                             row[:content]["Application number"],
-          address: row[:content]["Location Address"] ||
-                   row[:content]["Property Address"] ||
-                   row[:content]["Site Location"] ||
-                   row[:content]["Application location"] ||
-                   row[:content]["Application Location"] ||
-                   row[:content]["Location"] ||
-                   row[:content]["Primary Property Address"] ||
-                   row[:content]["Site Address"] ||
-                   (if row[:content]["Address"] && row[:content]["Suburb"]
-                      (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
-                    end) ||
-                   row[:content]["Address"],
-          description: row[:content]["Proposed Use or Development"] ||
-                       row[:content]["Description"] ||
-                       row[:content]["Application Proposal"] ||
-                       row[:content]["Proposal"] ||
-                       row[:content]["Application Description"] ||
-                       row[:content]["Application proposal"],
-          # This URL will only work in a session. Thanks for that!
-          detail_url: row[:url]
-        }
         date_received = row[:content]["Date Lodged"] ||
                         row[:content]["Date lodged"] ||
                         row[:content]["Application Date"] ||
                         row[:content]["Lodgement Date"] ||
                         row[:content]["Date received"] ||
                         row[:content]["Date"]
-        result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
-        result
+
+        council_reference = row[:content]["App No."] ||
+                            row[:content]["Application Number"] ||
+                            row[:content]["Application number"]
+
+        address = row[:content]["Location Address"] ||
+                  row[:content]["Property Address"] ||
+                  row[:content]["Site Location"] ||
+                  row[:content]["Application location"] ||
+                  row[:content]["Application Location"] ||
+                  row[:content]["Location"] ||
+                  row[:content]["Primary Property Address"] ||
+                  row[:content]["Site Address"] ||
+                  (if row[:content]["Address"] && row[:content]["Suburb"]
+                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
+                   end) ||
+                  row[:content]["Address"]
+
+        description = row[:content]["Proposed Use or Development"] ||
+                      row[:content]["Description"] ||
+                      row[:content]["Application Proposal"] ||
+                      row[:content]["Proposal"] ||
+                      row[:content]["Application Description"] ||
+                      row[:content]["Application proposal"]
+
+        {
+          council_reference: council_reference,
+          address: address,
+          description: description,
+          date_received: (Date.strptime(date_received, "%d/%m/%Y").to_s if date_received),
+          # This URL will only work in a session. Thanks for that!
+          detail_url: row[:url]
+        }
       end
 
       def self.scrape_index_page(page, base_url, agent)
@@ -61,10 +67,10 @@ module EpathwayScraper
 
           # Check if we have all the information we need from the index_data
           # If so then there's no need to scrape the detail page
-          unless data.key?(:council_reference) &&
-                 data.key?(:address) &&
-                 data.key?(:description) &&
-                 data.key?(:date_received)
+          unless data[:council_reference] &&
+                 data[:address] &&
+                 data[:description] &&
+                 data[:date_received]
 
             detail_page = agent.get(data[:detail_url])
             data = Page::Detail.scrape(detail_page, base_url)
