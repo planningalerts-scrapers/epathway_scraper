@@ -38,6 +38,15 @@ module EpathwayScraper
         form.submit(form.button_with(value: /Next/))
       end
 
+      # Fake that we're running javascript by picking out the javascript redirect
+      def self.follow_javascript_redirect(page, agent)
+        match = page.body.match(/window.location.href='(.*)';/)
+        raise "Could not find javascript redirect" if match.nil?
+
+        redirected_url = match[1]
+        agent.get(redirected_url)
+      end
+
       # Very simple minded test for whether we're on the correct page
       def self.on_page?(page)
         !page.search('input[type="radio"]').empty?

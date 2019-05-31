@@ -9,20 +9,11 @@ module EpathwayScraper
       def self.pick(page, type, agent)
         raise "Unexpected type #{type}" unless type == :last_30_days
 
-        page = follow_javascript_redirect(page, agent)
+        page = ListSelect.follow_javascript_redirect(page, agent)
 
         page = Page::Search.click_date_search_tab(page, agent)
         # The Date tab defaults to a search range of the last 30 days.
         Page::Search.click_search(page)
-      end
-
-      # Fake that we're running javascript by picking out the javascript redirect
-      def self.follow_javascript_redirect(page, agent)
-        match = page.body.match(/window.location.href='(.*)';/)
-        raise "Could not find javascript redirect" if match.nil?
-
-        redirected_url = match[1]
-        agent.get(redirected_url)
       end
 
       def self.click_date_search_tab(page, agent)
