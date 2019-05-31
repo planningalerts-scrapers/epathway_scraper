@@ -53,14 +53,6 @@ module EpathwayScraper
       Page::Search.search_for_one_application(page, application_no)
     end
 
-    def extract_table_data_and_urls(table)
-      Table.extract_table_data_and_urls(table, base_url)
-    end
-
-    def extract_total_number_of_pages(page)
-      Page::Index.extract_total_number_of_pages(page)
-    end
-
     # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
