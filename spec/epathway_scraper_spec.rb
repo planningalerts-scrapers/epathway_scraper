@@ -21,7 +21,7 @@ RSpec.describe EpathwayScraper do
       results = VCR.use_cassette(scraper_name) do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
-          EpathwayScraper::Scraper.scrape(*params) do |record|
+          EpathwayScraper.scrape(*params) do |record|
             results << record
           end
           results.sort_by { |r| r["council_reference"] }

@@ -13,6 +13,18 @@ require "English"
 
 # Top level module of gem
 module EpathwayScraper
+  def self.scrape_and_save(base_url, params)
+    scrape(base_url, params) do |record|
+      EpathwayScraper.save(record)
+    end
+  end
+
+  def self.scrape(base_url, params)
+    Scraper.new(base_url).scrape(params) do |record|
+      yield record
+    end
+  end
+
   def self.save(record)
     log(record)
     ScraperWiki.save_sqlite(["council_reference"], record)
@@ -29,20 +41,6 @@ module EpathwayScraper
     def initialize(base_url)
       @base_url = base_url + "/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
       @agent = Mechanize.new
-    end
-
-    # Convenience method
-    def self.scrape_and_save(base_url, params)
-      scrape(base_url, params) do |record|
-        EpathwayScraper.save(record)
-      end
-    end
-
-    # Convenience method
-    def self.scrape(base_url, params)
-      new(base_url).scrape(params) do |record|
-        yield record
-      end
     end
 
     def search_for_one_application(page, application_no)
