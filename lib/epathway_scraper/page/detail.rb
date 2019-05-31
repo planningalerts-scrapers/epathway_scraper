@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "epathway_scraper/table"
+
 module EpathwayScraper
   module Page
     # The detail page that shows all the information about the application

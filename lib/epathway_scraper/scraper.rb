@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+require "epathway_scraper/page/list_select"
+require "epathway_scraper/page/search"
+require "epathway_scraper/page/index"
+
+require "mechanize"
+
 module EpathwayScraper
   # Scrape an epathway development applications site
   class Scraper

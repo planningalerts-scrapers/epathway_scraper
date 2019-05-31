@@ -1,22 +1,15 @@
 # frozen_string_literal: true
 
 require "epathway_scraper/version"
-require "epathway_scraper/page/list_select"
-require "epathway_scraper/page/search"
-require "epathway_scraper/page/index"
-require "epathway_scraper/page/detail"
-require "epathway_scraper/table"
 require "epathway_scraper/scraper"
 
 require "scraperwiki"
-require "mechanize"
-require "English"
 
 # Top level module of gem
 module EpathwayScraper
   def self.scrape_and_save(base_url, params)
     scrape(base_url, params) do |record|
-      EpathwayScraper.save(record)
+      save(record)
     end
   end
 

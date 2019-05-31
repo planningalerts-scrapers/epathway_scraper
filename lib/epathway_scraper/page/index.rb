@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+require "epathway_scraper/table"
+require "epathway_scraper/page/detail"
+
+require "English"
+
 module EpathwayScraper
   module Page
     # A list of applications (probably paginated)
@@ -77,7 +82,7 @@ module EpathwayScraper
             # Get application page with a referrer or we get an error page
             detail_page = agent.get(data[:detail_url], [], page.uri)
 
-            data = Page::Detail.scrape(detail_page, base_url)
+            data = Detail.scrape(detail_page, base_url)
           end
 
           yield({
