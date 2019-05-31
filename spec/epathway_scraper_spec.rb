@@ -50,21 +50,21 @@ RSpec.describe EpathwayScraper do
         scraper_name: "South_Gippsland_Shire_DAs",
         params: [
           "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
-          { list_type: :advertising }
+          { list_type: :advertising, with_gets: true }
         ]
       },
       {
         scraper_name: "campbelltown",
         params: [
           "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
-          { list_type: :all }
+          { list_type: :all, with_gets: true }
         ]
       },
       {
         scraper_name: "ballarat",
         params: [
           "https://eservices.ballarat.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, with_gets: true }
         ]
       },
       {
@@ -85,7 +85,7 @@ RSpec.describe EpathwayScraper do
         scraper_name: "knox",
         params: [
           "https://eservices.knox.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, with_gets: true }
         ]
       },
       {
@@ -106,7 +106,7 @@ RSpec.describe EpathwayScraper do
         scraper_name: "nillumbik",
         params: [
           "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, with_gets: true }
         ]
       },
       {
