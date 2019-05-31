@@ -91,41 +91,8 @@ module EpathwayScraper
         end
       end
 
-      def self.click_next_page_link(page, page_no, agent)
-        next_link = page.links_with(text: (page_no + 1).to_s)[0]
-        return unless next_link
-
-        # rubocop:disable Metrics/LineLength
-        # TODO: Fix this long unreadable line
-        params = /javascript:WebForm_DoPostBackWithOptions\(new WebForm_PostBackOptions\("([^"]*)", "", false, "", "([^"]*)", false, true\)\)/.match(next_link.href)
-        # rubocop:enable Metrics/LineLength
-
-        aspnet_form = page.forms_with(name: "aspnetForm")[0]
-        aspnet_form.action = params[2]
-        aspnet_form["__EVENTTARGET"] = params[1]
-        aspnet_form["__EVENTARGUMENT"] = ""
-
-        agent.submit(aspnet_form)
-      end
-
-      # This scrapes all index pages by clicking the next link
-      # with all the POSTback nonsense
-      def self.scrape_all_index_pages(page, base_url, agent)
-        page_no = 1
-        loop do
-          scrape_index_page(page, base_url, agent) do |record|
-            yield record
-          end
-
-          page = Page::Index.click_next_page_link(page, page_no, agent)
-          break if page.nil?
-
-          page_no += 1
-        end
-      end
-
       # This scrapes all index pages by doing GETs on each page
-      def self.scrape_all_index_pages_with_gets(number_pages, base_url, agent)
+      def self.scrape_all_index_pages(number_pages, base_url, agent)
         page = agent.get("EnquirySummaryView.aspx?PageNumber=1")
         number_pages ||= extract_total_number_of_pages(page)
         (1..number_pages).each do |no|

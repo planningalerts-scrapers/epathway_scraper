@@ -80,23 +80,13 @@ module EpathwayScraper
       end
     end
 
-    # TODO: max_pages is currently ignored if with_gets is false
-    def scrape(list_type:, with_gets: false, max_pages: nil)
+    def scrape(list_type:, max_pages: nil)
       # Navigate to the correct list
-      page = pick_type_of_search(list_type)
-      if with_gets
-        # Notice how we're skipping the clicking of search
-        # even though that's what the user interface is showing next
-        Page::Index.scrape_all_index_pages_with_gets(max_pages, base_url, agent) do |record|
-          yield record
-        end
-      else
-        page = Page::Search.click_search(page) if Page::Search.on_page?(page)
-
-        # And scrape everything
-        Page::Index.scrape_all_index_pages(page, base_url, agent) do |record|
-          yield record
-        end
+      pick_type_of_search(list_type)
+      # Notice how we're skipping the clicking of search
+      # even though that's what the user interface is showing next
+      Page::Index.scrape_all_index_pages(max_pages, base_url, agent) do |record|
+        yield record
       end
     end
   end

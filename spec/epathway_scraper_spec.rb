@@ -50,70 +50,70 @@ RSpec.describe EpathwayScraper do
         scraper_name: "South_Gippsland_Shire_DAs",
         params: [
           "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "campbelltown",
         params: [
           "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
-          { list_type: :all, with_gets: true }
+          { list_type: :all }
         ]
       },
       {
         scraper_name: "ballarat",
         params: [
           "https://eservices.ballarat.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "glen_eira",
         params: [
           "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
-          { list_type: :all, with_gets: true, max_pages: 4 }
+          { list_type: :all, max_pages: 4 }
         ]
       },
       {
         scraper_name: "gold_coast",
         params: [
           "https://cogc.cloud.infor.com/ePathway/epthprod",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "knox",
         params: [
           "https://eservices.knox.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "monash",
         params: [
           "https://epathway.monash.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "moreland",
         params: [
           "https://eservices.moreland.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "nillumbik",
         params: [
           "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, with_gets: true }
+          { list_type: :advertising }
         ]
       },
       {
         scraper_name: "salisbury",
         params: [
           "https://eservices.salisbury.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, with_gets: true }
+          { list_type: :last_30_days }
         ]
       }
     ].freeze
