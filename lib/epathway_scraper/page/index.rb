@@ -74,7 +74,9 @@ module EpathwayScraper
                  data[:description] &&
                  data[:date_received]
 
-            detail_page = agent.get(data[:detail_url])
+            # Get application page with a referrer or we get an error page
+            detail_page = agent.get(data[:detail_url], [], page.uri)
+
             data = Page::Detail.scrape(detail_page, base_url)
           end
 
