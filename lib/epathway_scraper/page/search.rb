@@ -18,7 +18,10 @@ module EpathwayScraper
 
       # Fake that we're running javascript by picking out the javascript redirect
       def self.follow_javascript_redirect(page, agent)
-        redirected_url = page.body.match(/window.location.href='(.*)';/)[1]
+        match = page.body.match(/window.location.href='(.*)';/)
+        raise "Could not find javascript redirect" if match.nil?
+
+        redirected_url = match[1]
         agent.get(redirected_url)
       end
 
