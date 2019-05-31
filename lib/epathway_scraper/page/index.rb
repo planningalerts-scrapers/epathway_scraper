@@ -20,6 +20,7 @@ module EpathwayScraper
         date_received = row[:content]["Date Lodged"] ||
                         row[:content]["Date lodged"] ||
                         row[:content]["Application Date"] ||
+                        row[:content]["Application date"] ||
                         row[:content]["Lodgement Date"] ||
                         row[:content]["Date received"] ||
                         row[:content]["Date"]
