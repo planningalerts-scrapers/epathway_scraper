@@ -45,10 +45,6 @@ module EpathwayScraper
       end
     end
 
-    def scrape_and_save
-      scrape { |record| save(record) }
-    end
-
     def search_for_one_application(page, application_no)
       Page::Search.search_for_one_application(page, application_no)
     end
