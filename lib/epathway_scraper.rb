@@ -64,6 +64,7 @@ module EpathwayScraper
     # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
+      page = Page::ListSelect.follow_javascript_redirect(page, agent)
 
       # Checking whether we're on the right page
       if Page::ListSelect.on_page?(page)
