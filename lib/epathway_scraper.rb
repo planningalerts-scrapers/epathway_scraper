@@ -14,9 +14,12 @@ require "English"
 # Top level module of gem
 module EpathwayScraper
   def self.save(record)
-    puts "Storing " + record["council_reference"] + " - " + record["address"]
-    # puts record
+    log(record)
     ScraperWiki.save_sqlite(["council_reference"], record)
+  end
+
+  def self.log(record)
+    puts "Storing " + record["council_reference"] + " - " + record["address"]
   end
 
   # Scrape an epathway development applications site
