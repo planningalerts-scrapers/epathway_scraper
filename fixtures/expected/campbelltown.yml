@@ -22,24 +22,10 @@
   date_received: '2019-03-01'
 - council_reference: 1040/2016/DA-U/C
   address: Menangle House, 170 Menangle Road, MENANGLE PARK  NSW  2563
-  description: Modification of an existing development consent for the change of use
-    of an existing Tavern to a club and function centre, associated alterations and
-    continued use of a marquee
+  description: Alterations to function centre and bathrooms
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
-- council_reference: 1040/2019/DA-DW
-  address: 6 Brallos Street, BARDIA  NSW  2565
-  description: Construction of a single storey dwelling and detached garage
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-26'
-- council_reference: 1042/2019/DA-DW
-  address: 4 Brallos Street, BARDIA  NSW  2565
-  description: Construction of a single storey dwelling and detached garage
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-26'
 - council_reference: 1046/2014/DA-U
   address: 13/185-187 Airds Road, LEUMEAH  NSW  2560
   description: Use of premisies as an accountant/tax agent
@@ -59,12 +45,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2014-05-28'
-- council_reference: 1061/2018/DA-M
-  address: 43C Carnarvon Street, BOW BOWING  NSW  2566
-  description: Construction of a two storey attached dual occupancy
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-04-09'
 - council_reference: 1065/2019/DA-DW
   address: 29 Brudenell Avenue, LEUMEAH  NSW  2560
   description: Demolition of an existing dwelling and construction of a single storey
@@ -102,12 +82,6 @@
 - council_reference: 1103/2019/DA-DW
   address: 64 Paul Cullen Drive, BARDIA  NSW  2565
   description: Construction of a two storey dwellling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-26'
-- council_reference: 1107/2019/DA-DW
-  address: 63 Bardia Avenue, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling and attached garage
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-26'
@@ -204,27 +178,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-02'
-- council_reference: 1172/2019/DA-DW
-  address: 58 Paul Cullen Drive, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling, attached garage, retaining wall
-    and associated site and landscape works
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-02'
-- council_reference: 1177/2019/DA-DW
-  address: 51 Mulvihill Crescent, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dwelling, retaining walls and associated
-    landscaping
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-02'
-- council_reference: 1183/2019/DA-DW
-  address: 60 Paul Cullen Drive, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling, attached garage, retaining wall
-    and associated site and landscape works
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-02'
 - council_reference: 1184/2019/DA-C
   address: 5 Willowdale Drive, DENHAM COURT  NSW  2565
   description: Construction of a stand alone roof over external outdoor dining area
@@ -307,8 +260,10 @@
   date_received: '2019-04-03'
 - council_reference: 1227/2019/DA-M
   address: 12 Francis Street, MINTO  NSW  2566
-  description: Demolition of four existing dwellings and construction of 23 townhouses
-    and basement carparking
+  description: Demolition of existing dwellings and construction of a multi dwelling
+    housing development consisting of 23 dwellings and basement car parking under
+    the provisions of State Environmental Planning Policy (Affordable Rental Housing)
+    2009
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-04'
@@ -350,6 +305,14 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-09'
+- council_reference: 1278/2016/DA-RS/A
+  address: 18 Lorikeet Avenue, INGLEBURN  NSW  2565
+  description: Modification of an exisitng development consent for the demolition
+    of an existing dwelling, construction of two dwellings and subdivision into two
+    Torrens title residential allotments
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-21'
 - council_reference: 1281/2019/DA-DW
   address: 7 Hansens Road, LEUMEAH  NSW  2560
   description: Construction of a single storey dwelling
@@ -395,12 +358,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-12'
-- council_reference: 1329/2019/DA-O
-  address: 49 Nymboida Crescent, RUSE  NSW  2560
-  description: Construction of a deck and awning
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-15'
 - council_reference: 1346/2019/DA-C
   address: 304 Queen Street, CAMPBELLTOWN  NSW  2560
   description: Construction of a fitout and use as an indoor recreational facility
@@ -466,13 +423,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-18'
-- council_reference: 1374/2019/DA-DW
-  address: 27 Pennyroyal Boulevard, DENHAM COURT  NSW  2565
-  description: " Construction of a two storey dwelling, attached garage and associated
-    site and landscaping works"
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-23'
 - council_reference: 1382/2018/DA-U
   address: Mawson Park, Queen Street, CAMPBELLTOWN  NSW  2560
   description: Use of Mawson Park for night markets twice a month between 5 and 9pm.
@@ -517,20 +467,6 @@
 - council_reference: 1401/2019/DA-DW
   address: 4 Binh Ba Street, BARDIA  NSW  2565
   description: Construction of a two storey dwelling, attached garage and associated
-    site and landscaping works
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-26'
-- council_reference: 1402/2019/DA-DW
-  address: 11 Arthur Allen Drive, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling, attached garage and associated
-    site and landscaping works
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-26'
-- council_reference: 1403/2019/DA-DW
-  address: 50 Bruce Ferguson Avenue, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling with a detached garage and associated
     site and landscaping works
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -591,7 +527,7 @@
 - council_reference: 1456/2019/DA-RS
   address: 9 Hilltop Crescent, CAMPBELLTOWN  NSW  2560
   description: Demolition of existing dwelling, construction of two dwellings and
-    associated site and landscaping works and Torrens title subdivision into two lots.
+    associated site and landscaping works and Torrens title subdivision into two lots
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-02'
@@ -631,12 +567,6 @@
 - council_reference: 1467/2019/DA-O
   address: 5 St James Road, VARROVILLE  NSW  2566
   description: Construction of an outbuiling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-03'
-- council_reference: 1469/2019/DA-O
-  address: 21 Kanangra Crescent, RUSE  NSW  2560
-  description: Construction of a garage
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-03'
@@ -685,16 +615,11 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-08'
-- council_reference: 1530/2019/DA-O
-  address: 101 Mary Ann Drive, GLENFIELD  NSW  2167
-  description: Construction of retaining wall
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-09'
 - council_reference: 1551/2019/DA-RS
   address: 31 Marlborough Street, CAMPBELLTOWN  NSW  2560
-  description: Construction of two dwellings and associated site and landscaping works
-    and subdivision into two Torrens titled allotments
+  description: Construction of an attached dual occupancy development, associated
+    site and landscaping works and subsequent subdivision into two Torrens titled
+    allotments
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-10'
@@ -716,19 +641,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-10'
-- council_reference: 1557/2019/DA-M
-  address: 26 Brenda Street, INGLEBURN  NSW  2565
-  description: Construction of a 2 storey attached dual occupancy and demolition of
-    existing dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-10'
-- council_reference: 1558/2019/DA-M
-  address: 25 Carinda Street, INGLEBURN  NSW  2565
-  description: Construction of 2 storey attached dual occupancy
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-10'
 - council_reference: 1561/2019/DA-DW
   address: 21 Sawsedge Avenue, DENHAM COURT  NSW  2565
   description: Construction of a two storey dwelling
@@ -743,19 +655,11 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-02-03'
-- council_reference: 1567/2019/DA-RS
-  address: 59 Edgar Street, MACQUARIE FIELDS  NSW  2564
-  description: Demolition of existing garage, alterations and additions to existing
-    dwelling, construction of a single storey dual occupancy with an attached secondary
-    dwelling and subdivision into two Torrens title allotments
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-13'
 - council_reference: 1569/2019/DA-C
   address: 6 Olive Street, MINTO HEIGHTS  NSW  2566
   description: Demolition of an existing shed, use of existing container, construction
-    of two sheds, use one as home business, landscaping, front boundary fence and
-    driveway
+    of two sheds, use of one shed as home business, new landscaping, front boundary
+    fence and driveway
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-13'
@@ -765,28 +669,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-01-19'
-- council_reference: 1574/2014/DA-RA/B
-  address: 26A Chamberlain Street, CAMPBELLTOWN  NSW  2560
-  description: Modification of an existing development consent for the demolition
-    of existing dwelling and construction of a six storey residential flat building
-    comprising 48 apartments with two levels of basement parking
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-06-25'
-- council_reference: 1577/2019/DA-M
-  address: 18 High Street, CAMPBELLTOWN  NSW  2560
-  description: Construction of five x 2 storey dwellings. demoliton of existing 2
-    dwellings and subdivision into torrens title allotments
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-14'
-- council_reference: 1579/2019/DA-I
-  address: 1/11 Aero Road, INGLEBURN  NSW  2565
-  description: Construction of alterations and additions to existing factory and the
-    use as a bakery and cafe
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-14'
 - council_reference: 1580/2019/DA-C
   address: Rosemeadow Shopping Centre, Thomas Rose Drive, ROSEMEADOW  NSW  2560
   description: Construction of shade sails and reconfiguration of existing at grade
@@ -818,12 +700,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-15'
-- council_reference: 1590/2019/DA-O
-  address: 88 Epping Forest Drive, KEARNS  NSW  2558
-  description: Construction of a garage
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-15'
 - council_reference: 1593/2019/DA-DW
   address: 29 Arthur Allen Drive, BARDIA  NSW  2565
   description: Construction of a two storey dwelling
@@ -850,7 +726,8 @@
   date_received: '2019-05-15'
 - council_reference: 1604/2019/DA-DW
   address: 5 Maidenhair Avenue, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dwellling and inground swimming pool
+  description: Construction of a two storey dwellling, attached garage, inground swimming
+    pool and associated site and landscape works
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-15'
@@ -881,6 +758,15 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-05-21'
+- council_reference: 1626/2019/DA-RS
+  address: 15 Nepean Towers Avenue, GLEN ALPINE  NSW  2560
+  description: 'Construction of three x attached dwellings and subdivision into three
+    Torrens title allotments
+
+'
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-16'
 - council_reference: 1627/2018/DA-RS
   address: Lot 115 Macdonald Road, BARDIA  NSW  2565
   description: Construction of six two storey dwellings and subdivision into six Torrens
@@ -902,12 +788,38 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-23'
+- council_reference: 1645/2019/DA-AL
+  address: 29 Jacaranda Avenue, BRADBURY  NSW  2560
+  description: Construction of a dwelling adddition and alterations
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
+- council_reference: 1647/2019/DA-DW
+  address: 90 Mulholland Avenue, CAMPBELLTOWN  NSW  2560
+  description: Construction of a two storey dwelling comprising an attached garage,
+    retaining wall and associated site and landscape works.
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
 - council_reference: 165/2019/DA-DW
   address: Lot 1 Westmoreland Road, LEUMEAH  NSW  2560
   description: Construction of a two storey dwelling and detached carport
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-18'
+- council_reference: 1650/2019/DA-DEM
+  address: 6 Namoi Place, RUSE  NSW  2560
+  description: Demolition of an inground swimming pool
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
+- council_reference: 1653/2019/DA-M
+  address: 24 Norman Dunlop Crescent, MINTO  NSW  2566
+  description: Construction of first floor addition to existing dwelling and attached
+    secondary dwelling in rear yard
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-23'
 - council_reference: 1659/2015/DA-C
   address: Pt Lot 7 Camden Valley Way, DENHAM COURT  NSW  2565
   description: Construction of a clubhouse, carpark, recreation and landscaped areas
@@ -929,16 +841,22 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-06-01'
-- council_reference: 1670/2018/DA-O
-  address: 32 Winton Close, WEDDERBURN  NSW  2560
-  description: Construction of a storage shed
+- council_reference: 1668/2019/DA-AL
+  address: 15/10-18 Allman Street, CAMPBELLTOWN  NSW  2560
+  description: Construction of a dwelling addition and alteration
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2018-05-23'
+  date_received: '2019-05-21'
+- council_reference: 1677/2019/DA-O
+  address: 14 Englorie Park Drive, GLEN ALPINE  NSW  2560
+  description: Construction of a shed
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-21'
 - council_reference: 1698/2017/DA-M
   address: 2 Albert Street, INGLEBURN  NSW  2565
   description: Demolition of existing dwelling and construction of two x two storey
-    semi attached dwelling
+    semi-detached dwelling
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-06-02'
@@ -948,14 +866,12 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-05-25'
-- council_reference: 1708/2018/DA-RS
-  address: 56 Chamberlain Street, CAMPBELLTOWN  NSW  2560
-  description: Demolition of existing dwelling and garage and construction of a multi
-    dwelling housing development comprising of four dwellings and subdivision into
-    four strata allotments
+- council_reference: 1701/2019/DA-A
+  address: Campbelltown Mall, 271 Queen Street, CAMPBELLTOWN  NSW  2560
+  description: Replacement of existing signs for Kmart Auto Service Centre
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2018-05-25'
+  date_received: '2019-05-22'
 - council_reference: 1724/2018/DA-SW
   address: Lot 115 Macdonald Road, BARDIA  NSW  2565
   description: Torrens title subdivision of seven (7) superlots being Lots 199, 200,
@@ -965,12 +881,53 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-05-28'
+- council_reference: 1729/2019/DA-C
+  address: 108 Macquarie Road, INGLEBURN  NSW  2565
+  description: Replacing the existing gas oven with a chicken charcoal BBQ cooker
+    - shop B
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-23'
+- council_reference: 1732/2019/DA-AL
+  address: 5 Victor Place, RABY  NSW  2566
+  description: Construction of a first floor addition and alterations to an existing
+    dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-24'
+- council_reference: 1743/2019/DA-RS
+  address: 132 Lindesay Street, CAMPBELLTOWN  NSW  2560
+  description: Demolition of existing dwelling, construction of three x two storey
+    attached dwellings and subdivision into three Torrens title allotments
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-24'
+- council_reference: 1745/2019/DA-M
+  address: 39 Sapper Street, BARDIA  NSW  2565
+  description: Construction of a two storey dwelling with a detached garage and studio
+    above
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-24'
+- council_reference: 1746/2019/DA-82A
+  address: 18 Mahoney Drive, CAMPBELLTOWN  NSW  2560
+  description: Construction of a detached dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-24'
 - council_reference: 176/2019/DA-M
   address: 38 Westmoreland Road, MINTO  NSW  2566
   description: construction of a secondary dwelling and carport
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-21'
+- council_reference: 1761/2019/DA-SW
+  address: 128-320 Denham Court Road, DENHAM COURT  NSW  2565
+  description: Subdivision to create 204 torrens title residential allotments including
+    construction of roads and associated civil works
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
 - council_reference: 1767/2015/DA-SW/A
   address: Western Sydney University Campbelltown Campus, 183 Narellan Road, CAMPBELLTOWN  NSW  2560
   description: |-
@@ -988,12 +945,87 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2015-06-26'
+- council_reference: 1776/2019/DA-DW
+  address: 12 Brallos Street, BARDIA  NSW  2565
+  description: Construction of a single storey dwellling, detached garage and associated
+    site and landscape works
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: 1788/2019/DA-DW
+  address: 5 Brallos Street, BARDIA  NSW  2565
+  description: Construction of a single storey dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: 1789/2019/DA-AL
+  address: 103 Heritage Way, GLEN ALPINE  NSW  2560
+  description: Construction of alteration and addition to dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: 1792/2019/DA-M
+  address: 64 Leppington House Drive, DENHAM COURT  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1800/2019/DA-DW
+  address: 5 Retimo Street, BARDIA  NSW  2565
+  description: Construction of a single storey dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1801/2019/DA-M
+  address: 19B Atchison Road, MACQUARIE FIELDS  NSW  2564
+  description: Construction of a two storey dwelling and attached secondary dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1802/2019/DA-SW
+  address: 107 St Johns Road, BRADBURY  NSW  2560
+  description: Subdivision to create two allotments and construction of a carport
+    and ancillary structure and associated driveways
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1804/2019/DA-UMD
+  address: 6 Ohio Place, KEARNS  NSW  2558
+  description: Use of a manufactured  secondary dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1805/2019/DA-M
+  address: 153 Ingleburn Gardens Drive, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy - Lot 104 and
+    Lot 105
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1806/2019/DA-O
+  address: 2 Prospero Close, ROSEMEADOW  NSW  2560
+  description: Construction of a shed
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1808/2019/DA-M
+  address: 149 Ingleburn Gardens Drive, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
 - council_reference: 1809/2014/DA-U
   address: 8/14 Stennett Road, INGLEBURN  NSW  2565
   description: Use of unit 8 for warehousing and wholesale operations.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2014-08-01'
+- council_reference: 1810/2019/DA-M
+  address: 157 Ingleburn Gardens Drive, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
 - council_reference: 1812/2018/DA-M
   address: 6 Gowan Place, DENHAM COURT  NSW  2565
   description: Construction of a two storey dwelling to form part of a dual occupancy  and
@@ -1001,6 +1033,61 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-05-31'
+- council_reference: 1812/2019/DA-M
+  address: 161 Ingleburn Gardens Drive, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: 1817/2019/DA-M
+  address: 64 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1819/2019/DA-M
+  address: 56 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1820/2019/DA-M
+  address: 52 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1823/2019/DA-M
+  address: 46 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1825/2019/DA-M
+  address: 68 Webber Circuit, BARDIA  NSW  2565
+  description: Construction  of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1827/2019/DA-I
+  address: 1/7 Hollylea Road, LEUMEAH  NSW  2560
+  description: Construction of a mezzanine floor level for unit 1 and unit 2 and use
+    of unit 2 for the manufacture and supply of vertical drapes and security doors
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1828/2019/DA-M
+  address: 42 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached two storey dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: 1833/2019/DA-M
+  address: 60 Webber Circuit, BARDIA  NSW  2565
+  description: Construction of an attached dual occupancy
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
 - council_reference: 1843/2018/DA-RS
   address: Lot 115 Macdonald Road, BARDIA  NSW  2565
   description: Construction of six x two storey attached dwellings and subdivision
@@ -1015,6 +1102,12 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-06-01'
+- council_reference: 1863/2019/DA-DW
+  address: 55 Paul Cullen Drive, BARDIA  NSW  2565
+  description: Construction of a two storey dwelling
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-31'
 - council_reference: 19/2019/DA-MAH
   address: 6 Lyell Place, BOW BOWING  NSW  2566
   description: construction of a secondary dwelling
@@ -1048,12 +1141,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2012-10-05'
-- council_reference: 1994/2018/DA-O
-  address: 23 Edinburgh Crescent, ST ANDREWS  NSW  2566
-  description: Construction of a carport
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-06-13'
 - council_reference: 203/2019/DA-SW
   address: 51 Taber Street, MENANGLE PARK  NSW  2563
   description: Subdivision into 19 Torrens title allotments, demolition of dwelling
@@ -1062,12 +1149,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-22'
-- council_reference: 2086/2018/DA-U
-  address: 9 Burke Street, RUSE  NSW  2560
-  description: use of existing building as outbuilding
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-06-18'
 - council_reference: 21/1982/DA-S/A
   address: Pt Lot 2 Clydesdale Drive, BLAIRMOUNT  NSW  2559
   description: |
@@ -1082,20 +1163,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2015-08-11'
-- council_reference: 2128/2016/DA-DW/A
-  address: 36 Rangers Road, ST HELENS PARK  NSW  2560
-  description: Modification of an existing development consent for the construction
-    of a single storey dwelling with an attached garage and a detached garage
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-05-08'
-- council_reference: 2142/2017/DA-C
-  address: 49 Currawong Street, INGLEBURN  NSW  2565
-  description: Demolition of existing dwelling and construction of a 35 place childcare
-    centre and associated basement carparking
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2017-07-07'
 - council_reference: 2231/2016/DA-CW
   address: Lot 1097 Goldsmith Avenue, CAMPBELLTOWN  NSW  2560
   description: Construction of a pedestrian bridge and lift on the northern side of
@@ -1173,13 +1240,13 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-08-03'
-- council_reference: 2456/2018/DA-RS
-  address: 15 Milky Way, CAMPBELLTOWN  NSW  2560
-  description: Construction of an additional dwelling to create a dual occupancy development
-    and subdivision into two Torrens title allotments
+- council_reference: 2473/2013/DA-C/B
+  address: 1 Arthur Allen Drive, BARDIA  NSW  2565
+  description: Modification of an existing development consent for the construction
+    and operation of a child care centre
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2018-07-11'
+  date_received: '2019-05-23'
 - council_reference: 2475/2008/DA-DE
   address: 10 York Road, INGLEBURN  NSW  2565
   description: Continued use of premises for chemical storage and distribution
@@ -1208,7 +1275,7 @@
   date_received: '2015-09-21'
 - council_reference: 2657/2018/DA-C
   address: 14-16 Albert Street, INGLEBURN  NSW  2565
-  description: demolition of existing dwellings and construction of a two storey 90
+  description: Demolition of existing dwellings and construction of a two storey 90
     children childcare centre with basement parking and consolidation of lot 4 and
     5
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1270,22 +1337,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-08-10'
-- council_reference: 2814/2018/DA-SW
-  address: 5 Macleay Street, BRADBURY  NSW  2560
-  description: Subdivision into two torrens title allotments and construction of a
-    garage and driveway
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-08-10'
-- council_reference: 2828/2005/DA-SL/C
-  address: Mount Gilead Estate, 72 Glendower Street, GILEAD  NSW  2560
-  description: |-
-    Modification of existing development consent for the construction and operation of a retirement village and associated works.
-
-    Modification works include the relocation and redesign of an approved swimming pool into a new community facilities building and extension of the existing 'club house' building.
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-03-09'
 - council_reference: 284/2019/DA-DW
   address: 14 Hook Street, BARDIA  NSW  2565
   description: Construction of a two storey dwelling
@@ -1294,7 +1345,9 @@
   date_received: '2019-02-04'
 - council_reference: 2843/2018/DA-U
   address: 15/157 Airds Road, MINTO  NSW  2566
-  description: Use of Unit 15 for metal fabrication
+  description: Change of use of an existing industrial premises to metal sheet fabrication,
+    including the installation of business identification signage and construction
+    of an office.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-08-14'
@@ -1339,12 +1392,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-08-22'
-- council_reference: 295/2019/DA-M
-  address: 32 Hurlstone Avenue, GLENFIELD  NSW  2167
-  description: construction of a secondary dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-04'
 - council_reference: 2961/2018/DA-DW
   address: 16 Ashmead Road, MINTO  NSW  2566
   description: Construction of a single storey dwelling
@@ -1426,12 +1473,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-10-04'
-- council_reference: 3191/2017/DA-DW
-  address: 94 O'Hares Road, WEDDERBURN  NSW  2560
-  description: Construction of a two storey dwelling and swimming pool
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2017-10-05'
 - council_reference: 3213/2017/DA-C/A
   address: Lot 1 Campbelltown Road, GLENFIELD  NSW  2167
   description: Modification of an existing development consent for the alterations
@@ -1439,6 +1480,13 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-15'
+- council_reference: 3226/2018/DA-O/A
+  address: 9 Woolmers Place, GLEN ALPINE  NSW  2560
+  description: Modification of an existing development consent for the construction
+    of a shed
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
 - council_reference: 3241/2015/DA-I/A
   address: 55 Stennett Road, INGLEBURN  NSW  2565
   description: Modification of an existing development consent for the construction
@@ -1446,13 +1494,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-08-10'
-- council_reference: 3248/2018/DA-AL/A
-  address: 70 Raby Road, VARROVILLE  NSW  2566
-  description: Modification of an exisitng development consent for the construction
-    of alterations and additions to existing dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-22'
 - council_reference: 3253/2015/DA-C/B
   address: 194 Campbelltown Road, DENHAM COURT  NSW  2565
   description: Modification of an existing development consent for the demolition
@@ -1560,13 +1601,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-10-26'
-- council_reference: 342/2019/DA-RS
-  address: 33 Willowdale Drive, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dual occupancy and subdivision into two
-    torrens title allotments
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-07'
 - council_reference: 3432/2017/DA-AL
   address: 151 Katanna Road, WEDDERBURN  NSW  2560
   description: Construction of a single storey dwelling and decommissioning of the
@@ -1593,6 +1627,14 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-11-02'
+- council_reference: 3511/2018/DA-C/A
+  address: Lot 241 Farrow Road, CAMPBELLTOWN  NSW  2560
+  description: Modification of an existing development consent for the construction
+    of a commercial building for use as a hardware and building supplies outlet with
+    associated signage, earthworks and landscaping
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-23'
 - council_reference: 353/2019/DA-DW
   address: 5 Kapyong Street, BARDIA  NSW  2565
   description: Construction of a two storey dwelling
@@ -1610,12 +1652,6 @@
   address: 39 Fleming Drive, CAMPBELLTOWN  NSW  2560
   description: Construction of a two storey dwelling, in-ground swimming pool and
     retaining walls
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-10-12'
-- council_reference: 3568/2018/DA-DW
-  address: 52 Macdonald Road, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-10-12'
@@ -1710,6 +1746,13 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-10-19'
+- council_reference: 37/2018/DA-RS/A
+  address: 17 Willowdale Drive, DENHAM COURT  NSW  2565
+  description: Modification of an existing development consent for the construction
+    of a detached dual occupancy and subdivision into two Torrens title allotments
+  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
 - council_reference: 374/2019/DA-M
   address: 37 Aubrey Street, INGLEBURN  NSW  2565
   description: demolition of existing structures and construction of 3 narrow lot
@@ -1799,23 +1842,10 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-02-09'
-- council_reference: 3932/2018/DA-RS
-  address: 3 Lunar Place, CAMPBELLTOWN  NSW  2560
-  description: Construction of two x two storey detached dual occupancy, attached
-    garage, associated landscaping and  subsequent strata title subdivision
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-11-06'
 - council_reference: 3935/2018/DA-M
   address: 7 Oban Place, ST ANDREWS  NSW  2566
   description: Tree removal and construction of a secondary dwelling and associated
     site works
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-11-06'
-- council_reference: 3940/2018/DA-O
-  address: 44 Matthews Square, INGLEBURN  NSW  2565
-  description: Construction of a new shed
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-11-06'
@@ -1845,13 +1875,14 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-11-07'
-- council_reference: 3954/2018/DA-DW
-  address: 68 Leppington House Drive, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dwelling and inground swimming pool and
-    retaining walls
+- council_reference: 3960/2016/DA-RS/A
+  address: 39 Clifford Crescent, INGLEBURN  NSW  2565
+  description: modification of an existing development consent for the demolition
+    of existing structures, construction of two dwellings and subdivision into two
+    Torrens titled allotments
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2018-11-07'
+  date_received: '2019-05-21'
 - council_reference: 4000/2018/DA-RS
   address: 1 Forresters Close, WOODBINE  NSW  2560
   description: Construction of a dwelling and subdivision into two torrens title allotments
@@ -1969,18 +2000,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-11-30'
-- council_reference: 4347/2018/DA-O
-  address: 43 Edgar Street, MACQUARIE FIELDS  NSW  2564
-  description: Construction of a carport
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-11-30'
-- council_reference: 4392/2018/DA-M
-  address: 13 Patonga Close, WOODBINE  NSW  2560
-  description: Construction of an attached two storey dual occupancy
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-12-05'
 - council_reference: 440/2019/DA-SL
   address: 34 Sturt Street, CAMPBELLTOWN  NSW  2560
   description: Construction of a 100 bed residential aged care facility consisting
@@ -2003,12 +2022,6 @@
   address: 49 Frontignan Street, ESCHOL PARK  NSW  2558
   description: Construction of a fitout to existing garage and use as dog grooming
     salon
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-12-10'
-- council_reference: 4452/2018/DA-DW
-  address: 6 Mulvihill Crescent, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dwelling
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-12-10'
@@ -2039,13 +2052,6 @@
   address: 49 Parliament Road, MACQUARIE FIELDS  NSW  2564
   description: construction of a single storey dwelling, demolition of garage , shed
     and subdivision into two strata allotments
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-12-11'
-- council_reference: 4472/2018/DA-RS
-  address: 29 Willowdale Drive, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dual occupancy and subdivision into two
-    torrens title allotments
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-12-11'
@@ -2167,12 +2173,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-10'
-- council_reference: 490/2019/DA-MAH
-  address: 55 Goulburn Street, RUSE  NSW  2560
-  description: Construction of a secondary dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-15'
 - council_reference: 493/2016/DA-RA
   address: 263 Queen Street, CAMPBELLTOWN  NSW  2560
   description: Restoration of existing heritage-listed former CBC Bank building, demolition
@@ -2216,12 +2216,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2016-03-10'
-- council_reference: 550/2019/DA-O
-  address: 46 Glenroy Drive, CLAYMORE  NSW  2559
-  description: Construction of a retaining wall
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-20'
 - council_reference: 557/2019/DA-BH
   address: 3 Hughes Street, LEUMEAH  NSW  2560
   description: Demolition of existing structures and construction of a single storey
@@ -2314,7 +2308,7 @@
   date_received: '2019-02-26'
 - council_reference: 712/2019/DA-U
   address: 16 Airds Road, MINTO  NSW  2566
-  description: Use of existing premise as a recycling and storage facility
+  description: Use of existing premises as a recycling and storage facility
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-02-27'
@@ -2351,12 +2345,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-03-13'
-- council_reference: 740/2019/DA-O
-  address: 33 Paul Cullen Drive, BARDIA  NSW  2565
-  description: Construction of retaining walls and fence
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-28'
 - council_reference: 743/2018/DA-SW
   address: 913 Appin Road, GILEAD  NSW  2560
   description: Subdivision of land to create 333 residential lots and 5 residue lots
@@ -2365,12 +2353,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-03-13'
-- council_reference: 743/2019/DA-M
-  address: 74 Fanflower Avenue, DENHAM COURT  NSW  2565
-  description: construction of a two storey dwelling and attached secondary dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-02-28'
 - council_reference: 755/2019/DA-CW
   address: 128-320 Denham Court Road, DENHAM COURT  NSW  2565
   description: Construction and delivery of a recreational and open space precinct
@@ -2383,18 +2365,6 @@
   address: 48 Fanflower Avenue, DENHAM COURT  NSW  2565
   description: Construction of detached two storey dwellings and subdivision into
     two torrens title allotments
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-01'
-- council_reference: 763/2019/DA-DW
-  address: 15 Arthur Allen Drive, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-01'
-- council_reference: 765/2019/DA-DW
-  address: 77 Bruce Ferguson Avenue, BARDIA  NSW  2565
-  description: Construction of a two storey dwelling
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
@@ -2414,8 +2384,8 @@
   date_received: '2019-03-04'
 - council_reference: 789/2019/DA-A
   address: 33-35 Blaxland Road, CAMPBELLTOWN  NSW  2560
-  description: Installation of five advertising signages and external alternation
-    for Unit 2
+  description: Use of unit two as a hardware and building supplies, Installation of
+    five advertising signages, and external alternation.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-04'
@@ -2473,8 +2443,8 @@
   date_received: '2018-12-05'
 - council_reference: 860/2019/DA-M
   address: 58 Trobriand Crescent, GLENFIELD  NSW  2167
-  description: construction of a secondary dwelling, porch and the demolition of an
-    inground swimming pool
+  description: Demolition of an existing swimming pool and construction of a secondary
+    dwelling with porch
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-11'
@@ -2490,15 +2460,10 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-14'
-- council_reference: 930/2019/DA-DW
-  address: 18 Brooklime Crescent, DENHAM COURT  NSW  2565
-  description: Construction of a two storey dwelling
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-14'
 - council_reference: 932/2019/DA-U
   address: 36 Mount Erin Road, CAMPBELLTOWN  NSW  2560
-  description: Use of premise as car workshop and construction of fitout and mezzanine
+  description: use of premise as a vehicle repair station for specialist high performance
+    vehicles and associated fit out works
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-14'
@@ -2528,12 +2493,14 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-08-28'
-- council_reference: 973/2019/DA-O
-  address: 113 University Drive, CAMPBELLTOWN  NSW  2560
-  description: Construction of a retaining wall
+- council_reference: 975/2016/DA-M/A
+  address: 6 Kent Street, MINTO  NSW  2566
+  description: Modification of an existing development consent for the demolition
+    of existing dwelling and garage and construction of a multi dwelling development
+    consisting of five attached dwellings
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2019-03-18'
+  date_received: '2019-05-21'
 - council_reference: 975/2019/DA-S
   address: 10 Dowie Drive, CLAYMORE  NSW  2559
   description: Change of use from secondary dwelling to semi-detached dwelling and
@@ -2547,12 +2514,6 @@
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-18'
-- council_reference: 985/2018/DA-DW/A
-  address: 2 Lomatia Place, DENHAM COURT  NSW  2565
-  description: Modification to the construction of the two storey dwelling.
-  info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-04-03'
 - council_reference: 988/2010/DA-A/A
   address: 31 Blaxland Road, CAMPBELLTOWN  NSW  2560
   description: Modification to existing development consent for the Construction of

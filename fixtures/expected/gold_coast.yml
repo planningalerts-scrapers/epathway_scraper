@@ -18,24 +18,15 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-11-08'
-- council_reference: MCU/2018/1229
-  address: Lot 45 RP97038, 108 Bamboo Avenue, BENOWA  QLD  4217
+- council_reference: MCU/2018/1267
+  address: BAL Lot 2 RP885537, 264 Petsch Creek Road, TALLEBUDGERA VALLEY  QLD  4228
   description: |-
     Material Change of Use
     Impact Assessment
-    Dual Occupancy
+    Nature Based Tourism, Caretaker's Accommodation, Community Use
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2018-12-13'
-- council_reference: MCU/2018/1252
-  address: Lot 170 SP301113, 416 Foxwell Road, COOMERA  QLD  4209
-  description: |-
-    Material Change of Use
-    Impact Assessment
-    Health Care Service + Food/Drink Outlet + Multiple Dwelling (24)
-  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2018-12-20'
+  date_received: '2018-12-24'
 - council_reference: MCU/2019/102
   address: Lot 29 RP459, 4 Brake Street, BURLEIGH HEADS  QLD  4220
   description: |-
@@ -54,6 +45,15 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-19'
+- council_reference: MCU/2019/122
+  address: Lot 0 BUP9648, 2890 Gold Coast Highway, SURFERS PARADISE  QLD  4217
+  description: |-
+    Material Change of Use
+    Impact Assessment
+    Office
+  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-03-28'
 - council_reference: MCU/2019/135
   address: Lot 9 SP144352, 127 Lahr's Road, ORMEAU  QLD  4208
   description: |-
@@ -70,24 +70,35 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-18'
-- council_reference: MCU/2019/44
-  address: Lot 0 BUP105613, 122 Eastlake Street, CARRARA  QLD  4211
+- council_reference: MCU/2019/35
+  address: Lot 7 RP21863, 2245 Gold Coast Highway, MERMAID BEACH  QLD  4218
   description: |-
     Material Change of Use
     Impact Assessment
-    Indoor Sport & Recreation
+    Bar
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2019-02-08'
-- council_reference: MCU/2019/60
-  address: Lot 722 RP120527, 199 Tahiti Avenue, PALM BEACH  QLD  4221
+  date_received: '2019-02-05'
+- council_reference: MCU/2019/52
+  address: Lot 20 RP218168, 30 Balsa Street, ELANORA  QLD  4221
   description: |-
     Material Change of Use
     Impact Assessment
-    Dual Occupancy
+    Dwelling House & Secondary Dwelling
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2019-02-21'
+  date_received: '2019-02-15'
+- council_reference: MCU/2019/61
+  address: Lot 1 SP212740, Lot 1 Darlington Drive, YATALA  QLD  4207
+  description: |-
+    Material Change of Use
+    Impact Assessment
+    Variation Request to override the planning scheme for
+    development in accordance with the Medium Impact Industry
+    Zone + Development Permit - Material Change of Use - Warehouse
+  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-02-24'
 - council_reference: MCU/2019/74
   address: Lot 15 SP197390, 16 Therese Mary Avenue, CARRARA  QLD  4211
   description: |-
@@ -97,21 +108,6 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
-- council_reference: MCU/2019/85
-  address: Lot 1 RP130147, 1857 Stapylton Jacobs Well Road, JACOBS WELL  QLD  4208
-  description: "Material Change of Use \nImpact Assessment\nSecondary Dwelling"
-  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-06'
-- council_reference: MCU/2019/94
-  address: Lot 32 SP182342, 26 Palladium Boulevarde, HOPE ISLAND  QLD  4212
-  description: |-
-    Material change of use
-    Impact assessment
-    Dwelling house
-  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-03-12'
 - council_reference: OTH/2018/1427
   address: Lot 3 RP110743, 6 Quinns Hill Road East, STAPYLTON  QLD  4207
   description: |-
@@ -121,6 +117,13 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2018-12-17'
+- council_reference: OTH/2019/13
+  address: Lot 1 SP169925, 12 Indy Court, CARRARA  QLD  4211
+  description: "Other Change application \nMaterial change of use \nOther Change to
+    MCU/2017/437"
+  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-04-12'
 - council_reference: OTH/2019/18
   address: Lot 2 SP301198, 5 Dixon Drive, PIMPAMA  QLD  4209
   description: |-
@@ -131,3 +134,19 @@
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-03'
+- council_reference: OTH/2019/19
+  address: Lot 1 RP857235, 101 Musgrave Street, COOLANGATTA  QLD  4225
+  description: "Other Change Application \nMaterial change of use\nImpact assessment\nOther
+    Change to MCU/2018/1192"
+  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-03'
+- council_reference: ROL/2019/26
+  address: Lot 2 RP183398, 205 Worongary Road, TALLAI  QLD  4213
+  description: |-
+    Reconfiguration of a Lot
+    Impact assessment
+    1 into 2 lot subdivision + access easement
+  info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-03-18'
