@@ -32,7 +32,7 @@ module EpathwayScraper
         end
         # Extract target and argument of postback from href
         match = a["href"].match(/javascript:__doPostBack\('(.*)','(.*)'\)/)
-        raise "Link isn't a postback link" if match.nil?
+        raise "Link isn't a postback link: #{a['href']}" if match.nil?
 
         form = page.forms.first
         raise "Can't find form for postback" if form.nil?
