@@ -21,18 +21,16 @@ module EpathwayScraper
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
 
-      # Checking whether we're on the right page
-      if Page::ListSelect.on_page?(page)
-        if %i[all last_30_days].include?(list_type)
-          page = Page::ListSelect.pick(page, :all)
-        elsif list_type == :advertising
-          page = Page::ListSelect.pick(page, :advertising)
-        else
-          raise "Unexpected list_type: #{list_type}"
-        end
+      if list_type == :all
+        page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+      elsif list_type == :advertising
+        page = Page::ListSelect.pick(page, :advertising) if Page::ListSelect.on_page?(page)
+      elsif list_type == :last_30_days
+        page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+        page = Page::Search.pick(page, :last_30_days, agent)
+      else
+        raise "Unexpected list_type: #{list_type}"
       end
-
-      page = Page::Search.pick(page, :last_30_days, agent) if list_type == :last_30_days
 
       page
     end
