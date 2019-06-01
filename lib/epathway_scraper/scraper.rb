@@ -37,12 +37,6 @@ module EpathwayScraper
       page
     end
 
-    def scrape_index_page(page)
-      Page::Index.scrape_index_page(page, base_url, agent) do |record|
-        yield record
-      end
-    end
-
     def scrape(list_type:, max_pages: nil)
       # Navigate to the correct list
       pick_type_of_search(list_type)
