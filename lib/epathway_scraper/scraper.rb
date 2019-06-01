@@ -16,10 +16,6 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
-    def search_for_one_application(page, application_no)
-      Page::Search.search_for_one_application(page, application_no)
-    end
-
     # list_type one of :advertising, :all, :last_30_days
     def pick_type_of_search(list_type)
       page = agent.get(base_url)
