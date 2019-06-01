@@ -129,6 +129,13 @@ RSpec.describe EpathwayScraper do
           "https://eservices.darebin.vic.gov.au/ePathway/Production",
           { list_type: :all_year, year: 2019 }
         ]
+      },
+      {
+        scraper_name: "inverell",
+        params: [
+          "http://203.49.140.77/ePathway/Production",
+          { list_type: :all_year, year: 2019 }
+        ]
       }
     ].freeze
 
