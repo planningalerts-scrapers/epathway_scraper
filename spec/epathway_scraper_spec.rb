@@ -136,6 +136,13 @@ RSpec.describe EpathwayScraper do
           "http://203.49.140.77/ePathway/Production",
           { list_type: :all_year, year: 2019 }
         ]
+      },
+      {
+        scraper_name: "onkaparinga",
+        params: [
+          "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
+          { list_type: :all_year, year: 2019 }
+        ]
       }
     ].freeze
 
