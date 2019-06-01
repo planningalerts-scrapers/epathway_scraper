@@ -34,12 +34,7 @@ module EpathwayScraper
       elsif list_type == :all_year
         page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
         page = Page::Search.click_date_search_tab(page, agent)
-
-        Page::DateSearch.pick_date_range(
-          page,
-          Date.new(year, 1, 1),
-          Date.new(year + 1, 1, 1).prev_day
-        )
+        Page::DateSearch.pick_all_year(page, year)
       else
         raise "Unexpected list_type: #{list_type}"
       end

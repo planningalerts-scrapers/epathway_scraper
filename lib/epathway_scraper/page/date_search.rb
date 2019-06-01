@@ -18,6 +18,14 @@ module EpathwayScraper
 
         Search.click_search(page)
       end
+
+      def self.pick_all_year(page, year)
+        pick_date_range(
+          page,
+          Date.new(year, 1, 1),
+          Date.new(year + 1, 1, 1).prev_day
+        )
+      end
     end
   end
 end
