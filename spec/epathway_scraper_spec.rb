@@ -115,6 +115,13 @@ RSpec.describe EpathwayScraper do
           "https://eservices.salisbury.sa.gov.au/ePathway/Production",
           { list_type: :last_30_days }
         ]
+      },
+      {
+        scraper_name: "adelaide",
+        params: [
+          "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
+          { list_type: :all_year, year: 2019 }
+        ]
       }
     ].freeze
 
