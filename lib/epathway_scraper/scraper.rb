@@ -16,28 +16,22 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
-    # list_type one of :advertising, :all, :last_30_days
-    def pick_type_of_search(list_type)
+    def scrape(list_type:, max_pages: nil)
+      # Navigate to the correct list
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
 
       if list_type == :all
-        page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+        Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
       elsif list_type == :advertising
-        page = Page::ListSelect.pick(page, :advertising) if Page::ListSelect.on_page?(page)
+        Page::ListSelect.pick(page, :advertising) if Page::ListSelect.on_page?(page)
       elsif list_type == :last_30_days
         page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
-        page = Page::Search.pick(page, :last_30_days, agent)
+        Page::Search.pick(page, :last_30_days, agent)
       else
         raise "Unexpected list_type: #{list_type}"
       end
 
-      page
-    end
-
-    def scrape(list_type:, max_pages: nil)
-      # Navigate to the correct list
-      pick_type_of_search(list_type)
       # Notice how we're skipping the clicking of search
       # even though that's what the user interface is showing next
       Page::Index.scrape_all_index_pages(max_pages, base_url, agent) do |record|
