@@ -8,18 +8,18 @@ module EpathwayScraper
     # Hopefully we don't have to look at this page because the index page
     # has the information we need
     module Detail
-      def self.scrape(detail_page, base_url)
+      def self.scrape(detail_page)
         address = field(detail_page, "Application location")
         # If address is stored in a table at the bottom
         if address.nil?
           # Find the table that contains the addresses
           table = detail_page.search("table.ContentPanel").find do |t|
-            Table.extract_table_data_and_urls(t, base_url)[0][:content].keys.include?(
+            Table.extract_table_data_and_urls(t)[0][:content].keys.include?(
               "Property Address"
             )
           end
           # Find the address of the primary location
-          row = Table.extract_table_data_and_urls(table, base_url).find do |r|
+          row = Table.extract_table_data_and_urls(table).find do |r|
             r[:content]["Primary Location"] == "Yes"
           end
           address = row[:content]["Property Address"]

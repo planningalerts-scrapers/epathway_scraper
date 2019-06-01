@@ -69,7 +69,7 @@ module EpathwayScraper
         table = page.at("table.ContentPanel")
         return if table.nil?
 
-        Table.extract_table_data_and_urls(table, base_url).each do |row|
+        Table.extract_table_data_and_urls(table).each do |row|
           data = extract_index_data(row)
 
           # Check if we have all the information we need from the index_data
@@ -82,7 +82,7 @@ module EpathwayScraper
             # Get application page with a referrer or we get an error page
             detail_page = agent.get(data[:detail_url], [], page.uri)
 
-            data = Detail.scrape(detail_page, base_url)
+            data = Detail.scrape(detail_page)
           end
 
           yield({
