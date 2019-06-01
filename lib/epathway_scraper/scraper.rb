@@ -17,7 +17,7 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
-    # list_type: one of :all, :advertising, :last_30_days
+    # list_type: one of :all, :advertising, :last_30_days, :all_year
     def scrape(list_type:, max_pages: nil, year: nil)
       # Navigate to the correct list
       page = agent.get(base_url)
