@@ -122,6 +122,13 @@ RSpec.describe EpathwayScraper do
           "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
           { list_type: :all_year, year: 2019 }
         ]
+      },
+      {
+        scraper_name: "darebin",
+        params: [
+          "https://eservices.darebin.vic.gov.au/ePathway/Production",
+          { list_type: :all_year, year: 2019 }
+        ]
       }
     ].freeze
 
