@@ -27,6 +27,10 @@ module EpathwayScraper
                 else
                   rows.find { |r| r[:content]["Primary Location"] == "Yes" }
                 end
+          if row.nil?
+            # fallback to using the first address. Ugh
+            row = rows[0]
+          end
           raise "Couldn't find primary address" if row.nil?
 
           address = row[:content]["Property Address"] || row[:content]["Address"]
