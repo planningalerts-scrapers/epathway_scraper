@@ -33,7 +33,8 @@ module EpathwayScraper
 
         council_reference = row[:content]["App No."] ||
                             row[:content]["Application Number"] ||
-                            row[:content]["Application number"]
+                            row[:content]["Application number"] ||
+                            row[:content]["Number"]
 
         address = row[:content]["Location Address"] ||
                   row[:content]["Property Address"] ||
