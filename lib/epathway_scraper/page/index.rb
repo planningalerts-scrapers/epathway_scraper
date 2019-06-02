@@ -86,14 +86,17 @@ module EpathwayScraper
             data = Detail.scrape(detail_page)
           end
 
-          yield({
+          record = {
             "council_reference" => data[:council_reference],
             "address" => data[:address],
             "description" => data[:description],
             "info_url" => base_url,
             "date_scraped" => Date.today.to_s,
             "date_received" => data[:date_received]
-          })
+          }
+          record["on_notice_from"] = data[:on_notice_from] if data[:on_notice_from]
+          record["on_notice_to"] = data[:on_notice_to] if data[:on_notice_to]
+          yield(record)
         end
       end
 
