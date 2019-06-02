@@ -14,9 +14,8 @@ module EpathwayScraper
         if address.nil?
           # Find the table that contains the addresses
           table = detail_page.search("table.ContentPanel").find do |t|
-            Table.extract_table_data_and_urls(t)[0][:content].keys.include?(
-              "Property Address"
-            )
+            k = Table.extract_table_data_and_urls(t)[0][:content].keys
+            k.include?("Property Address") || k.include?("Address")
           end
           raise "Couldn't find address table" if table.nil?
 
@@ -24,6 +23,8 @@ module EpathwayScraper
           row = Table.extract_table_data_and_urls(table).find do |r|
             r[:content]["Primary Location"] == "Yes"
           end
+          raise "Couldn't find primary address" if row.nil?
+
           address = row[:content]["Property Address"]
         end
 
