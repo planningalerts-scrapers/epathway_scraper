@@ -143,6 +143,13 @@ RSpec.describe EpathwayScraper do
           "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
           { list_type: :all_year, year: 2019 }
         ]
+      },
+      {
+        scraper_name: "unley",
+        params: [
+          "https://online.unley.sa.gov.au/ePathway/Production",
+          { list_type: :last_30_days }
+        ]
       }
     ].freeze
 
