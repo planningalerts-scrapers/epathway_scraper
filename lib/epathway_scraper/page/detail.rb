@@ -19,24 +19,30 @@ module EpathwayScraper
           end
           raise "Couldn't find address table" if table.nil?
 
-          # Find the address of the primary location
-          row = Table.extract_table_data_and_urls(table).find do |r|
-            r[:content]["Primary Location"] == "Yes"
-          end
+          rows = Table.extract_table_data_and_urls(table)
+          # If there's just one location then use that
+          row = if rows.count == 1
+                  rows[0]
+                # Otherwise find the address of the primary location
+                else
+                  rows.find { |r| r[:content]["Primary Location"] == "Yes" }
+                end
           raise "Couldn't find primary address" if row.nil?
 
-          address = row[:content]["Property Address"]
+          address = row[:content]["Property Address"] || row[:content]["Address"]
         end
+
+        date_received = field(detail_page, "Date Received") ||
+                        field(detail_page, "Lodgement date") ||
+                        field(detail_page, "Lodgement Date")
 
         {
           council_reference: field(detail_page, "Application Number") ||
             field(detail_page, "Application number"),
           description: field(detail_page, "Proposed Use or Development") ||
-            field(detail_page, "Application description"),
-          date_received: Date.strptime(
-            field(detail_page, "Date Received") || field(detail_page, "Lodgement date"),
-            "%d/%m/%Y"
-          ).to_s,
+            field(detail_page, "Application description") ||
+            field(detail_page, "Proposal"),
+          date_received: Date.strptime(date_received, "%d/%m/%Y").to_s,
           address: address
         }
       end
