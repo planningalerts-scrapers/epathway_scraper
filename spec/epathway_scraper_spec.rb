@@ -150,6 +150,13 @@ RSpec.describe EpathwayScraper do
           "https://online.unley.sa.gov.au/ePathway/Production",
           { list_type: :last_30_days }
         ]
+      },
+      {
+        scraper_name: "wollongong",
+        params: [
+          "http://epathway.wollongong.nsw.gov.au/ePathway/Production",
+          { list_type: :advertising }
+        ]
       }
     ].freeze
 
