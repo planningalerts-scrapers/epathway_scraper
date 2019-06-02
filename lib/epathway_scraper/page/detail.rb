@@ -18,6 +18,8 @@ module EpathwayScraper
               "Property Address"
             )
           end
+          raise "Couldn't find address table" if table.nil?
+
           # Find the address of the primary location
           row = Table.extract_table_data_and_urls(table).find do |r|
             r[:content]["Primary Location"] == "Yes"
