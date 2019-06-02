@@ -21,7 +21,8 @@ module EpathwayScraper
                     button_texts.index("Advertised Planning Applications") ||
                     button_texts.index("Planning Applications Currently Advertised") ||
                     button_texts.index("Planning permit applications advertised") ||
-                    button_texts.index("Planning applications being advertised")
+                    button_texts.index("Planning applications being advertised") ||
+                    button_texts.index("Applications On Exhibition")
                 elsif type == :all
                   button_texts.index("Development Application Tracking") ||
                     button_texts.index("Town Planning Public Register") ||
@@ -37,7 +38,10 @@ module EpathwayScraper
         raise "Couldn't find index for #{type} in #{button_texts}" if index.nil?
 
         form.radiobuttons[index].click
-        form.submit(form.button_with(value: /Next/))
+        button = form.button_with(value: /Next/) || form.button_with(value: /Save and Continue/)
+        raise "Couldn't find button" if button.nil?
+
+        form.submit(button)
       end
 
       # Fake that we're running javascript by picking out the javascript redirect
