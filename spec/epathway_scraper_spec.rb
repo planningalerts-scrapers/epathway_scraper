@@ -47,7 +47,7 @@ RSpec.describe EpathwayScraper do
 
     SCRAPERS = [
       {
-        scraper_name: "South_Gippsland_Shire_DAs",
+        scraper_name: "south_gippsland",
         params: [
           "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
           { list_type: :advertising }
