@@ -36,6 +36,17 @@ module EpathwayScraper
                         field(detail_page, "Lodgement date") ||
                         field(detail_page, "Lodgement Date")
 
+        on_notice_table = detail_page.search("table.ContentPanel").find do |t|
+          k = Table.extract_table_data_and_urls(t)[0][:content].keys
+          k.include?("Start Date")
+        end
+
+        if on_notice_table
+          data = Table.extract_table_data_and_urls(on_notice_table)
+          on_notice_from = Date.strptime(data[0][:content]["Start Date"], "%d/%m/%Y").to_s
+          on_notice_to = Date.strptime(data[0][:content]["Closing Date"], "%d/%m/%Y").to_s
+        end
+
         {
           council_reference: field(detail_page, "Application Number") ||
             field(detail_page, "Application number"),
@@ -43,7 +54,9 @@ module EpathwayScraper
             field(detail_page, "Application description") ||
             field(detail_page, "Proposal"),
           date_received: Date.strptime(date_received, "%d/%m/%Y").to_s,
-          address: address
+          address: address,
+          on_notice_from: on_notice_from,
+          on_notice_to: on_notice_to
         }
       end
 
