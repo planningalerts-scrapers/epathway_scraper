@@ -157,6 +157,13 @@ RSpec.describe EpathwayScraper do
           "http://epathway.wollongong.nsw.gov.au/ePathway/Production",
           { list_type: :advertising }
         ]
+      },
+      {
+        scraper_name: "yarra_ranges",
+        params: [
+          "https://epathway.yarraranges.vic.gov.au/ePathway/Production",
+          { list_type: :all, max_pages: 20 }
+        ]
       }
     ].freeze
 
