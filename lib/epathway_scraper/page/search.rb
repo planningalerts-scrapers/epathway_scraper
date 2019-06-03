@@ -5,6 +5,10 @@ module EpathwayScraper
     # Usually the second page on the site where you do an actual search.
     # It has a tab interface usually for different kinds of searches
     module Search
+      DATE_TAB_LABELS = [
+        "Date Search", "Lodgement Date", "Date Range", "Date Lodged", "Date"
+      ].freeze
+
       # Currently only supporting type of :last_30_days
       def self.pick(page, type, agent)
         raise "Unexpected type #{type}" unless type == :last_30_days
@@ -17,7 +21,7 @@ module EpathwayScraper
       def self.click_date_search_tab(page, agent)
         table = page.at("table.tabcontrol")
         a = table.search("a").find do |b|
-          ["Date Search", "Lodgement Date", "Date Range", "Date Lodged"].include?(b.inner_text)
+          DATE_TAB_LABELS.include?(b.inner_text)
         end
         raise "Couldn't find tab link" if a.nil?
 
