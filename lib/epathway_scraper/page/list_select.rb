@@ -6,21 +6,37 @@ module EpathwayScraper
     # something like "development applications" and applications that are on notice.
     # If there is only one type of list then it looks like this page can be absent
     module ListSelect
-      def self.select_advertising(page)
+      ADVERTISING_TEXT = [
+        "Planning Application at Advertising",
+        "Planning Applications Currently on Advertising",
+        "Development Applications On Public Exhibition",
+        "Planning Permit Applications Advertised",
+        "Development applications in Public Notification",
+        "Advertised Planning Applications",
+        "Planning Applications Currently Advertised",
+        "Planning permit applications advertised",
+        "Planning applications being advertised",
+        "Applications On Exhibition"
+      ].freeze
+
+      ALL_TEXT = [
+        "Development Application Tracking",
+        "Town Planning Public Register",
+        "Planning Application Register",
+        "Planning Permit Application Search",
+        "Development applications",
+        "Development Applications",
+        "Planning Application Enquiry",
+        "List of Development Applications",
+        "Find a Development Application"
+      ].freeze
+
+      def self.select(page, text_to_match)
         form = page.forms.first
 
         button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
 
-        index = button_texts.index("Planning Application at Advertising") ||
-                button_texts.index("Planning Applications Currently on Advertising") ||
-                button_texts.index("Development Applications On Public Exhibition") ||
-                button_texts.index("Planning Permit Applications Advertised") ||
-                button_texts.index("Development applications in Public Notification") ||
-                button_texts.index("Advertised Planning Applications") ||
-                button_texts.index("Planning Applications Currently Advertised") ||
-                button_texts.index("Planning permit applications advertised") ||
-                button_texts.index("Planning applications being advertised") ||
-                button_texts.index("Applications On Exhibition")
+        index = button_texts.find_index { |text| text_to_match.include?(text) }
         raise "Couldn't find index in #{button_texts}" if index.nil?
 
         form.radiobuttons[index].click
@@ -30,27 +46,12 @@ module EpathwayScraper
         form.submit(button)
       end
 
+      def self.select_advertising(page)
+        select(page, ADVERTISING_TEXT)
+      end
+
       def self.select_all(page)
-        form = page.forms.first
-
-        button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
-
-        index = button_texts.index("Development Application Tracking") ||
-                button_texts.index("Town Planning Public Register") ||
-                button_texts.index("Planning Application Register") ||
-                button_texts.index("Planning Permit Application Search") ||
-                button_texts.index("Development applications") ||
-                button_texts.index("Development Applications") ||
-                button_texts.index("Planning Application Enquiry") ||
-                button_texts.index("List of Development Applications") ||
-                button_texts.index("Find a Development Application")
-        raise "Couldn't find index in #{button_texts}" if index.nil?
-
-        form.radiobuttons[index].click
-        button = form.button_with(value: /Next/) || form.button_with(value: /Save and Continue/)
-        raise "Couldn't find button" if button.nil?
-
-        form.submit(button)
+        select(page, ALL_TEXT)
       end
 
       # Fake that we're running javascript by picking out the javascript redirect
