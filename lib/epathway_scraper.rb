@@ -25,6 +25,6 @@ module EpathwayScraper
   end
 
   def self.log(record)
-    puts "Storing " + record["council_reference"] + " - " + record["address"]
+    puts "Storing #{record['council_reference']} - #{record['address']}"
   end
 end

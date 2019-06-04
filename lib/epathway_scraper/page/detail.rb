@@ -15,7 +15,9 @@ module EpathwayScraper
           # Find the table that contains the addresses
           table = detail_page.search("table.ContentPanel").find do |t|
             k = Table.extract_table_data_and_urls(t)[0][:content].keys
-            k.include?("Property Address") || k.include?("Address")
+            k.include?("Property Address") ||
+              k.include?("Address") ||
+              k.include?("Formatted Property Address")
           end
           raise "Couldn't find address table" if table.nil?
 
@@ -33,7 +35,9 @@ module EpathwayScraper
           end
           raise "Couldn't find primary address" if row.nil?
 
-          address = row[:content]["Property Address"] || row[:content]["Address"]
+          address = row[:content]["Property Address"] ||
+                    row[:content]["Address"] ||
+                    row[:content]["Formatted Property Address"]
         end
 
         date_received = field(detail_page, "Date Received") ||
@@ -51,17 +55,25 @@ module EpathwayScraper
           on_notice_to = Date.strptime(data[0][:content]["Closing Date"], "%d/%m/%Y").to_s
         end
 
-        {
-          council_reference: field(detail_page, "Application Number") ||
-            field(detail_page, "Application number"),
-          description: field(detail_page, "Proposed Use or Development") ||
-            field(detail_page, "Application description") ||
-            field(detail_page, "Proposal"),
-          date_received: Date.strptime(date_received, "%d/%m/%Y").to_s,
+        council_reference = field(detail_page, "Application Number") ||
+                            field(detail_page, "Application number")
+
+        description = field(detail_page, "Proposed Use or Development") ||
+                      field(detail_page, "Application description") ||
+                      field(detail_page, "Proposal")
+
+        result = {
           address: address,
           on_notice_from: on_notice_from,
           on_notice_to: on_notice_to
         }
+        result[:description] = description if description
+        result[:council_reference] = council_reference if council_reference
+        # Only include the data received if it's available because some places
+        # have the date received on the index page but not the detail page.
+        # Go figure.
+        result[:date_received] = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
+        result
       end
 
       def self.field(page, name)

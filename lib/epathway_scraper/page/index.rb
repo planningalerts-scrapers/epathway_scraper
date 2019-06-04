@@ -125,7 +125,16 @@ module EpathwayScraper
             # Get application page with a referrer or we get an error page
             detail_page = agent.get(data[:detail_url], [], page.uri)
 
-            data = Detail.scrape(detail_page)
+            data = data.merge(Detail.scrape(detail_page))
+
+            # Finally check we have everything
+            unless data[:council_reference] &&
+                   data[:address] &&
+                   full_address?(data[:address]) &&
+                   data[:description] &&
+                   data[:date_received]
+              raise "Couldn't get all the data"
+            end
           end
 
           record = {
