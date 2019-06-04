@@ -42,6 +42,22 @@ module EpathwayScraper
         "Details of proposal or permit"
       ].freeze
 
+      ADDRESS_TEXT = [
+        "Location Address",
+        "Property Address",
+        "Site Location",
+        "Application location",
+        "Application Location",
+        "Location",
+        "Primary Property Address",
+        "Site Address",
+        "Address"
+      ].freeze
+
+      SUBURB_TEXT = [
+        "Suburb"
+      ].freeze
+
       def self.extract_total_number_of_pages(page)
         page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
         if page_label.nil?
@@ -62,17 +78,11 @@ module EpathwayScraper
         council_reference = row[:content].find { |k, _v| COUNCIL_REFERENCE_TEXT.include?(k) }
         council_reference = council_reference[1] if council_reference
 
-        address = row[:content]["Location Address"] ||
-                  row[:content]["Property Address"] ||
-                  row[:content]["Site Location"] ||
-                  row[:content]["Application location"] ||
-                  row[:content]["Application Location"] ||
-                  row[:content]["Location"] ||
-                  row[:content]["Primary Property Address"] ||
-                  row[:content]["Site Address"] ||
-                  row[:content]["Address"]
+        address = row[:content].find { |k, _v| ADDRESS_TEXT.include?(k) }
+        address = address[1] if address
 
-        suburb = row[:content]["Suburb"]
+        suburb = row[:content].find { |k, _v| SUBURB_TEXT.include?(k) }
+        suburb = suburb[1] if suburb
 
         # If suburb is not in the address then add it
         if suburb && !address.include?(suburb)
