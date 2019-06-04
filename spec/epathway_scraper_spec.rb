@@ -185,6 +185,13 @@ RSpec.describe EpathwayScraper do
           "https://services.greatlakes.nsw.gov.au/ePathway/Production",
           { list_type: :all, max_pages: 10 }
         ]
+      },
+      {
+        scraper_name: "west_torrens",
+        params: [
+          "https://epathway.wtcc.sa.gov.au/ePathway/Production",
+          { list_type: :last_30_days }
+        ]
       }
     ].freeze
 
