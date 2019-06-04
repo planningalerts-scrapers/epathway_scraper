@@ -70,10 +70,15 @@ module EpathwayScraper
                   row[:content]["Location"] ||
                   row[:content]["Primary Property Address"] ||
                   row[:content]["Site Address"] ||
-                  (if row[:content]["Address"] && row[:content]["Suburb"]
-                     (row[:content]["Address"] + ", " + row[:content]["Suburb"] + ", VIC")
-                   end) ||
                   row[:content]["Address"]
+
+        suburb = row[:content]["Suburb"]
+
+        # If suburb is not in the address then add it
+        if suburb && !address.include?(suburb)
+          # TODO: Remove hardcoded state here
+          address += ", #{suburb}, VIC"
+        end
 
         description = row[:content].find { |k, _v| DESCRIPTION_TEXT.include?(k) }
         description = description[1] if description
