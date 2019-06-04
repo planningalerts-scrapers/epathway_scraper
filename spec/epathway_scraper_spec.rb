@@ -178,6 +178,13 @@ RSpec.describe EpathwayScraper do
           "https://online.kingston.vic.gov.au/ePathway/Production",
           { list_type: :all_year, year: 2019 }
         ]
+      },
+      {
+        scraper_name: "greatlakes",
+        params: [
+          "https://services.greatlakes.nsw.gov.au/ePathway/Production",
+          { list_type: :all, max_pages: 10 }
+        ]
       }
     ].freeze
 
