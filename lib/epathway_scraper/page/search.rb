@@ -6,7 +6,12 @@ module EpathwayScraper
     # It has a tab interface usually for different kinds of searches
     module Search
       DATE_TAB_LABELS = [
-        "Date Search", "Lodgement Date", "Date Range", "Date Lodged", "Date"
+        "Date Search",
+        "Lodgement Date",
+        "Date Range",
+        "Date Lodged",
+        "Date",
+        "Search by Date Range"
       ].freeze
 
       # Currently only supporting type of :last_30_days
