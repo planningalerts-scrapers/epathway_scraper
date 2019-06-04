@@ -30,7 +30,8 @@ module EpathwayScraper
                         row[:content]["Date received"] ||
                         row[:content]["Date"] ||
                         row[:content]["Lodged"] ||
-                        row[:content]["Date Registered"]
+                        row[:content]["Date Registered"] ||
+                        row[:content]["Lodge Date"]
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
         council_reference = row[:content]["App No."] ||
@@ -38,7 +39,8 @@ module EpathwayScraper
                             row[:content]["Application number"] ||
                             row[:content]["Number"] ||
                             row[:content]["Our Reference"] ||
-                            row[:content]["Application No"]
+                            row[:content]["Application No"] ||
+                            row[:content]["Application"]
 
         address = row[:content]["Location Address"] ||
                   row[:content]["Property Address"] ||

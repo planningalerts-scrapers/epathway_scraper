@@ -31,7 +31,8 @@ module EpathwayScraper
                     button_texts.index("Development applications") ||
                     button_texts.index("Development Applications") ||
                     button_texts.index("Planning Application Enquiry") ||
-                    button_texts.index("List of Development Applications")
+                    button_texts.index("List of Development Applications") ||
+                    button_texts.index("Find a Development Application")
                 else
                   raise "Unexpected list type: #{type}"
                 end
