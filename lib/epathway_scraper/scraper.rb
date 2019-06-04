@@ -18,7 +18,7 @@ module EpathwayScraper
     end
 
     # list_type: one of :all, :advertising, :last_30_days, :all_year
-    def scrape(list_type:, max_pages: nil, year: nil)
+    def scrape(list_type:, max_pages: nil, year: nil, force_detail: false)
       # Navigate to the correct list
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
@@ -41,7 +41,7 @@ module EpathwayScraper
 
       # Notice how we're skipping the clicking of search
       # even though that's what the user interface is showing next
-      Page::Index.scrape_all_index_pages(max_pages, base_url, agent) do |record|
+      Page::Index.scrape_all_index_pages(max_pages, base_url, agent, force_detail) do |record|
         yield record
       end
     end

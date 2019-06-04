@@ -91,23 +91,11 @@ module EpathwayScraper
         }
       end
 
-      # This is a very dumb heuristic for whether this a "full" address,
-      # one that we consider complete for the purposes of the data here
-      def self.full_address?(address)
-        address.include?(",") ||
-          address.include?("VIC") ||
-          address.include?("QLD") ||
-          address.include?("NSW") ||
-          address.include?("TAS") ||
-          address.include?("WA") ||
-          address.include?("NT") ||
-          address.include?("SA") ||
-          # In the case where an address is intentionally left blank
-          # let's recognise it as a full address
-          address == ""
-      end
-
-      def self.scrape_index_page(page, base_url, agent)
+      # If force_detail is true, then we always scrape the detail page
+      # We need this for the case of Barossa, SA that doesn't include the
+      # suburb in the address on the index page. We don't have a simple and
+      # reliable way to automatically detect this
+      def self.scrape_index_page(page, base_url, agent, force_detail)
         table = page.at("table.ContentPanel")
         return if table.nil?
 
@@ -118,9 +106,9 @@ module EpathwayScraper
           # If so then there's no need to scrape the detail page
           unless data[:council_reference] &&
                  data[:address] &&
-                 full_address?(data[:address]) &&
                  data[:description] &&
-                 data[:date_received]
+                 data[:date_received] &&
+                 !force_detail
 
             # Get application page with a referrer or we get an error page
             detail_page = agent.get(data[:detail_url], [], page.uri)
@@ -130,7 +118,6 @@ module EpathwayScraper
             # Finally check we have everything
             unless data[:council_reference] &&
                    data[:address] &&
-                   full_address?(data[:address]) &&
                    data[:description] &&
                    data[:date_received]
               raise "Couldn't get all the data"
@@ -152,12 +139,12 @@ module EpathwayScraper
       end
 
       # This scrapes all index pages by doing GETs on each page
-      def self.scrape_all_index_pages(number_pages, base_url, agent)
+      def self.scrape_all_index_pages(number_pages, base_url, agent, force_detail)
         page = agent.get("EnquirySummaryView.aspx?PageNumber=1")
         number_pages ||= extract_total_number_of_pages(page)
         (1..number_pages).each do |no|
           page = agent.get("EnquirySummaryView.aspx?PageNumber=#{no}") if no > 1
-          scrape_index_page(page, base_url, agent) do |record|
+          scrape_index_page(page, base_url, agent, force_detail) do |record|
             yield record
           end
         end
