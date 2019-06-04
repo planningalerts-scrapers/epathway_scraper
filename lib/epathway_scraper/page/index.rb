@@ -70,19 +70,19 @@ module EpathwayScraper
         end
       end
 
+      def self.find_value_by_key(row, key_matches)
+        r = row[:content].find { |k, _v| key_matches.include?(k) }
+        r[1] if r
+      end
+
       def self.extract_index_data(row)
-        date_received = row[:content].find { |k, _v| DATE_RECEIVED_TEXT.include?(k) }
-        date_received = date_received[1] if date_received
+        date_received = find_value_by_key(row, DATE_RECEIVED_TEXT)
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
-        council_reference = row[:content].find { |k, _v| COUNCIL_REFERENCE_TEXT.include?(k) }
-        council_reference = council_reference[1] if council_reference
+        council_reference = find_value_by_key(row, COUNCIL_REFERENCE_TEXT)
 
-        address = row[:content].find { |k, _v| ADDRESS_TEXT.include?(k) }
-        address = address[1] if address
-
-        suburb = row[:content].find { |k, _v| SUBURB_TEXT.include?(k) }
-        suburb = suburb[1] if suburb
+        address = find_value_by_key(row, ADDRESS_TEXT)
+        suburb = find_value_by_key(row, SUBURB_TEXT)
 
         # If suburb is not in the address then add it
         if suburb && !address.include?(suburb)
@@ -90,8 +90,7 @@ module EpathwayScraper
           address += ", #{suburb}, VIC"
         end
 
-        description = row[:content].find { |k, _v| DESCRIPTION_TEXT.include?(k) }
-        description = description[1] if description
+        description = find_value_by_key(row, DESCRIPTION_TEXT)
 
         {
           council_reference: council_reference,
