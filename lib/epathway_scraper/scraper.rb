@@ -24,15 +24,15 @@ module EpathwayScraper
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
 
       if list_type == :all
-        Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+        Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
       elsif list_type == :advertising
-        Page::ListSelect.pick(page, :advertising) if Page::ListSelect.on_page?(page)
+        Page::ListSelect.select_advertising(page) if Page::ListSelect.on_page?(page)
       elsif list_type == :last_30_days
-        page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+        page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         Page::Search.pick(page, :last_30_days, agent)
       # Get all applications in a single year
       elsif list_type == :all_year
-        page = Page::ListSelect.pick(page, :all) if Page::ListSelect.on_page?(page)
+        page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         page = Page::Search.click_date_search_tab(page, agent)
         Page::DateSearch.pick_all_year(page, year)
       else
