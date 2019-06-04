@@ -171,6 +171,13 @@ RSpec.describe EpathwayScraper do
           "https://epayments.barossa.sa.gov.au/ePathway/Production",
           { list_type: :last_30_days, force_detail: true }
         ]
+      },
+      {
+        scraper_name: "kingston",
+        params: [
+          "https://online.kingston.vic.gov.au/ePathway/Production",
+          { list_type: :all_year, year: 2019 }
+        ]
       }
     ].freeze
 
