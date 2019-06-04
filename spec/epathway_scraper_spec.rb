@@ -192,6 +192,13 @@ RSpec.describe EpathwayScraper do
           "https://epathway.wtcc.sa.gov.au/ePathway/Production",
           { list_type: :last_30_days }
         ]
+      },
+      {
+        scraper_name: "the_hills",
+        params: [
+          "https://epathway.thehills.nsw.gov.au/ePathway/Production",
+          { list_type: :last_30_days }
+        ]
       }
     ].freeze
 
