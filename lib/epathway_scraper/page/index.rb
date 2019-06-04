@@ -10,48 +10,43 @@ module EpathwayScraper
     # A list of applications (probably paginated)
     module Index
       DATE_RECEIVED_TEXT = [
-        "Date Lodged",
-        "Date lodged",
-        "Application Date",
-        "Application date",
-        "Lodgement Date",
-        "Date received",
-        "Date",
-        "Lodged",
-        "Date Registered",
-        "Lodge Date"
+        "application date",
+        "date",
+        "date lodged",
+        "date received",
+        "date registered",
+        "lodged",
+        "lodge date",
+        "lodgement date"
       ].freeze
 
       COUNCIL_REFERENCE_TEXT = [
-        "App No.",
-        "Application Number",
-        "Application number",
-        "Number",
-        "Our Reference",
-        "Application No",
-        "Application"
+        "app no.",
+        "application",
+        "application no",
+        "application number",
+        "number",
+        "our reference"
       ].freeze
 
       DESCRIPTION_TEXT = [
-        "Proposed Use or Development",
-        "Description",
-        "Application Proposal",
-        "Proposal",
-        "Application Description",
-        "Application proposal",
-        "Details of proposal or permit"
+        "application description",
+        "application proposal",
+        "description",
+        "details of proposal or permit",
+        "proposal",
+        "proposed use or development"
       ].freeze
 
       ADDRESS_TEXT = [
-        "Location Address",
-        "Property Address",
-        "Site Location",
-        "Application location",
-        "Application Location",
-        "Location",
-        "Primary Property Address",
-        "Site Address",
-        "Address"
+        "address",
+        "application location",
+        "location",
+        "location address",
+        "primary property address",
+        "property address",
+        "site address",
+        "site location"
       ].freeze
 
       def self.extract_total_number_of_pages(page)
@@ -67,7 +62,8 @@ module EpathwayScraper
       end
 
       def self.find_value_by_key(row, key_matches)
-        r = row[:content].find { |k, _v| key_matches.include?(k) }
+        # Matching using lowercase letters to make things simpler
+        r = row[:content].find { |k, _v| key_matches.include?(k.downcase) }
         r[1] if r
       end
 
