@@ -54,10 +54,6 @@ module EpathwayScraper
         "Address"
       ].freeze
 
-      SUBURB_TEXT = [
-        "Suburb"
-      ].freeze
-
       def self.extract_total_number_of_pages(page)
         page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
         if page_label.nil?
@@ -79,23 +75,10 @@ module EpathwayScraper
         date_received = find_value_by_key(row, DATE_RECEIVED_TEXT)
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
-        council_reference = find_value_by_key(row, COUNCIL_REFERENCE_TEXT)
-
-        address = find_value_by_key(row, ADDRESS_TEXT)
-        suburb = find_value_by_key(row, SUBURB_TEXT)
-
-        # If suburb is not in the address then add it
-        if suburb && !address.include?(suburb)
-          # TODO: Remove hardcoded state here
-          address += ", #{suburb}, VIC"
-        end
-
-        description = find_value_by_key(row, DESCRIPTION_TEXT)
-
         {
-          council_reference: council_reference,
-          address: address,
-          description: description,
+          council_reference: find_value_by_key(row, COUNCIL_REFERENCE_TEXT),
+          address: find_value_by_key(row, ADDRESS_TEXT),
+          description: find_value_by_key(row, DESCRIPTION_TEXT),
           date_received: date_received,
           # This URL will only work in a session. Thanks for that!
           detail_url: row[:url]
