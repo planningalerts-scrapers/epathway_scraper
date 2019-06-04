@@ -7,34 +7,35 @@ module EpathwayScraper
     # If there is only one type of list then it looks like this page can be absent
     module ListSelect
       ADVERTISING_TEXT = [
-        "Advertised Planning Applications",
-        "Applications On Exhibition",
-        "Development Applications On Public Exhibition",
-        "Development applications in Public Notification",
-        "Planning Application at Advertising",
-        "Planning applications being advertised",
-        "Planning Applications Currently on Advertising",
-        "Planning Applications Currently Advertised",
-        "Planning Permit Applications Advertised",
-        "Planning permit applications advertised"
+        "advertised planning applications",
+        "applications on exhibition",
+        "development applications on public exhibition",
+        "development applications in public notification",
+        "planning application at advertising",
+        "planning applications being advertised",
+        "planning applications currently on advertising",
+        "planning applications currently advertised",
+        "planning permit applications advertised"
       ].freeze
 
       ALL_TEXT = [
-        "Development Application Tracking",
-        "Development applications",
-        "Development Applications",
-        "Find a Development Application",
-        "List of Development Applications",
-        "Planning Application Enquiry",
-        "Planning Application Register",
-        "Planning Permit Application Search",
-        "Town Planning Public Register"
+        "development application tracking",
+        "development applications",
+        "find a development application",
+        "list of development applications",
+        "planning application enquiry",
+        "planning application register",
+        "planning permit application search",
+        "town planning public register"
       ].freeze
 
       def self.select(page, text_to_match)
         form = page.forms.first
 
-        button_texts = page.search('input[type="radio"]').map { |i| i.parent.next.inner_text }
+        button_texts = page.search('input[type="radio"]').map do |i|
+          # Make the text lowercase for easier matching
+          i.parent.next.inner_text.downcase
+        end
 
         index = button_texts.find_index { |text| text_to_match.include?(text) }
         raise "Couldn't find index in #{button_texts}" if index.nil?
