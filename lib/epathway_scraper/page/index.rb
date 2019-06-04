@@ -49,6 +49,10 @@ module EpathwayScraper
         "site location"
       ].freeze
 
+      SUBURB_TEXT = [
+        "suburb"
+      ].freeze
+
       def self.extract_total_number_of_pages(page)
         page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
         if page_label.nil?
@@ -71,9 +75,15 @@ module EpathwayScraper
         date_received = find_value_by_key(row, DATE_RECEIVED_TEXT)
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
+        address = find_value_by_key(row, ADDRESS_TEXT)
+        suburb = find_value_by_key(row, SUBURB_TEXT)
+
+        # Add the suburb to addresses that don't already include them
+        address += ", #{suburb}" if suburb && !address.include?(suburb)
+
         {
           council_reference: find_value_by_key(row, COUNCIL_REFERENCE_TEXT),
-          address: find_value_by_key(row, ADDRESS_TEXT),
+          address: address,
           description: find_value_by_key(row, DESCRIPTION_TEXT),
           date_received: date_received,
           # This URL will only work in a session. Thanks for that!
