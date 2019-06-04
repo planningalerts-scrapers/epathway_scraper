@@ -91,6 +91,22 @@ module EpathwayScraper
         }
       end
 
+      # This is a very dumb heuristic for whether this a "full" address,
+      # one that we consider complete for the purposes of the data here
+      def self.full_address?(address)
+        address.include?(",") ||
+          address.include?("VIC") ||
+          address.include?("QLD") ||
+          address.include?("NSW") ||
+          address.include?("TAS") ||
+          address.include?("WA") ||
+          address.include?("NT") ||
+          address.include?("SA") ||
+          # In the case where an address is intentionally left blank
+          # let's recognise it as a full address
+          address == ""
+      end
+
       def self.scrape_index_page(page, base_url, agent)
         table = page.at("table.ContentPanel")
         return if table.nil?
@@ -102,6 +118,7 @@ module EpathwayScraper
           # If so then there's no need to scrape the detail page
           unless data[:council_reference] &&
                  data[:address] &&
+                 full_address?(data[:address]) &&
                  data[:description] &&
                  data[:date_received]
 
