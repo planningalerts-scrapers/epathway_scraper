@@ -9,6 +9,39 @@ module EpathwayScraper
   module Page
     # A list of applications (probably paginated)
     module Index
+      DATE_RECEIVED_TEXT = [
+        "Date Lodged",
+        "Date lodged",
+        "Application Date",
+        "Application date",
+        "Lodgement Date",
+        "Date received",
+        "Date",
+        "Lodged",
+        "Date Registered",
+        "Lodge Date"
+      ].freeze
+
+      COUNCIL_REFERENCE_TEXT = [
+        "App No.",
+        "Application Number",
+        "Application number",
+        "Number",
+        "Our Reference",
+        "Application No",
+        "Application"
+      ].freeze
+
+      DESCRIPTION_TEXT = [
+        "Proposed Use or Development",
+        "Description",
+        "Application Proposal",
+        "Proposal",
+        "Application Description",
+        "Application proposal",
+        "Details of proposal or permit"
+      ].freeze
+
       def self.extract_total_number_of_pages(page)
         page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
         if page_label.nil?
@@ -22,25 +55,12 @@ module EpathwayScraper
       end
 
       def self.extract_index_data(row)
-        date_received = row[:content]["Date Lodged"] ||
-                        row[:content]["Date lodged"] ||
-                        row[:content]["Application Date"] ||
-                        row[:content]["Application date"] ||
-                        row[:content]["Lodgement Date"] ||
-                        row[:content]["Date received"] ||
-                        row[:content]["Date"] ||
-                        row[:content]["Lodged"] ||
-                        row[:content]["Date Registered"] ||
-                        row[:content]["Lodge Date"]
+        date_received = row[:content].find { |k, _v| DATE_RECEIVED_TEXT.include?(k) }
+        date_received = date_received[1] if date_received
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
-        council_reference = row[:content]["App No."] ||
-                            row[:content]["Application Number"] ||
-                            row[:content]["Application number"] ||
-                            row[:content]["Number"] ||
-                            row[:content]["Our Reference"] ||
-                            row[:content]["Application No"] ||
-                            row[:content]["Application"]
+        council_reference = row[:content].find { |k, _v| COUNCIL_REFERENCE_TEXT.include?(k) }
+        council_reference = council_reference[1] if council_reference
 
         address = row[:content]["Location Address"] ||
                   row[:content]["Property Address"] ||
@@ -55,13 +75,8 @@ module EpathwayScraper
                    end) ||
                   row[:content]["Address"]
 
-        description = row[:content]["Proposed Use or Development"] ||
-                      row[:content]["Description"] ||
-                      row[:content]["Application Proposal"] ||
-                      row[:content]["Proposal"] ||
-                      row[:content]["Application Description"] ||
-                      row[:content]["Application proposal"] ||
-                      row[:content]["Details of proposal or permit"]
+        description = row[:content].find { |k, _v| DESCRIPTION_TEXT.include?(k) }
+        description = description[1] if description
 
         {
           council_reference: council_reference,
