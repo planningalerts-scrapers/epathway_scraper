@@ -164,6 +164,13 @@ RSpec.describe EpathwayScraper do
           "https://epathway.yarraranges.vic.gov.au/ePathway/Production",
           { list_type: :all, max_pages: 20 }
         ]
+      },
+      {
+        scraper_name: "barossa",
+        params: [
+          "https://epayments.barossa.sa.gov.au/ePathway/Production",
+          { list_type: :last_30_days, force_detail: true }
+        ]
       }
     ].freeze
 
