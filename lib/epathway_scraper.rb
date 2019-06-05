@@ -14,11 +14,7 @@ module EpathwayScraper
   end
 
   def self.scrape(params)
-    params[:list_type] = params[:list]
-    params.delete(:list)
-    params2 = params.reject { |k, _v| k == :url }
-
-    Scraper.new(params[:url]).scrape(params2) do |record|
+    Scraper.new(params[:url]).scrape2(params.reject { |k, _v| k == :url }) do |record|
       yield record
     end
   end

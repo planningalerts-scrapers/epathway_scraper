@@ -17,6 +17,14 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
+    def scrape2(list:, state:, max_pages: nil, force_detail: false)
+      scrape(
+        list_type: list, state: state, max_pages: max_pages, force_detail: force_detail
+      ) do |record|
+        yield record
+      end
+    end
+
     # list_type: one of :all, :advertising, :last_30_days, :all_this_year
     # state: NSW, VIC or NT, etc...
     def scrape(list_type:, state:, max_pages: nil, force_detail: false)
