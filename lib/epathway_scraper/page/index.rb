@@ -142,7 +142,12 @@ module EpathwayScraper
           }
           record["on_notice_from"] = data[:on_notice_from] if data[:on_notice_from]
           record["on_notice_to"] = data[:on_notice_to] if data[:on_notice_to]
-          yield(record)
+
+          # One final check that we actually want this application. If
+          # the council hasn't got a proper council reference for it yet,
+          # there's little point to adding it, in fact it will kind of screw
+          # things up. So, better to just ignore it
+          yield(record) if record["council_reference"] != "Not on file"
         end
       end
 
