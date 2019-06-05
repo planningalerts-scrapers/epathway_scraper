@@ -22,12 +22,7 @@ RSpec.describe EpathwayScraper do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
 
-          params[:list_type] = params[:list]
-          params.delete(:list)
-          EpathwayScraper.scrape(
-            params[:url],
-            params.reject { |k, _v| k == :url }
-          ) do |record|
+          EpathwayScraper.scrape2(params) do |record|
             results << record
           end
 
