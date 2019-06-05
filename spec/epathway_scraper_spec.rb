@@ -17,26 +17,20 @@ RSpec.describe EpathwayScraper do
   end
 
   describe "Scraper" do
-    def test_scraper2(scraper_name, params)
-      params[:list_type] = params[:list]
-      params.delete(:list)
-
-      test_scraper(
-        scraper_name: scraper_name,
-        params: [
-          params[:url],
-          params.reject { |k, _v| k == :url }
-        ]
-      )
-    end
-
-    def test_scraper(scraper_name:, params:)
+    def test_scraper(scraper_name, params)
       results = VCR.use_cassette(scraper_name) do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
-          EpathwayScraper.scrape(*params) do |record|
+
+          params[:list_type] = params[:list]
+          params.delete(:list)
+          EpathwayScraper.scrape(
+            params[:url],
+            params.reject { |k, _v| k == :url }
+          ) do |record|
             results << record
           end
+
           results.sort_by { |r| r["council_reference"] }
         end
       end
@@ -177,7 +171,7 @@ RSpec.describe EpathwayScraper do
 
     AUTHORITIES.each do |scraper_name, params|
       it scraper_name do
-        test_scraper2(scraper_name, params)
+        test_scraper(scraper_name, params)
       end
     end
   end
