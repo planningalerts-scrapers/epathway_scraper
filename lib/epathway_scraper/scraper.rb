@@ -17,35 +17,27 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
-    def scrape2(list:, state:, max_pages: nil, force_detail: false)
-      scrape(
-        list_type: list, state: state, max_pages: max_pages, force_detail: force_detail
-      ) do |record|
-        yield record
-      end
-    end
-
-    # list_type: one of :all, :advertising, :last_30_days, :all_this_year
+    # list: one of :all, :advertising, :last_30_days, :all_this_year
     # state: NSW, VIC or NT, etc...
-    def scrape(list_type:, state:, max_pages: nil, force_detail: false)
+    def scrape(list:, state:, max_pages: nil, force_detail: false)
       # Navigate to the correct list
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
 
-      if list_type == :all
+      if list == :all
         Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
-      elsif list_type == :advertising
+      elsif list == :advertising
         Page::ListSelect.select_advertising(page) if Page::ListSelect.on_page?(page)
-      elsif list_type == :last_30_days
+      elsif list == :last_30_days
         page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         Page::Search.pick(page, :last_30_days, agent)
       # Get all applications lodged this entire year
-      elsif list_type == :all_this_year
+      elsif list == :all_this_year
         page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         page = Page::Search.click_date_search_tab(page, agent)
         Page::DateSearch.pick_all_year(page, DateTime.now.year)
       else
-        raise "Unexpected list_type: #{list_type}"
+        raise "Unexpected list: #{list}"
       end
 
       # Notice how we're skipping the clicking of search
