@@ -22,7 +22,7 @@ RSpec.describe EpathwayScraper do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
 
-          EpathwayScraper.scrape(EpathwayScraper::AUTHORITIES[authority]) do |record|
+          EpathwayScraper.scrape_authority(authority) do |record|
             results << record
           end
 

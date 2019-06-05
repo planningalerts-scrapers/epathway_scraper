@@ -53,6 +53,12 @@ module EpathwayScraper
     end
   end
 
+  def self.scrape_authority(authority)
+    scrape(EpathwayScraper::AUTHORITIES[authority]) do |record|
+      yield record
+    end
+  end
+
   def self.save(record)
     log(record)
     ScraperWiki.save_sqlite(["council_reference"], record)
