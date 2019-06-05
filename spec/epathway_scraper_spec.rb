@@ -120,28 +120,28 @@ RSpec.describe EpathwayScraper do
         scraper_name: "adelaide",
         params: [
           "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
-          { list_type: :all_year, year: 2019, state: "SA" }
+          { list_type: :all_this_year, state: "SA" }
         ]
       },
       {
         scraper_name: "darebin",
         params: [
           "https://eservices.darebin.vic.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019, state: "VIC" }
+          { list_type: :all_this_year, state: "VIC" }
         ]
       },
       {
         scraper_name: "inverell",
         params: [
           "http://203.49.140.77/ePathway/Production",
-          { list_type: :all_year, year: 2019, state: "NSW" }
+          { list_type: :all_this_year, state: "NSW" }
         ]
       },
       {
         scraper_name: "onkaparinga",
         params: [
           "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019, state: "SA" }
+          { list_type: :all_this_year, state: "SA" }
         ]
       },
       {
@@ -176,7 +176,7 @@ RSpec.describe EpathwayScraper do
         scraper_name: "kingston",
         params: [
           "https://online.kingston.vic.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019, state: "VIC" }
+          { list_type: :all_this_year, state: "VIC" }
         ]
       },
       {

@@ -17,9 +17,9 @@ module EpathwayScraper
       @agent = Mechanize.new
     end
 
-    # list_type: one of :all, :advertising, :last_30_days, :all_year
+    # list_type: one of :all, :advertising, :last_30_days, :all_this_year
     # state: NSW, VIC or NT, etc...
-    def scrape(list_type:, state:, max_pages: nil, year: nil, force_detail: false)
+    def scrape(list_type:, state:, max_pages: nil, force_detail: false)
       # Navigate to the correct list
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
@@ -31,11 +31,11 @@ module EpathwayScraper
       elsif list_type == :last_30_days
         page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         Page::Search.pick(page, :last_30_days, agent)
-      # Get all applications in a single year
-      elsif list_type == :all_year
+      # Get all applications lodged this entire year
+      elsif list_type == :all_this_year
         page = Page::ListSelect.select_all(page) if Page::ListSelect.on_page?(page)
         page = Page::Search.click_date_search_tab(page, agent)
-        Page::DateSearch.pick_all_year(page, year)
+        Page::DateSearch.pick_all_year(page, DateTime.now.year)
       else
         raise "Unexpected list_type: #{list_type}"
       end
