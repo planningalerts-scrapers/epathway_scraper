@@ -11,8 +11,8 @@ require "scraperwiki"
 
 # Top level module of gem
 module EpathwayScraper
-  def self.scrape_and_save(base_url, params)
-    scrape(base_url, params) do |record|
+  def self.scrape_and_save(params)
+    scrape(params) do |record|
       save(record)
     end
   end
