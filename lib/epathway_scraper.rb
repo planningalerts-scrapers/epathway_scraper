@@ -12,12 +12,6 @@ require "scraperwiki"
 
 # Top level module of gem
 module EpathwayScraper
-  def self.scrape_and_save(params)
-    scrape(params) do |record|
-      save(record)
-    end
-  end
-
   # list: one of :all, :advertising, :last_30_days, :all_this_year
   # state: NSW, VIC or NT, etc...
   def self.scrape(url:, list:, state:, max_pages: nil, force_detail: false)
@@ -56,6 +50,12 @@ module EpathwayScraper
   def self.scrape_authority(authority)
     scrape(EpathwayScraper::AUTHORITIES[authority]) do |record|
       yield record
+    end
+  end
+
+  def self.scrape_and_save_authority(authority)
+    scrape_authority(authority) do |record|
+      save(record)
     end
   end
 
