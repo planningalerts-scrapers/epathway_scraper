@@ -5,6 +5,7 @@ require "epathway_scraper/page/list_select"
 require "epathway_scraper/page/search"
 require "epathway_scraper/page/index"
 require "epathway_scraper/page/date_search"
+require "epathway_scraper/authorities"
 
 require "mechanize"
 require "scraperwiki"
