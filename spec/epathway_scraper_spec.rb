@@ -17,16 +17,12 @@ RSpec.describe EpathwayScraper do
   end
 
   describe "Scraper" do
-    def test_scraper2(authority)
-      test_scraper(authority, EpathwayScraper::AUTHORITIES[authority])
-    end
-
-    def test_scraper(authority, params)
+    def test_scraper(authority)
       results = VCR.use_cassette(authority) do
         Timecop.freeze(Date.new(2019, 5, 15)) do
           results = []
 
-          EpathwayScraper.scrape(params) do |record|
+          EpathwayScraper.scrape(EpathwayScraper::AUTHORITIES[authority]) do |record|
             results << record
           end
 
@@ -53,7 +49,7 @@ RSpec.describe EpathwayScraper do
 
     EpathwayScraper::AUTHORITIES.keys.each do |authority|
       it authority do
-        test_scraper2(authority)
+        test_scraper(authority)
       end
     end
   end
