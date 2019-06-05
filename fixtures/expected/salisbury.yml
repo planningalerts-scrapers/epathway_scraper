@@ -113,7 +113,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-07'
 - council_reference: 361/773/2019/1X
-  address: East Para Primary School, 12 Caroona Avenue , Para Hills SA  5096
+  address: 12 Caroona Avenue , Para Hills SA  5096
   description: VERANDAH
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -162,13 +162,13 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-08'
 - council_reference: 361/781/2019/1B
-  address: Ingle Farm Shopping Centre, 219-247 Montague Road , Ingle Farm SA  5098
+  address: 219-247 Montague Road , Ingle Farm SA  5098
   description: INTERNAL RETAIL FITOUT (TENANCY 1034)
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-08'
 - council_reference: 361/783/2019/S49
-  address: Ryans Road Reserve Parent Property, Ryans Road , Green Fields SA  5107
+  address: Ryans Road , Green Fields SA  5107
   description: REMOVAL OF THIRTY TWO (2) REGULATED TREES AND TWENTY ONE (21) SIGNIFICANT
     TREES AND MAJOR PRUNING OF NINETEEN (19) REGULATED TREES AND TWENTY FIVE (25)
     SIGNIFICANT TREES TO SUPPORT GAWLER RAIL ELECTRIFICATION PROJECT (SECTION 49)
@@ -332,7 +332,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-14'
 - council_reference: 361/809/2019/1B
-  address: University of SA Campus, 1-75 Mawson Lakes Boulevard , Mawson Lakes SA  5095
+  address: 1-75 Mawson Lakes Boulevard , Mawson Lakes SA  5095
   description: INTERNAL LAB FITOUT - LEVEL 1 (BUILDING M2)
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -375,7 +375,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-15'
 - council_reference: 361/816/2019/2T
-  address: Little Para Linear Park (Lower), Empire Street , Salisbury Downs SA  5108
+  address: Empire Street , Salisbury Downs SA  5108
   description: REMOVAL OF ONE REGULATED TREE AND ONE SIGNIFICANT TREE ON COUNCIL RESERVE
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -508,14 +508,13 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-17'
 - council_reference: 361/839/2019/2T
-  address: Amsterdam Crescent Reserve, Amsterdam Crescent , Salisbury Downs SA  5108
+  address: Amsterdam Crescent , Salisbury Downs SA  5108
   description: REMOVAL OF TWO (2) REGULATED TREES ON COUNCIL RESERVE
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-17'
 - council_reference: 361/840/2019/2T
-  address: Dry Creek Linear Park (Tech Park) Parent Property, Third Avenue , Mawson
-    Lakes SA  5095
+  address: Third Avenue , Mawson Lakes SA  5095
   description: REMOVAL OF A REGULATED TREE ON COUNCIL RESERVE
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -796,7 +795,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-31'
 - council_reference: 361/886/2019/1B
-  address: Morella Community Centre, 82 Kings Road , Parafield Gardens SA  5107
+  address: 82 Kings Road , Parafield Gardens SA  5107
   description: ALTERATIONS TO COMMUNITY CENTRE (STORE ROOM AND INTERNAL ALTERATIONS)
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -820,7 +819,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-27'
 - council_reference: 361/890/2019/1B
-  address: Ingle Farm Shopping Centre, 219-247 Montague Road , Ingle Farm SA  5098
+  address: 219-247 Montague Road , Ingle Farm SA  5098
   description: BUILDING ALTERATIONS TO INGLE FARM SHOPPING CENTRE (UPGRADE MALL ENTRIES,
     UPGRADE DISABLED CAR PARKING AND SIGNAGE TO ENTRIES AND ABOVE PARAPET
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -919,7 +918,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-28'
 - council_reference: 361/906/2019/1B
-  address: Parabanks Shopping Centre, 68-84 John Street , Salisbury SA  5108
+  address: 68-84 John Street , Salisbury SA  5108
   description: SIGNAGE
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -955,7 +954,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-29'
 - council_reference: 361/912/2019/1B
-  address: The Old Spot Hotel, 1955 Main North Road , Salisbury Heights SA  5109
+  address: 1955 Main North Road , Salisbury Heights SA  5109
   description: INSTALLATION OF 100KW SOLAR CARPARK STRUCTURE
   info_url: https://eservices.salisbury.sa.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'

@@ -124,6 +124,11 @@ module EpathwayScraper
             end
           end
 
+          # Remove "building name" from address
+          if data[:address].split(",").size >= 3
+            data[:address] = data[:address].split(",", 2)[1].strip
+          end
+
           record = {
             "council_reference" => data[:council_reference],
             "address" => data[:address],

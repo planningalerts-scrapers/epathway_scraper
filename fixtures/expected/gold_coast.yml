@@ -1,6 +1,6 @@
 ---
 - council_reference: COM/2018/108
-  address: Lot 901 SP279990, Lot 901 Huntington Drive, MAUDSLAND  QLD  4210
+  address: Lot 901 Huntington Drive, MAUDSLAND  QLD  4210
   description: |-
     Combined Application
     Impact Assessment
@@ -10,7 +10,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-11'
 - council_reference: MCU/2018/1167
-  address: Lot 8 RP90257, 264 Coolangatta Road, BILINGA  QLD  4225
+  address: 264 Coolangatta Road, BILINGA  QLD  4225
   description: |-
     Material Change of Use
     Impact Assessment
@@ -19,7 +19,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-11-08'
 - council_reference: MCU/2018/1267
-  address: BAL Lot 2 RP885537, 264 Petsch Creek Road, TALLEBUDGERA VALLEY  QLD  4228
+  address: 264 Petsch Creek Road, TALLEBUDGERA VALLEY  QLD  4228
   description: |-
     Material Change of Use
     Impact Assessment
@@ -28,7 +28,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-24'
 - council_reference: MCU/2019/102
-  address: Lot 29 RP459, 4 Brake Street, BURLEIGH HEADS  QLD  4220
+  address: 4 Brake Street, BURLEIGH HEADS  QLD  4220
   description: |-
     Material change of use
     Impact assessment
@@ -37,7 +37,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-15'
 - council_reference: MCU/2019/107
-  address: Lot 87 RP42678, 6 Glenelg Avenue, MERMAID BEACH  QLD  4218
+  address: 6 Glenelg Avenue, MERMAID BEACH  QLD  4218
   description: |-
     Material Change of Use
     Impact Assessment
@@ -46,7 +46,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-19'
 - council_reference: MCU/2019/122
-  address: Lot 0 BUP9648, 2890 Gold Coast Highway, SURFERS PARADISE  QLD  4217
+  address: 2890 Gold Coast Highway, SURFERS PARADISE  QLD  4217
   description: |-
     Material Change of Use
     Impact Assessment
@@ -55,7 +55,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-28'
 - council_reference: MCU/2019/135
-  address: Lot 9 SP144352, 127 Lahr's Road, ORMEAU  QLD  4208
+  address: 127 Lahr's Road, ORMEAU  QLD  4208
   description: |-
     Material Change of Use
     Impact Assessment
@@ -64,14 +64,14 @@
   date_scraped: '2019-05-15'
   date_received: '2019-04-08'
 - council_reference: MCU/2019/153
-  address: Lot 5 RP183196, 100 Maudsland Road, OXENFORD  QLD  4210
+  address: 100 Maudsland Road, OXENFORD  QLD  4210
   description: "Material Change of Use\nImpact Assessable \nExtension to Dwelling
     House"
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-18'
 - council_reference: MCU/2019/35
-  address: Lot 7 RP21863, 2245 Gold Coast Highway, MERMAID BEACH  QLD  4218
+  address: 2245 Gold Coast Highway, MERMAID BEACH  QLD  4218
   description: |-
     Material Change of Use
     Impact Assessment
@@ -80,7 +80,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-02-05'
 - council_reference: MCU/2019/52
-  address: Lot 20 RP218168, 30 Balsa Street, ELANORA  QLD  4221
+  address: 30 Balsa Street, ELANORA  QLD  4221
   description: |-
     Material Change of Use
     Impact Assessment
@@ -89,7 +89,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-02-15'
 - council_reference: MCU/2019/61
-  address: Lot 1 SP212740, Lot 1 Darlington Drive, YATALA  QLD  4207
+  address: Lot 1 Darlington Drive, YATALA  QLD  4207
   description: |-
     Material Change of Use
     Impact Assessment
@@ -100,7 +100,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-02-24'
 - council_reference: MCU/2019/74
-  address: Lot 15 SP197390, 16 Therese Mary Avenue, CARRARA  QLD  4211
+  address: 16 Therese Mary Avenue, CARRARA  QLD  4211
   description: |-
     Material Change of Use
     Impact Assessment
@@ -109,7 +109,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
 - council_reference: OTH/2018/1427
-  address: Lot 3 RP110743, 6 Quinns Hill Road East, STAPYLTON  QLD  4207
+  address: 6 Quinns Hill Road East, STAPYLTON  QLD  4207
   description: |-
     Other Change
     Material Change of Use
@@ -118,14 +118,14 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-17'
 - council_reference: OTH/2019/13
-  address: Lot 1 SP169925, 12 Indy Court, CARRARA  QLD  4211
+  address: 12 Indy Court, CARRARA  QLD  4211
   description: "Other Change application \nMaterial change of use \nOther Change to
     MCU/2017/437"
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-12'
 - council_reference: OTH/2019/18
-  address: Lot 2 SP301198, 5 Dixon Drive, PIMPAMA  QLD  4209
+  address: 5 Dixon Drive, PIMPAMA  QLD  4209
   description: |-
     Other Change
     Impact assessment
@@ -135,14 +135,14 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-03'
 - council_reference: OTH/2019/19
-  address: Lot 1 RP857235, 101 Musgrave Street, COOLANGATTA  QLD  4225
+  address: 101 Musgrave Street, COOLANGATTA  QLD  4225
   description: "Other Change Application \nMaterial change of use\nImpact assessment\nOther
     Change to MCU/2018/1192"
   info_url: https://cogc.cloud.infor.com/ePathway/epthprod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-03'
 - council_reference: ROL/2019/26
-  address: Lot 2 RP183398, 205 Worongary Road, TALLAI  QLD  4213
+  address: 205 Worongary Road, TALLAI  QLD  4213
   description: |-
     Reconfiguration of a Lot
     Impact assessment

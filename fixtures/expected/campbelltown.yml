@@ -1,6 +1,6 @@
 ---
 - council_reference: 1013/2019/DA-DEM
-  address: Western Sydney University Campbelltown Campus, 183 Narellan Road, CAMPBELLTOWN  NSW  2560
+  address: 183 Narellan Road, CAMPBELLTOWN  NSW  2560
   description: Demolition of of exisitng gymnasium, netball courts, carparking, driveway
     and garden
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -14,14 +14,14 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-21'
 - council_reference: 1040/2016/DA-U/B
-  address: Menangle House, 170 Menangle Road, MENANGLE PARK  NSW  2563
+  address: 170 Menangle Road, MENANGLE PARK  NSW  2563
   description: Modification to construct an external addition comprising of cool rooms,
     store rooms, freezer room, kitchen and loading zone
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
 - council_reference: 1040/2016/DA-U/C
-  address: Menangle House, 170 Menangle Road, MENANGLE PARK  NSW  2563
+  address: 170 Menangle Road, MENANGLE PARK  NSW  2563
   description: Alterations to function centre and bathrooms
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -167,7 +167,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-04-01'
 - council_reference: 1167/2019/DA-U
-  address: Campbelltown Sportsground, 12 Old Leumeah Road, LEUMEAH  NSW  2560
+  address: 12 Old Leumeah Road, LEUMEAH  NSW  2560
   description: Use of sports stadium for a motorcycle stunt show
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -399,7 +399,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-04-17'
 - council_reference: 1368/2019/DA-U
-  address: Campbelltown Mall, 271 Queen Street, CAMPBELLTOWN  NSW  2560
+  address: 271 Queen Street, CAMPBELLTOWN  NSW  2560
   description: Use of premise as a 24 hours gym (Shop L28 )
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -424,7 +424,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-04-18'
 - council_reference: 1382/2018/DA-U
-  address: Mawson Park, Queen Street, CAMPBELLTOWN  NSW  2560
+  address: Queen Street, CAMPBELLTOWN  NSW  2560
   description: Use of Mawson Park for night markets twice a month between 5 and 9pm.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -670,7 +670,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-01-19'
 - council_reference: 1580/2019/DA-C
-  address: Rosemeadow Shopping Centre, Thomas Rose Drive, ROSEMEADOW  NSW  2560
+  address: Thomas Rose Drive, ROSEMEADOW  NSW  2560
   description: Construction of shade sails and reconfiguration of existing at grade
     car parking
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -745,7 +745,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-16'
 - council_reference: 1625/2019/DA-U
-  address: Al-Faisal College, 10 Benham Road, MINTO  NSW  2566
+  address: 10 Benham Road, MINTO  NSW  2566
   description: Upgrade of existing school to increase number of students from 600
     to 900
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -867,7 +867,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-05-25'
 - council_reference: 1701/2019/DA-A
-  address: Campbelltown Mall, 271 Queen Street, CAMPBELLTOWN  NSW  2560
+  address: 271 Queen Street, CAMPBELLTOWN  NSW  2560
   description: Replacement of existing signs for Kmart Auto Service Centre
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -929,7 +929,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-05-27'
 - council_reference: 1767/2015/DA-SW/A
-  address: Western Sydney University Campbelltown Campus, 183 Narellan Road, CAMPBELLTOWN  NSW  2560
+  address: 183 Narellan Road, CAMPBELLTOWN  NSW  2560
   description: |-
     Modification - Stage 5 - Subdivision of existing land into 140 residential allotments and two other allotments to contain telecommunications equipment and an existing coal seam gas well and associated civil works
 
@@ -1193,7 +1193,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-01-22'
 - council_reference: 2255/2018/DA-C
-  address: Western Sydney University Campbelltown Campus, 183 Narellan Road, CAMPBELLTOWN  NSW  2560
+  address: 183 Narellan Road, CAMPBELLTOWN  NSW  2560
   description: Construction and operation of the Campbelltown Sports and Health Centre
     of Excellence including a two storey building, 120 on-site parking spaces, new
     driveways and landscaping works
@@ -1201,7 +1201,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-06-28'
 - council_reference: 2281/2010/DA-U/A
-  address: Koshigaya Park, Camden Road, CAMPBELLTOWN  NSW  2560
+  address: Camden Road, CAMPBELLTOWN  NSW  2560
   description: Modification of an existing development consent  for the use of Koshigaya
     Park for community festivals
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1260,14 +1260,14 @@
   date_scraped: '2019-05-15'
   date_received: '2019-01-30'
 - council_reference: 2512/2015/DA-C/B
-  address: Coronation Park, 9 Redfern Road, MINTO  NSW  2566
+  address: 9 Redfern Road, MINTO  NSW  2566
   description: Modification of an existing development consent for the construction
     of additions to existing sports hall - Minto Indoor Sport Centre
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-18'
 - council_reference: 2626/2015/DA-I
-  address: Campbelltown City Waste Depot, 59 Junction Road, LEUMEAH  NSW  2560
+  address: 59 Junction Road, LEUMEAH  NSW  2560
   description: Demolition of existing workshop and construction of a new mechanical
     workshop
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1288,7 +1288,7 @@
   date_scraped: '2019-05-15'
   date_received: '2008-10-29'
 - council_reference: 2678/2016/DA-SW/A
-  address: Deane Park, Briar Road, BRADBURY  NSW  2560
+  address: Briar Road, BRADBURY  NSW  2560
   description: Stage 3 of Airds Bradbury Urban Renewal Project - including subdivision
     of land to create 104 Torrens titled residential lots, 1 residue lot, public roads
     and associated civil and landscape works
@@ -1318,7 +1318,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-10'
 - council_reference: 2768/2018/DA-C
-  address: Walsa, 29 Pheasants Road, WEDDERBURN  NSW  2560
+  address: 29 Pheasants Road, WEDDERBURN  NSW  2560
   description: Construction of a telecommunications tower
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -1358,7 +1358,7 @@
   date_scraped: '2019-05-15'
   date_received: '2016-08-31'
 - council_reference: 2882/2016/DA-C/A
-  address: Bardia Public School, Macdonald Road, BARDIA  NSW  2565
+  address: Macdonald Road, BARDIA  NSW  2565
   description: Modification of an existing development consent for the demolition
     of all existing school buildings and removal of trees at Bardia Public School,
     construction of new school buildings, sports field, games court, play areas and
@@ -1454,7 +1454,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-21'
 - council_reference: 3130/2016/DA-C
-  address: Caversham, 26 Oxley Street, CAMPBELLTOWN  NSW  2560
+  address: 26 Oxley Street, CAMPBELLTOWN  NSW  2560
   description: Use of existing building as a dwelling for a home occupation and construction
     of a garage.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1567,7 +1567,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-09-25'
 - council_reference: 3360/2016/DA-CW
-  address: Mont St Quentin Oval, Campbelltown Road, BARDIA  NSW  2565
+  address: Campbelltown Road, BARDIA  NSW  2565
   description: Restoration of the existing oval and other landscape embellishment
     works
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1785,7 +1785,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-10-30'
 - council_reference: 3868/2017/DA-CW
-  address: Mount Gilead, 901 Appin Road, GILEAD  NSW  2560
+  address: 901 Appin Road, GILEAD  NSW  2560
   description: Bulk earthwork activities including the removal of vegetation, dam
     de-watering and remediation of land
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1836,7 +1836,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-11-01'
 - council_reference: 389/2017/DA-RA
-  address: Raith, 74 Fern Avenue, BRADBURY  NSW  2560
+  address: 74 Fern Avenue, BRADBURY  NSW  2560
   description: Construction of a residential development containing 134 residences
     and alterations to and use of the existing heritge building.
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1890,7 +1890,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-11-09'
 - council_reference: 403/2019/DA-C
-  address: Ingleburn Fair Shopping Centre, 100 Macquarie Road, INGLEBURN  NSW  2565
+  address: 100 Macquarie Road, INGLEBURN  NSW  2565
   description: Construction of alterations, additions and demolition works to existing
     shopping centre
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1910,7 +1910,7 @@
   date_scraped: '2019-05-15'
   date_received: '2017-12-14'
 - council_reference: 4042/2016/DA-AL
-  address: Beulah, 767 Appin Road, GILEAD  NSW  2560
+  address: 767 Appin Road, GILEAD  NSW  2560
   description: Alterations and additions to Beulah Homestead
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -1994,7 +1994,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-11-30'
 - council_reference: 4345/2018/DA-MAH
-  address: Macquarie Fields Community Hall, 5 Fields Road, MACQUARIE FIELDS  NSW  2564
+  address: 5 Fields Road, MACQUARIE FIELDS  NSW  2564
   description: Construction of five two storey dwellings and subdivision into five
     strata allotments
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -2033,7 +2033,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-10'
 - council_reference: 4457/2018/DA-M
-  address: Hillcrest, 50 Badgally Road, CLAYMORE  NSW  2559
+  address: 50 Badgally Road, CLAYMORE  NSW  2559
   description: Retention of existing local heritage item known as 'Hillcrest', minor
     demolition works to the heritage building, demolition of remaining buildings and
     structures on site including tree removal and the construction of a 75 unit multi
@@ -2103,7 +2103,7 @@
   date_scraped: '2019-05-15'
   date_received: '2018-12-19'
 - council_reference: 4618/2018/DA-C
-  address: St Andrews Cottage, 4 Stranraer Drive, ST ANDREWS  NSW  2566
+  address: 4 Stranraer Drive, ST ANDREWS  NSW  2566
   description: alterations to an existing building including demolition of ancillary
     structures and use of building as a childcare facility
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -2184,14 +2184,14 @@
   date_scraped: '2019-05-15'
   date_received: '2016-03-04'
 - council_reference: 497/2017/DA-SW
-  address: Kevin Wheatley Reserve, Riverside Drive, AIRDS  NSW  2560
+  address: Riverside Drive, AIRDS  NSW  2560
   description: Subdivision of land into 176 residential allotments, four future development
     allotments, associated civil and landscape works
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2017-02-21'
 - council_reference: 512/2019/DA-C
-  address: Glenfield Park School, Roy Watts Road, GLENFIELD  NSW  2167
+  address: Roy Watts Road, GLENFIELD  NSW  2167
   description: Construction of a multi purpose hall including a fitness centre and
     amenities
   info_url: https://ebiz.campbelltown.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -2369,7 +2369,7 @@
   date_scraped: '2019-05-15'
   date_received: '2019-03-01'
 - council_reference: 774/2018/DA-C
-  address: Woodcrest, 111 Oxford Road, INGLEBURN  NSW  2565
+  address: 111 Oxford Road, INGLEBURN  NSW  2565
   description: Partial demolition of existing heritage-listed dwelling and alterations
     and additions to the existing dwelling for use as a childcare centre for 150 children
     and associated car parking
