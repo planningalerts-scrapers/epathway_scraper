@@ -45,166 +45,135 @@ RSpec.describe EpathwayScraper do
       expect(results).to eq expected
     end
 
-    SCRAPERS = [
-      {
-        scraper_name: "south_gippsland",
-        params: [
-          "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
-          { list_type: :advertising, state: "VIC" }
-        ]
+    AUTHORITIES = {
+      south_gippsland: {
+        url: "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "campbelltown",
-        params: [
-          "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
-          { list_type: :all, state: "NSW" }
-        ]
+      campbelltown: {
+        url: "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
+        state: "NSW",
+        list: :all
       },
-      {
-        scraper_name: "ballarat",
-        params: [
-          "https://eservices.ballarat.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "VIC" }
-        ]
+      ballarat: {
+        url: "https://eservices.ballarat.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "glen_eira",
-        params: [
-          "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 4, state: "VIC" }
-        ]
+      glen_eira: {
+        url: "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :all,
+        max_pages: 4
       },
-      {
-        scraper_name: "gold_coast",
-        params: [
-          "https://cogc.cloud.infor.com/ePathway/epthprod",
-          { list_type: :advertising, state: "QLD" }
-        ]
+      gold_coast: {
+        url: "https://cogc.cloud.infor.com/ePathway/epthprod",
+        state: "QLD",
+        list: :advertising
       },
-      {
-        scraper_name: "knox",
-        params: [
-          "https://eservices.knox.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "VIC" }
-        ]
+      knox: {
+        url: "https://eservices.knox.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "monash",
-        params: [
-          "https://epathway.monash.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "VIC" }
-        ]
+      monash: {
+        url: "https://epathway.monash.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "moreland",
-        params: [
-          "https://eservices.moreland.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "VIC" }
-        ]
+      moreland: {
+        url: "https://eservices.moreland.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "nillumbik",
-        params: [
-          "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "VIC" }
-        ]
+      nillumbik: {
+        url: "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :advertising
       },
-      {
-        scraper_name: "salisbury",
-        params: [
-          "https://eservices.salisbury.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, state: "SA" }
-        ]
+      salisbury: {
+        url: "https://eservices.salisbury.sa.gov.au/ePathway/Production",
+        state: "SA",
+        list: :last_30_days
       },
-      {
-        scraper_name: "adelaide",
-        params: [
-          "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
-          { list_type: :all_this_year, state: "SA" }
-        ]
+      adelaide: {
+        url: "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
+        state: "SA",
+        list: :all_this_year
       },
-      {
-        scraper_name: "darebin",
-        params: [
-          "https://eservices.darebin.vic.gov.au/ePathway/Production",
-          { list_type: :all_this_year, state: "VIC" }
-        ]
+      darebin: {
+        url: "https://eservices.darebin.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :all_this_year
       },
-      {
-        scraper_name: "inverell",
-        params: [
-          "http://203.49.140.77/ePathway/Production",
-          { list_type: :all_this_year, state: "NSW" }
-        ]
+      inverell: {
+        url: "http://203.49.140.77/ePathway/Production",
+        state: "NSW",
+        list: :all_this_year
       },
-      {
-        scraper_name: "onkaparinga",
-        params: [
-          "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
-          { list_type: :all_this_year, state: "SA" }
-        ]
+      onkaparinga: {
+        url: "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
+        state: "SA",
+        list: :all_this_year
       },
-      {
-        scraper_name: "unley",
-        params: [
-          "https://online.unley.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, state: "SA" }
-        ]
+      unley: {
+        url: "https://online.unley.sa.gov.au/ePathway/Production",
+        state: "SA",
+        list: :last_30_days
       },
-      {
-        scraper_name: "wollongong",
-        params: [
-          "http://epathway.wollongong.nsw.gov.au/ePathway/Production",
-          { list_type: :advertising, state: "NSW" }
-        ]
+      wollongong: {
+        url: "http://epathway.wollongong.nsw.gov.au/ePathway/Production",
+        state: "NSW",
+        list: :advertising
       },
-      {
-        scraper_name: "yarra_ranges",
-        params: [
-          "https://epathway.yarraranges.vic.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 20, state: "VIC" }
-        ]
+      yarra_ranges: {
+        url: "https://epathway.yarraranges.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :all,
+        max_pages: 20
       },
-      {
-        scraper_name: "barossa",
-        params: [
-          "https://epayments.barossa.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, force_detail: true, state: "SA" }
-        ]
+      barossa: {
+        url: "https://epayments.barossa.sa.gov.au/ePathway/Production",
+        state: "SA",
+        list: :last_30_days,
+        force_detail: true
       },
-      {
-        scraper_name: "kingston",
-        params: [
-          "https://online.kingston.vic.gov.au/ePathway/Production",
-          { list_type: :all_this_year, state: "VIC" }
-        ]
+      kingston: {
+        url: "https://online.kingston.vic.gov.au/ePathway/Production",
+        state: "VIC",
+        list: :all_this_year
       },
-      {
-        scraper_name: "greatlakes",
-        params: [
-          "https://services.greatlakes.nsw.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 10, state: "NSW" }
-        ]
+      greatlakes: {
+        url: "https://services.greatlakes.nsw.gov.au/ePathway/Production",
+        state: "NSW",
+        list: :all,
+        max_pages: 10
       },
-      {
-        scraper_name: "west_torrens",
-        params: [
-          "https://epathway.wtcc.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, state: "SA" }
-        ]
+      west_torrens: {
+        url: "https://epathway.wtcc.sa.gov.au/ePathway/Production",
+        state: "SA",
+        list: :last_30_days
       },
-      {
-        scraper_name: "the_hills",
-        params: [
-          "https://epathway.thehills.nsw.gov.au/ePathway/Production",
-          { list_type: :last_30_days, state: "NSW" }
-        ]
+      the_hills: {
+        url: "https://epathway.thehills.nsw.gov.au/ePathway/Production",
+        state: "NSW",
+        list: :last_30_days
       }
-    ].freeze
+    }.freeze
 
-    SCRAPERS.each do |scraper|
-      it scraper[:scraper_name] do
-        test_scraper(scraper)
+    AUTHORITIES.each do |scraper_name, params|
+      params[:list_type] = params[:list]
+      params.delete(:list)
+
+      it scraper_name do
+        test_scraper(
+          scraper_name: scraper_name.to_s,
+          params: [
+            params[:url],
+            params.reject { |k, _v| k == :url }
+          ]
+        )
       end
     end
   end
