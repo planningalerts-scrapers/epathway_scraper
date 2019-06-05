@@ -50,154 +50,154 @@ RSpec.describe EpathwayScraper do
         scraper_name: "south_gippsland",
         params: [
           "https://eservices.southgippsland.vic.gov.au/ePathway/ePathProd",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "campbelltown",
         params: [
           "https://ebiz.campbelltown.nsw.gov.au/ePathway/Production",
-          { list_type: :all }
+          { list_type: :all, state: "NSW" }
         ]
       },
       {
         scraper_name: "ballarat",
         params: [
           "https://eservices.ballarat.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "glen_eira",
         params: [
           "https://epathway-web.gleneira.vic.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 4 }
+          { list_type: :all, max_pages: 4, state: "VIC" }
         ]
       },
       {
         scraper_name: "gold_coast",
         params: [
           "https://cogc.cloud.infor.com/ePathway/epthprod",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "QLD" }
         ]
       },
       {
         scraper_name: "knox",
         params: [
           "https://eservices.knox.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "monash",
         params: [
           "https://epathway.monash.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "moreland",
         params: [
           "https://eservices.moreland.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "nillumbik",
         params: [
           "https://epathway.nillumbik.vic.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "VIC" }
         ]
       },
       {
         scraper_name: "salisbury",
         params: [
           "https://eservices.salisbury.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days }
+          { list_type: :last_30_days, state: "SA" }
         ]
       },
       {
         scraper_name: "adelaide",
         params: [
           "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
-          { list_type: :all_year, year: 2019 }
+          { list_type: :all_year, year: 2019, state: "SA" }
         ]
       },
       {
         scraper_name: "darebin",
         params: [
           "https://eservices.darebin.vic.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019 }
+          { list_type: :all_year, year: 2019, state: "VIC" }
         ]
       },
       {
         scraper_name: "inverell",
         params: [
           "http://203.49.140.77/ePathway/Production",
-          { list_type: :all_year, year: 2019 }
+          { list_type: :all_year, year: 2019, state: "NSW" }
         ]
       },
       {
         scraper_name: "onkaparinga",
         params: [
           "http://pathway.onkaparinga.sa.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019 }
+          { list_type: :all_year, year: 2019, state: "SA" }
         ]
       },
       {
         scraper_name: "unley",
         params: [
           "https://online.unley.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days }
+          { list_type: :last_30_days, state: "SA" }
         ]
       },
       {
         scraper_name: "wollongong",
         params: [
           "http://epathway.wollongong.nsw.gov.au/ePathway/Production",
-          { list_type: :advertising }
+          { list_type: :advertising, state: "NSW" }
         ]
       },
       {
         scraper_name: "yarra_ranges",
         params: [
           "https://epathway.yarraranges.vic.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 20 }
+          { list_type: :all, max_pages: 20, state: "VIC" }
         ]
       },
       {
         scraper_name: "barossa",
         params: [
           "https://epayments.barossa.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days, force_detail: true }
+          { list_type: :last_30_days, force_detail: true, state: "SA" }
         ]
       },
       {
         scraper_name: "kingston",
         params: [
           "https://online.kingston.vic.gov.au/ePathway/Production",
-          { list_type: :all_year, year: 2019 }
+          { list_type: :all_year, year: 2019, state: "VIC" }
         ]
       },
       {
         scraper_name: "greatlakes",
         params: [
           "https://services.greatlakes.nsw.gov.au/ePathway/Production",
-          { list_type: :all, max_pages: 10 }
+          { list_type: :all, max_pages: 10, state: "NSW" }
         ]
       },
       {
         scraper_name: "west_torrens",
         params: [
           "https://epathway.wtcc.sa.gov.au/ePathway/Production",
-          { list_type: :last_30_days }
+          { list_type: :last_30_days, state: "SA" }
         ]
       },
       {
         scraper_name: "the_hills",
         params: [
           "https://epathway.thehills.nsw.gov.au/ePathway/Production",
-          { list_type: :last_30_days }
+          { list_type: :last_30_days, state: "NSW" }
         ]
       }
     ].freeze

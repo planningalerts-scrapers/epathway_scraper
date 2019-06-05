@@ -95,7 +95,7 @@ module EpathwayScraper
       # We need this for the case of Barossa, SA that doesn't include the
       # suburb in the address on the index page. We don't have a simple and
       # reliable way to automatically detect this
-      def self.scrape_index_page(page, base_url, agent, force_detail)
+      def self.scrape_index_page(page, base_url, agent, force_detail, state)
         table = page.at("table.ContentPanel")
         return if table.nil?
 
@@ -129,6 +129,9 @@ module EpathwayScraper
             data[:address] = data[:address].split(",", 2)[1].strip
           end
 
+          # Add state to the end of the address if it isn't already there
+          data[:address] += ", #{state}" unless data[:address].include?(state)
+
           record = {
             "council_reference" => data[:council_reference],
             "address" => data[:address],
@@ -144,12 +147,12 @@ module EpathwayScraper
       end
 
       # This scrapes all index pages by doing GETs on each page
-      def self.scrape_all_index_pages(number_pages, base_url, agent, force_detail)
+      def self.scrape_all_index_pages(number_pages, base_url, agent, force_detail, state)
         page = agent.get("EnquirySummaryView.aspx?PageNumber=1")
         number_pages ||= extract_total_number_of_pages(page)
         (1..number_pages).each do |no|
           page = agent.get("EnquirySummaryView.aspx?PageNumber=#{no}") if no > 1
-          scrape_index_page(page, base_url, agent, force_detail) do |record|
+          scrape_index_page(page, base_url, agent, force_detail, state) do |record|
             yield record
           end
         end
