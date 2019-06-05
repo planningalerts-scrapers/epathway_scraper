@@ -10,16 +10,12 @@ require "mechanize"
 module EpathwayScraper
   # Scrape an epathway development applications site
   class Scraper
-    attr_reader :base_url, :agent
-
-    def initialize(base_url)
-      @base_url = base_url + "/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
-      @agent = Mechanize.new
-    end
-
     # list: one of :all, :advertising, :last_30_days, :all_this_year
     # state: NSW, VIC or NT, etc...
-    def scrape(list:, state:, max_pages: nil, force_detail: false)
+    def scrape(url:, list:, state:, max_pages: nil, force_detail: false)
+      base_url = url + "/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
+      agent = Mechanize.new
+
       # Navigate to the correct list
       page = agent.get(base_url)
       page = Page::ListSelect.follow_javascript_redirect(page, agent)
