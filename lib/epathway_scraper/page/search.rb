@@ -11,7 +11,8 @@ module EpathwayScraper
         "Date Range",
         "Date Lodged",
         "Date",
-        "Search by Date Range"
+        "Search by Date Range",
+        "Date range search"
       ].freeze
 
       # Currently only supporting type of :last_30_days

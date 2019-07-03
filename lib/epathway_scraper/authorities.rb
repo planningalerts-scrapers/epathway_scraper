@@ -38,7 +38,7 @@ module EpathwayScraper
     gold_coast: {
       url: "https://cogc.cloud.infor.com/ePathway/epthprod",
       state: "QLD",
-      list: :advertising
+      list: :last_30_days
     },
     greatlakes: {
       url: "https://services.greatlakes.nsw.gov.au/ePathway/Production",
