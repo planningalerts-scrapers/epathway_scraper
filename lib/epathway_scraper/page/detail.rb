@@ -39,6 +39,7 @@ module EpathwayScraper
                     row[:content]["Address"] ||
                     row[:content]["Formatted Property Address"]
         end
+        address = address.squeeze(" ")
 
         date_received = field(detail_page, "Date Received") ||
                         field(detail_page, "Lodgement date") ||

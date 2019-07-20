@@ -80,6 +80,7 @@ module EpathwayScraper
 
         # Add the suburb to addresses that don't already include them
         address += ", #{suburb}" if suburb && !address.include?(suburb)
+        address = address.squeeze(" ")
 
         {
           council_reference: find_value_by_key(row, COUNCIL_REFERENCE_TEXT),
