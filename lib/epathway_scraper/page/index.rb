@@ -79,6 +79,10 @@ module EpathwayScraper
         address = find_value_by_key(row, ADDRESS_TEXT)
         suburb = find_value_by_key(row, SUBURB_TEXT)
 
+        # If there's a carriage return, the second part is the lot number.
+        # We don't really want that
+        address = address.split("\n")[0].strip if address.include?("\n")
+
         # Add the suburb to addresses that don't already include them
         address += ", #{suburb}" if suburb && !address.include?(suburb)
         address = address.squeeze(" ")

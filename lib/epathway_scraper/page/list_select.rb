@@ -31,7 +31,8 @@ module EpathwayScraper
         # This one is ridiculous
         "the barossa council development applications",
         "development application - planning act",
-        "register of planning applications"
+        "register of planning applications",
+        "planning applications"
       ].freeze
 
       def self.select(page, text_to_match)
