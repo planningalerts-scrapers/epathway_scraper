@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    rockhampton: {
+      url: "https://eservices.rockhamptonregion.qld.gov.au/ePathway/ePathProd",
+      state: "QLD",
+      list: :last_30_days
+    },
     livingstone: {
       url: "http://mpathway.livingstone.qld.gov.au/ePathway/Production",
       state: "QLD",
