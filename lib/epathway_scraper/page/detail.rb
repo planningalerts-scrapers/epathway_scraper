@@ -46,7 +46,7 @@ module EpathwayScraper
 
         on_notice_table = detail_page.search("table.ContentPanel").find do |t|
           k = Table.extract_table_data_and_urls(t)[0][:content].keys
-          k.include?("Start Date")
+          k.include?("Start Date") && k.include?("Closing Date")
         end
 
         if on_notice_table
