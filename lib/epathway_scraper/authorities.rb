@@ -3,6 +3,12 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    bendigo: {
+      url: "https://epathway.bendigo.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      # Not using :last_30_days because the bendigo server has a problem
+      list: :advertising
+    },
     rockhampton: {
       url: "https://eservices.rockhamptonregion.qld.gov.au/ePathway/ePathProd",
       state: "QLD",

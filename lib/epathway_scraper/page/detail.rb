@@ -42,6 +42,7 @@ module EpathwayScraper
         address = address.squeeze(" ")
 
         date_received = field(detail_page, "Date Received") ||
+                        field(detail_page, "Date received") ||
                         field(detail_page, "Lodgement date") ||
                         field(detail_page, "Lodgement Date")
 

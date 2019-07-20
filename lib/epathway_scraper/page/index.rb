@@ -46,7 +46,8 @@ module EpathwayScraper
         "primary property address",
         "property address",
         "site address",
-        "site location"
+        "site location",
+        "street address"
       ].freeze
 
       SUBURB_TEXT = [

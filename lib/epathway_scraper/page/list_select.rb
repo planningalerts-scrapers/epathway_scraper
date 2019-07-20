@@ -15,7 +15,8 @@ module EpathwayScraper
         "planning applications being advertised",
         "planning applications currently on advertising",
         "planning applications currently advertised",
-        "planning permit applications advertised"
+        "planning permit applications advertised",
+        "planning applications on advertising"
       ].freeze
 
       ALL_TEXT = [
@@ -29,7 +30,8 @@ module EpathwayScraper
         "town planning public register",
         # This one is ridiculous
         "the barossa council development applications",
-        "development application - planning act"
+        "development application - planning act",
+        "register of planning applications"
       ].freeze
 
       def self.select(page, text_to_match)
