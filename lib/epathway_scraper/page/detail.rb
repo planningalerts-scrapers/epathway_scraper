@@ -64,7 +64,8 @@ module EpathwayScraper
 
         description = field(detail_page, "Proposed Use or Development") ||
                       field(detail_page, "Application description") ||
-                      field(detail_page, "Proposal")
+                      field(detail_page, "Proposal") ||
+                      field(detail_page, "Application Description")
 
         result = {
           address: address,

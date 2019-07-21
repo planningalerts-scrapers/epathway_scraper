@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    macedon_ranges: {
+      url: "https://eservices.mrsc.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      list: :last_30_days
+    },
     maroondah: {
       url: "https://eservices.maroondah.vic.gov.au/ePathway/Production",
       state: "VIC",

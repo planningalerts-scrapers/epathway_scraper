@@ -41,7 +41,9 @@ module EpathwayScraper
         # Town Planning
         "town planning public register",
         # This one is ridiculous
-        "the barossa council development applications"
+        "the barossa council development applications",
+        # Statutory Planning
+        "statutory planning - online register"
       ].freeze
 
       def self.select(page, text_to_match)
