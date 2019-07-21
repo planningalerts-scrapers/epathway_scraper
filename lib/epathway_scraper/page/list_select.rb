@@ -50,10 +50,15 @@ module EpathwayScraper
         raise "Couldn't find index in #{button_texts}" if index.nil?
 
         form.radiobuttons[index].click
-        button = form.button_with(value: /Next/) || form.button_with(value: /Save and Continue/)
+        button = form_button(page)
         raise "Couldn't find button" if button.nil?
 
         form.submit(button)
+      end
+
+      def self.form_button(page)
+        form = page.form
+        form.button_with(value: /Next/) || form.button_with(value: /Save and Continue/)
       end
 
       def self.select_advertising(page)
@@ -75,7 +80,7 @@ module EpathwayScraper
 
       # Very simple minded test for whether we're on the correct page
       def self.on_page?(page)
-        !page.search('input[type="radio"]').empty?
+        !page.search('input[type="radio"]').empty? && form_button(page)
       end
     end
   end
