@@ -9,51 +9,6 @@ module EpathwayScraper
   module Page
     # A list of applications (probably paginated)
     module Index
-      DATE_RECEIVED_TEXT = [
-        "application date",
-        "date",
-        "date lodged",
-        "date received",
-        "date registered",
-        "lodged",
-        "lodge date",
-        "lodgement date"
-      ].freeze
-
-      COUNCIL_REFERENCE_TEXT = [
-        "app no.",
-        "application",
-        "application no",
-        "application number",
-        "number",
-        "our reference"
-      ].freeze
-
-      DESCRIPTION_TEXT = [
-        "application description",
-        "application proposal",
-        "description",
-        "details of proposal or permit",
-        "proposal",
-        "proposed use or development"
-      ].freeze
-
-      ADDRESS_TEXT = [
-        "address",
-        "application location",
-        "location",
-        "location address",
-        "primary property address",
-        "property address",
-        "site address",
-        "site location",
-        "street address"
-      ].freeze
-
-      SUBURB_TEXT = [
-        "suburb"
-      ].freeze
-
       def self.extract_total_number_of_pages(page)
         page_label = page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel")
         if page_label.nil?
@@ -72,12 +27,57 @@ module EpathwayScraper
         r[1] if r
       end
 
+      def self.normalise_row_data(row)
+        result = {}
+        row[:content].each do |key, value|
+          result[normalise_key(key, value)] = value
+        end
+        result
+      end
+
+      def self.normalise_key(key, value)
+        case key.downcase
+        when "app no.", "application", "application no", "application number",
+             "number", "our reference"
+          :council_reference
+        when "application date", "date", "date lodged", "date received",
+             "date registered", "lodged", "lodge date"
+          :date_received
+        # This can be different from the date_received. Weird, huh?
+        when "lodgement date"
+          :lodgement_date
+        when "current status", "status"
+          :status
+        when "address", "application location", "location", "location address",
+             "primary property address", "property address", "site address",
+             "site location", "street address"
+          :address
+        when "suburb", "location suburb"
+          :suburb
+        when "application description", "application proposal", "description",
+             "details of proposal or permit", "proposal",
+             "proposed use or development"
+          :description
+        when "type", "application type", "type of application"
+          :type
+        when "current decision", "decision (check status)", "decision (if decided)"
+          :decision
+        # TODO: Year of what exactly?
+        when "year"
+          :year
+        else
+          raise "Unexpected key: #{key.downcase} with value: #{value}"
+        end
+      end
+
       def self.extract_index_data(row)
-        date_received = find_value_by_key(row, DATE_RECEIVED_TEXT)
+        normalised = normalise_row_data(row)
+
+        date_received = normalised[:date_received] || normalised[:lodgement_date]
         date_received = Date.strptime(date_received, "%d/%m/%Y").to_s if date_received
 
-        address = find_value_by_key(row, ADDRESS_TEXT)
-        suburb = find_value_by_key(row, SUBURB_TEXT)
+        address = normalised[:address]
+        suburb = normalised[:suburb]
 
         # If there's a carriage return, the second part is the lot number.
         # We don't really want that
@@ -88,9 +88,9 @@ module EpathwayScraper
         address = address.squeeze(" ")
 
         {
-          council_reference: find_value_by_key(row, COUNCIL_REFERENCE_TEXT),
+          council_reference: normalised[:council_reference],
           address: address,
-          description: find_value_by_key(row, DESCRIPTION_TEXT),
+          description: normalised[:description],
           date_received: date_received,
           # This URL will only work in a session. Thanks for that!
           detail_url: row[:url]
