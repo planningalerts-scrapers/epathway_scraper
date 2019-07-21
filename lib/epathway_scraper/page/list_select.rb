@@ -21,6 +21,7 @@ module EpathwayScraper
         "development applications in public notification",
         # Planning Permit Applications
         "planning permit applications advertised",
+        "advertised planning permit applications"
       ].freeze
 
       ALL_TEXT = [

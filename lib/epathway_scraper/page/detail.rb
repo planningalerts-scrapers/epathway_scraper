@@ -9,7 +9,8 @@ module EpathwayScraper
     # has the information we need
     module Detail
       def self.scrape(detail_page)
-        address = field(detail_page, "Application location")
+        address = field(detail_page, "Application location") ||
+                  field(detail_page, "Application Location")
         # If address is stored in a table at the bottom
         if address.nil?
           # Find the table that contains the addresses
@@ -44,7 +45,8 @@ module EpathwayScraper
         date_received = field(detail_page, "Date Received") ||
                         field(detail_page, "Date received") ||
                         field(detail_page, "Lodgement date") ||
-                        field(detail_page, "Lodgement Date")
+                        field(detail_page, "Lodgement Date") ||
+                        field(detail_page, "Application Date")
 
         on_notice_table = detail_page.search("table.ContentPanel").find do |t|
           k = Table.extract_table_data_and_urls(t)[0][:content].keys
