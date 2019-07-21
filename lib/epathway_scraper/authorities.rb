@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    frankston: {
+      url: "https://epathway.frankston.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      list: :last_30_days
+    },
     east_gippsland: {
       url: "https://epathway.egipps.vic.gov.au/ePathway/Production",
       state: "VIC",
