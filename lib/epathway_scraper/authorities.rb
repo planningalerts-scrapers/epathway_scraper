@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    port_phillip: {
+      url: "https://eservices.portphillip.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      list: :last_30_days
+    },
     mooney_valley: {
       url: "https://online.mvcc.vic.gov.au/ePathway/Production",
       state: "VIC",

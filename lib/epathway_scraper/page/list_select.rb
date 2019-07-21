@@ -38,6 +38,7 @@ module EpathwayScraper
         "planning application enquiry",
         "planning application register",
         "register of planning applications",
+        "planning applications register - general",
         # Planning Permit Applications
         "planning permit application search",
         # Town Planning

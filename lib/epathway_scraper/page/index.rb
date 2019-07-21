@@ -60,7 +60,8 @@ module EpathwayScraper
           :description
         when "type", "application type", "type of application"
           :type
-        when "current decision", "decision (check status)", "decision (if decided)"
+        when "current decision", "decision (check status)", "decision (if decided)",
+             "decision"
           :decision
         # TODO: Year of what exactly?
         when "year"
