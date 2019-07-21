@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    mooney_valley: {
+      url: "https://online.mvcc.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      list: :advertising
+    },
     macedon_ranges: {
       url: "https://eservices.mrsc.vic.gov.au/ePathway/Production",
       state: "VIC",

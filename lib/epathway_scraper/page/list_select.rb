@@ -21,7 +21,9 @@ module EpathwayScraper
         "development applications in public notification",
         # Planning Permit Applications
         "planning permit applications advertised",
-        "advertised planning permit applications"
+        "advertised planning permit applications",
+        # Statutory Planning Applications
+        "advertised statutory planning applications"
       ].freeze
 
       ALL_TEXT = [
@@ -42,8 +44,9 @@ module EpathwayScraper
         "town planning public register",
         # This one is ridiculous
         "the barossa council development applications",
-        # Statutory Planning
-        "statutory planning - online register"
+        # Statutory Planning Applications
+        "statutory planning - online register",
+        "statutory planning applications register"
       ].freeze
 
       def self.select(page, text_to_match)
