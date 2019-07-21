@@ -126,7 +126,7 @@ module EpathwayScraper
                    data[:address] &&
                    data[:description] &&
                    data[:date_received]
-              raise "Couldn't get all the data"
+              raise "Couldn't get all the data: #{data}"
             end
           end
 
