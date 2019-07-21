@@ -40,7 +40,10 @@ module EpathwayScraper
 
         button_texts = page.search('input[type="radio"]').map do |i|
           # Make the text lowercase for easier matching
-          i.parent.next.inner_text.downcase
+          a = i.parent.next
+          raise "Unexpected node" unless a.name == "td"
+
+          a.inner_text.downcase
         end
 
         index = button_texts.find_index { |text| text_to_match.include?(text) }
