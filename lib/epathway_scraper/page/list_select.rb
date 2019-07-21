@@ -7,32 +7,40 @@ module EpathwayScraper
     # If there is only one type of list then it looks like this page can be absent
     module ListSelect
       ADVERTISING_TEXT = [
-        "advertised planning applications",
+        # Applications
         "applications on exhibition",
-        "development applications on public exhibition",
-        "development applications in public notification",
+        # Planning Applications
+        "advertised planning applications",
         "planning application at advertising",
         "planning applications being advertised",
         "planning applications currently on advertising",
         "planning applications currently advertised",
+        "planning applications on advertising",
+        # Development Applications
+        "development applications on public exhibition",
+        "development applications in public notification",
+        # Planning Permit Applications
         "planning permit applications advertised",
-        "planning applications on advertising"
       ].freeze
 
       ALL_TEXT = [
+        # Development Applications
         "development application tracking",
         "development applications",
         "find a development application",
         "list of development applications",
+        "development application - planning act",
+        # Planning Applications
+        "planning applications",
         "planning application enquiry",
         "planning application register",
+        "register of planning applications",
+        # Planning Permit Applications
         "planning permit application search",
+        # Town Planning
         "town planning public register",
         # This one is ridiculous
-        "the barossa council development applications",
-        "development application - planning act",
-        "register of planning applications",
-        "planning applications"
+        "the barossa council development applications"
       ].freeze
 
       def self.select(page, text_to_match)
