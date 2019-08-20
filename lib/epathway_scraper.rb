@@ -14,9 +14,11 @@ require "scraperwiki"
 module EpathwayScraper
   # list: one of :all, :advertising, :last_30_days, :all_this_year
   # state: NSW, VIC or NT, etc...
-  def self.scrape(url:, list:, state:, max_pages: nil, force_detail: false)
+  def self.scrape(url:, list:, state:, max_pages: nil, force_detail: false,
+                  disable_ssl_certificate_check: false)
     base_url = url + "/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
     agent = Mechanize.new
+    agent.verify_mode = OpenSSL::SSL::VERIFY_NONE if disable_ssl_certificate_check
 
     # Navigate to the correct list
     page = agent.get(base_url)

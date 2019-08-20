@@ -3,6 +3,14 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    greater_shepparton: {
+      url: "https://eservices.greatershepparton.com.au/ePathway/Production",
+      state: "VIC",
+      list: :last_30_days,
+      # Has an incomplete SSL chain: See
+      # https://www.ssllabs.com/ssltest/analyze.html?d=eservices.greatershepparton.com.au&latest
+      disable_ssl_certificate_check: true
+    },
     latrobe: {
       url: "https://eservices.latrobe.vic.gov.au/ePathway/Production",
       state: "VIC",

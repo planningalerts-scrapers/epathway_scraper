@@ -75,7 +75,7 @@ module EpathwayScraper
 
       def self.form_button(page)
         form = page.form
-        form.button_with(value: /Next/) || form.button_with(value: /Save and Continue/)
+        form.button_with(value: /Next/) || form.button_with(value: /Continue/)
       end
 
       def self.select_advertising(page)
