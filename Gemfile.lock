@@ -20,6 +20,8 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     ast (2.4.0)
+    childprocess (1.0.1)
+      rake (< 13.0)
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -43,6 +45,7 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
+    mini_magick (4.9.5)
     mini_portile2 (2.4.0)
     net-http-digest_auth (1.4.1)
     net-http-persistent (3.0.1)
@@ -56,6 +59,7 @@ GEM
     public_suffix (3.0.3)
     rainbow (3.0.0)
     rake (10.1.1)
+    regexp_parser (1.6.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -77,7 +81,11 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.0)
+    rubyzip (1.2.3)
     safe_yaml (1.0.5)
+    selenium-webdriver (3.142.3)
+      childprocess (>= 0.5, < 2.0)
+      rubyzip (~> 1.2, >= 1.2.2)
     sqlite3 (1.4.1)
     sqlite_magic (0.0.6)
       sqlite3
@@ -87,6 +95,9 @@ GEM
     unf_ext (0.0.7.6)
     unicode-display_width (1.6.0)
     vcr (4.0.0)
+    watir (6.16.5)
+      regexp_parser (~> 1.2)
+      selenium-webdriver (~> 3.6)
     webmock (3.5.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -99,12 +110,14 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   epathway_scraper!
+  mini_magick
   rake (~> 10.0)
   rspec (~> 3.0)
   rubocop
   scraperwiki!
   timecop
   vcr
+  watir
   webmock
 
 BUNDLED WITH
