@@ -4,6 +4,12 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
+## What an Epathway website looks like
+
+![Sign up](https://github.com/planningalerts-scrapers/epathway_scraper/raw/master/screenshots/all.jpg)
+
+(To update this screenshot run `bundle exec rake screenshots`)
+
 ## Installation
 
 Add this line to your application's Gemfile:
