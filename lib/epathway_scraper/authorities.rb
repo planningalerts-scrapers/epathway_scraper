@@ -3,6 +3,11 @@
 module EpathwayScraper
   # The settings to scrape each different authority
   AUTHORITIES = {
+    latrobe: {
+      url: "https://eservices.latrobe.vic.gov.au/ePathway/Production",
+      state: "VIC",
+      list: :last_30_days
+    },
     whitehorse: {
       url: "https://eservices.whitehorse.vic.gov.au/ePathway/Production",
       state: "VIC",
