@@ -65,7 +65,8 @@ module EpathwayScraper
     livingstone: {
       url: "http://mpathway.livingstone.qld.gov.au/ePathway/Production",
       state: "QLD",
-      list: :last_30_days
+      list: :last_30_days,
+      force_detail: true
     },
     adelaide: {
       url: "https://epathway.adelaidecitycouncil.com/epathway/ePathwayProd",
