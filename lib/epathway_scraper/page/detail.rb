@@ -16,9 +16,19 @@ module EpathwayScraper
           # Find the table that contains the addresses
           table = detail_page.search("table.ContentPanel").find do |t|
             k = Table.extract_table_data_and_urls(t)[0][:content].keys
-            k.include?("Property Address") ||
-              k.include?("Address") ||
-              k.include?("Formatted Property Address")
+            k.all? do |o|
+              [
+                "Property Address",
+                "Address",
+                "Formatted Property Address",
+                "Ward",
+                "Title",
+                "Primary Location",
+                "Location Address",
+                "Location Suburb",
+                "Formatted Property Address"
+              ].include?(o)
+            end
           end
           raise "Couldn't find address table" if table.nil?
 
