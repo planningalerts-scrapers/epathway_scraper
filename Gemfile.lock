@@ -20,8 +20,7 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     ast (2.4.0)
-    childprocess (1.0.1)
-      rake (< 13.0)
+    childprocess (3.0.0)
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -58,7 +57,7 @@ GEM
       ast (~> 2.4.0)
     public_suffix (3.0.3)
     rainbow (3.0.0)
-    rake (10.1.1)
+    rake (13.0.1)
     regexp_parser (1.6.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
@@ -81,11 +80,11 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.0)
-    rubyzip (1.2.3)
+    rubyzip (2.2.0)
     safe_yaml (1.0.5)
-    selenium-webdriver (3.142.3)
-      childprocess (>= 0.5, < 2.0)
-      rubyzip (~> 1.2, >= 1.2.2)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
     sqlite3 (1.4.1)
     sqlite_magic (0.0.6)
       sqlite3
@@ -111,7 +110,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   epathway_scraper!
   mini_magick
-  rake (~> 10.0)
+  rake (~> 13.0)
   rspec (~> 3.0)
   rubocop
   scraperwiki!
