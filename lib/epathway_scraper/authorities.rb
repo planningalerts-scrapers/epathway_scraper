@@ -180,6 +180,11 @@ module EpathwayScraper
       state: "VIC",
       list: :all,
       max_pages: 20
+    },
+    lake_macquarie: {
+      url: "https://property.lakemac.com.au/ePathway/Production",
+      state: "NSW",
+      list: :last_30_days
     }
   }.freeze
 end

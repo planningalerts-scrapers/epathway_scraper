@@ -33,6 +33,7 @@ module EpathwayScraper
         "find a development application",
         "list of development applications",
         "development application - planning act",
+        "all applications",
         # Planning Applications
         "planning applications",
         "planning application enquiry",
