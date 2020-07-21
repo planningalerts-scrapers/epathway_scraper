@@ -38,6 +38,7 @@ module EpathwayScraper
         "planning applications",
         "planning application enquiry",
         "planning application register",
+        "planning applications register",
         "register of planning applications",
         "planning applications register - general",
         # Planning

@@ -1,52 +1,13 @@
 ---
-- council_reference: 2014/3/A
-  address: 50 Golf Links Road, YALLOURN VIC 3825
-  description: Staged multi-lot subdivision, buildings and works associated with an
-    outdoor recreation facility (golf course), and native vegetation removal
+- council_reference: 2020/146
+  address: Hirsts Road, BOOLARRA VIC 3870
+  description: Use and Development of land for a single dwelling
   info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2019-07-26'
-- council_reference: 2015/113/A
-  address: 145 Traralgon Maffra Road, TRARALGON VIC 3844
-  description: Buildings and Works associated with a Supermarket and Shops, Two Lot
-    Subdivision, Removal of Native Vegetation, Reduction in the Car Parking requirements
-    and creation of Access to a Road Zone Category 1.
+  date_received: '2020-06-23'
+- council_reference: 2020/148
+  address: 50 Hoven Drive, TRARALGON VIC 3844
+  description: Development of an outbuilding ancillary to a dwelling
   info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
-  date_received: '2019-08-08'
-- council_reference: 2016/108/A
-  address: 25 King Street, TOONGABBIE VIC 3856
-  description: Development of land with a single dwelling and ancillary shed in the
-    General Residential Zone - Schedule 1 and in the Land Subject to Inundation Overlay
-  info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-07-25'
-- council_reference: 2018/142/B
-  address: Miners Way, MORWELL VIC 3840
-  description: Use and Development of land for industry (soil blending and distribution),
-    waiver of car parking requirement and removal of native vegetation in the Industrial
-    1 Zone and Environmental Significance Overlay Schedule 1
-  info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-07-30'
-- council_reference: 2018/258/A
-  address: 355 Princes Highway, TRARALGON EAST VIC 3844
-  description: Development of land with an extension to an existing building in the
-    Industrial 1 Zone and reduction in Car Parking requirements
-  info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-07-25'
-- council_reference: 2019/155
-  address: 80 Fox's Road, TOONGABBIE VIC 3856
-  description: Development of land with a pergola ancillary to an existing dwelling
-    in the Rural Living Zone - Schedule 4 (RLZ4)
-  info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-07-26'
-- council_reference: 2019/156
-  address: 35 Wattle Tree Road, MOE SOUTH VIC 3825
-  description: Development of Land with a extension to an existing dwelling in the
-    Rural Living Zone Schedule 3 (RLZ3)
-  info_url: https://eservices.latrobe.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
-  date_scraped: '2019-05-15'
-  date_received: '2019-08-01'
+  date_received: '2020-06-24'
